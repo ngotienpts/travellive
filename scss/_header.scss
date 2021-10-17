@@ -1,0 +1,31 @@
+.header {
+  background-color: $color-black-0a;
+}
+.logo-header-top {
+  padding: 2.75rem 2.5rem;
+}
+.navbar-item__info {
+  color: $color-gray-ed;
+  cursor: pointer;
+}
+.navbar-item__icon {
+  font-size: 1rem;
+  color: $color-gray-ed;
+}
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar--left__logo {
+  height: 2.25rem;
+  width: auto;
+}
+.navbar--right__img {
+  width: 1.5rem;
+  height: auto;
+}
+.navbar--right__item {
+  cursor: pointer;
+}

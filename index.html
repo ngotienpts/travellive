@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travellive</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+   <link rel="stylesheet" href="./css/style.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+</head>
+
+<body>
+   <header id="header">
+      <section class="header">
+         <div class="logo-header-top text-center d-xl-block d-none">
+            <a href="#">
+               <img src="./images/logo1.svg" alt="" class="d-inline-block">
+            </a>
+         </div>
+         <div class="navbar d-flex align-items-center justify-content-between py-3 px-4">
+            <div class="navbar--left">
+               <img src="./images/logo2.svg" alt="" class="navbar--left__logo">
+            </div>
+            <div class="navbar--center">
+               <ul class="navbar__list d-flex align-items-center">
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item active">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                     <ul class="navbar-item__dropdown" style="display: none;">
+                        <li class="navbar-item__primary">
+                           <a href="#">Cảm hứng du lịch</a>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">Điểm đến</a>
+                           <ul class="navbar-item-list">
+                              <li class="navbar-item-list__second"><a href="#">Việt Nam</a></li>
+                              <li class="navbar-item-list__second"><a href="#">Châu Á</a></li>
+                              <li class="navbar-item-list__second"><a href="#">Châu Âu</a></li>
+                              <li class="navbar-item-list__second"><a href="#">Châu Phi</a></li>
+                              <li class="navbar-item-list__second"><a href="#">Châu Mỹ</a></li>
+                              <li class="navbar-item-list__second"><a href="#">Châu Úc</a></li>
+                           </ul>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">Lưu trú</a>
+                           <ul class="navbar-item-list">
+                              <li class="navbar-item-list__second"><a href="#">Hotels & Resorts</a></li>
+                              <li class="navbar-item-list__second"><a href="#">#NoHetelRooms</a></li>
+                           </ul>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">Phương tiện du lịch</a>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">Tips</a>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">Tours</a>
+                        </li>
+                        <li class="navbar-item__primary">
+                           <a href="#">HOT DEAL!</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+                  <li class="navbar-item">
+                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                        <span class="navbar-item__title d-inline-block mr-1">More</span>
+                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="navbar--right d-flex align-items-center">
+               <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__search p-2 mr-2">
+                  <img src="./images/w-search.svg" alt="" class="navbar--right__img">
+               </div>
+               <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__user bg-white p-2 rounded-circle">
+                  <img src="./images/b_user.svg" alt="" class="navbar--right__img">
+               </div>
+            </div>
+         </div>
+      </section>
+   </header>
+   <main id="main">
+      <section>
+         <div class="w-100">
+            <img src="./images/2.jpg" alt="" class="w-100">
+         </div>
+      </section>
+   </main>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>
