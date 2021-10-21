@@ -1,145 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&family=Alegreya:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Travellive</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-   <link rel="stylesheet" href="./css/style.css">
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-</head>
-
-<body>
-   <header id="header">
+  <body>
+   <!-- logo header -->
+    <section class="header-logo-top">
+      <div>
+        <a href="#">
+          <img src="./images/logo1.svg" alt="" class="d-inline-block" />
+        </a>
+      </div>
+    </section>
+    <!-- logo header -->
+    <!-- show menu tablet -->
+    <section class="menu-mb">
+      <div class="coating-menu-mb"></div>
+      <div class="menu-mb-content">
+         <div class="menu-mb-content-header position-relative d-flex align-items-center justify-content-between">
+               <a href="#"><img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb"></a>
+               <ion-icon name="close-outline" class="fs-36 text-white close-menu-mb"></ion-icon>
+         </div>
+         <div class="menu-mb-list">
+            <ul class="navbar__list">
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class=" d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <!-- contact about -->
+              <li class="navbar-item line my-12"></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">about us</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">contact</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">sign in</a></li>
+              <li class="navbar-item line my-12"></li>
+              <!-- end contact about -->
+              <!-- share -->
+              <li class="navbar-item py-12 px-4 d-flex align-items-center justify-content-end">
+                 <a href="#" class="share-fb-menu share-menu">
+                    <img src="./images/u_facebook.png" alt="">
+                 </a>
+                 <a href="#" class="share-insta-menu share-menu">
+                    <img src="./images/u_instagram-alt.png" alt="">
+                 </a>
+                 <a href="#" class="share-youtbe-menu share-menu">
+                    <img src="./images/u_youtube.png" alt="">
+                 </a>
+                 <a href="#" class="share-zalo-menu share-menu">
+                    <img src="./images/zalo.png" alt="">
+                 </a>
+              </li>
+              <!-- end share -->
+            </ul>
+          </div>
+      </div>
+    </section>
+    <!-- end show menu tablet -->
+    <!-- header -->
+    <header id="header">
       <section class="header">
-         <div class="logo-header-top text-center d-xl-block d-none">
+        <div
+          class="navbars d-flex align-items-center justify-content-between py-xl-3 px-xl-4">
+          <div class="navbar--left">
             <a href="#">
-               <img src="./images/logo1.svg" alt="" class="d-inline-block">
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo" />
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb" />
             </a>
+          </div>
+          <div class="navbar--center">
+            <ul class="navbar__list d-flex align-items-center">
+              <li class="navbar-item  navbar-item-pc">
+                <div
+                  class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Việt Nam</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Á</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Âu</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Phi</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Mỹ</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Úc</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Hotels & Resorts</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">#NoHetelRooms</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class=" d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar--right d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__search p-2  mr-2 ">
+               <img src="./images/w-search.svg" alt="" class="navbar--right__img"/>
+            </div>
+            <div  class="align-items-center justify-content-center navbar--right__item navbar--right__user bg-white p-2 rounded-circle ">
+               <img src="./images/b_user.svg" alt="" class="navbar--right__img"/>
+            </div>
+            <div class="align-items-center justify-content-center navbar--right__item navbar--right__bar p-2">
+               <img src="./images/bar.svg" alt="" class="navbar--right__img"/>
+            </div>
+          </div>
+        </div>
+        <!-- search header -->
+        <div class="search-header">
+          <div class="search-header-form">
+            <form action="" id="form-1">
+              <div
+                class="form-group-t d-flex align-items-center position-relative"
+              >
+                <input
+                  type="text"
+                  name="search-header"
+                  class="form-control-t form-search-header"
+                  placeholder="Tìm kiếm"
+                />
+                <div class="ml-2 position-absolute search-header-btn">
+                  <img src="./images/w-search.svg" alt="" class="serch-btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end search header -->
+      </section>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      <section class="banner-top position-relative">
+         <div class="banner-top-avatar position-relative">
+            <a href="#">
+               <img src="./images/2.jpg" alt="" class="w-100 banner-top-avatar__img" />
+               <div class="coating-banner-top"></div>
+            </a>
+            <div class="banner-top-avatar__content position-absolute">
+               <p class="text-red-d8 fw-700 text-uppercase">aliquam erat</p>
+               <h1 class="fs-48 text-white fw-500 font-primary">This is the sample of the blog's title</h1>
+               <p class="text-gray-f5 fs-18 font-third py-12">Mera description would be shown like this</p>
+               <a href="#" class="btn border-white boder-999 bg-black-06">
+                  <span class="fs-18 text-white fw-700">Take There</span>
+                  <ion-icon name="arrow-forward-outline" class="fs-20 ml-1 text-white"></ion-icon>
+               </a>
+            </div>
          </div>
-         <div class="navbar d-flex align-items-center justify-content-between py-3 px-4">
-            <div class="navbar--left">
-               <img src="./images/logo2.svg" alt="" class="navbar--left__logo">
-            </div>
-            <div class="navbar--center">
-               <ul class="navbar__list d-flex align-items-center">
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+         <div class="banner-top-thumb-list">
+            <div class="banner-top-thumb active">
+               <div class="banner-top-thumb__img">
+                   <div class="">
+                     <div class="thumb-img">
+                       <div class="thumb-item thumb-5x3"><img class="banner-top-thumb__image" src="./images/1.jpg" alt=""></div>
                      </div>
-                  </li>
-                  <li class="navbar-item active">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                     <ul class="navbar-item__dropdown" style="display: none;">
-                        <li class="navbar-item__primary">
-                           <a href="#">Cảm hứng du lịch</a>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">Điểm đến</a>
-                           <ul class="navbar-item-list">
-                              <li class="navbar-item-list__second"><a href="#">Việt Nam</a></li>
-                              <li class="navbar-item-list__second"><a href="#">Châu Á</a></li>
-                              <li class="navbar-item-list__second"><a href="#">Châu Âu</a></li>
-                              <li class="navbar-item-list__second"><a href="#">Châu Phi</a></li>
-                              <li class="navbar-item-list__second"><a href="#">Châu Mỹ</a></li>
-                              <li class="navbar-item-list__second"><a href="#">Châu Úc</a></li>
-                           </ul>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">Lưu trú</a>
-                           <ul class="navbar-item-list">
-                              <li class="navbar-item-list__second"><a href="#">Hotels & Resorts</a></li>
-                              <li class="navbar-item-list__second"><a href="#">#NoHetelRooms</a></li>
-                           </ul>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">Phương tiện du lịch</a>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">Tips</a>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">Tours</a>
-                        </li>
-                        <li class="navbar-item__primary">
-                           <a href="#">HOT DEAL!</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">To Live</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-                  <li class="navbar-item">
-                     <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
-                        <span class="navbar-item__title d-inline-block mr-1">More</span>
-                        <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <div class="navbar--right d-flex align-items-center">
-               <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__search p-2 mr-2">
-                  <img src="./images/w-search.svg" alt="" class="navbar--right__img">
+                   </div>
                </div>
-               <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__user bg-white p-2 rounded-circle">
-                  <img src="./images/b_user.svg" alt="" class="navbar--right__img">
+               <div class="coating-banner-top-thumb"></div>
+               <div class="banner-top-thumb-content">
+                  <h2 class="banner-top-thumb__title text-uppercase fw-700 pb-2">aliquam erat</h2>
+                  <p class="banner-top-thumb__des fs-20 fw-500 font-primary fix-text3">Amet minim   non deserunt ullamco est sit as aliqua dolor do </p>
+               </div>
+            </div>
+            <div class="banner-top-thumb">
+               <div class="banner-top-thumb__img">
+                  <div class="">
+                    <div class="thumb-img">
+                      <div class="thumb-item thumb-5x3"><img class="banner-top-thumb__image" src="./images/2.jpg" alt=""></div>
+                    </div>
+                  </div>
+               </div>
+               <div class="coating-banner-top-thumb"></div>
+               <div class="banner-top-thumb-content">
+                  <h2 class="banner-top-thumb__title text-uppercase fw-700 pb-2">aliquam erat</h2>
+                  <p class="banner-top-thumb__des fs-20 fw-500 font-primary fix-text3">Amet minim   non deserunt ullamco est sit as aliqua dolor do </p>
+               </div>
+            </div>
+            <div class="banner-top-thumb">
+               <div class="banner-top-thumb__img">
+                  <div class="">
+                    <div class="thumb-img">
+                      <div class="thumb-item thumb-5x3"><img class="banner-top-thumb__image" src="./images/3.jpg" alt=""></div>
+                    </div>
+                  </div>
+               </div>
+               <div class="coating-banner-top-thumb"></div>
+               <div class="banner-top-thumb-content">
+                  <h2 class="banner-top-thumb__title text-uppercase fw-700 pb-2">aliquam erat</h2>
+                  <p class="banner-top-thumb__des fs-20 fw-500 font-primary fix-text3">Amet minim   non deserunt ullamco est sit as aliqua dolor do </p>
+               </div>
+            </div>
+            <div class="banner-top-thumb">
+               <div class="banner-top-thumb__img">
+                  <div class="">
+                    <div class="thumb-img">
+                      <div class="thumb-item thumb-5x3"><img class="banner-top-thumb__image" src="./images/4.jpg" alt=""></div>
+                    </div>
+                  </div>
+               </div>
+               <div class="coating-banner-top-thumb"></div>
+               <div class="banner-top-thumb-content">
+                  <h2 class="banner-top-thumb__title text-uppercase fw-700 pb-2">aliquam erat</h2>
+                  <p class="banner-top-thumb__des fs-20 fw-500 font-primary fix-text3">Amet minim   non deserunt ullamco est sit as aliqua dolor do </p>
                </div>
             </div>
          </div>
       </section>
-   </header>
-   <main id="main">
-      <section>
-         <div class="w-100">
-            <img src="./images/2.jpg" alt="" class="w-100">
-         </div>
-      </section>
-   </main>
-   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-   <script src="./js/main.js"></script>
-</body>
-
+    </main>
+    <!-- end main -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

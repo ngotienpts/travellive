@@ -27,6 +27,7 @@ select,
 button {
   outline: none;
   font-family: "Alegreya Sans", sans-serif;
+  border: 0;
 }
 input {
   line-height: normal;
@@ -56,7 +57,7 @@ img {
   font-family: "Alegreya Sans", sans-serif;
 }
 .font-third {
-  font-family: "Alegreya Sans";
+  font-family: 'Alegreya', serif;
 }
 /*===========================================================================*/
 .w-670 {
@@ -126,6 +127,9 @@ img {
 .fs-36 {
   font-size: 2.25rem;
 }
+.fs-48 {
+  font-size: 3rem;
+}
 
 /*=================================================================*/
 .btn {
@@ -133,10 +137,10 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0.5rem 1.5rem;
   background-color: #fff;
   color: #fff;
+  outline: none;
 }
 /*=================================================================*/
 .thumb-img {
@@ -207,6 +211,9 @@ img {
 }
 .bg-black-0a {
   background-color: $color-black-0a;
+}
+.bg-black-06 {
+  background-color: #0000008c;
 }
 /*=================================================================*/
 .fw-300 {
@@ -322,3 +329,43 @@ img {
   margin: 0.75rem;
 }
 /*=================================================================*/
+.form-control-t {
+  width: 100%;
+  border: none;
+  height: 2.125rem;
+  padding: 1rem;
+}
+/*=================================================================*/
+.border-white {
+  border: 1px solid #fff;
+}
+/*=================================================================*/
+.boder-999 {
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+/*=================================================================*/
+.fix-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fix-text2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fix-text3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
