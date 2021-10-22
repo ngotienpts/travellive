@@ -329,6 +329,10 @@ img {
   padding-bottom: 60%;
 }
 
+.thumb-6x3 {
+  padding-bottom: 70%;
+}
+
 .thumb-item img {
   position: absolute;
   top: 0;
@@ -810,7 +814,8 @@ img {
   margin-right: 1.5rem;
 }
 
-.banner-top-avatar__content {
+.banner-top-avatar__content,
+.banner-top-mb-item-text {
   max-width: 800px;
   top: 50%;
   left: 50%;
@@ -895,6 +900,10 @@ img {
 
 .banner-top-thumb.active .banner-top-thumb__des {
   color: #3D3D3D;
+}
+
+.banner-top-mb-container {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

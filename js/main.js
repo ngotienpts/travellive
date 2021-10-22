@@ -112,7 +112,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
     },
-    
+
+    // slide banner top mb
+    slideBannerTopMb:function(){
+      $('.banner-top-mb').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        dots:true,
+        responsive: [
+          {
+            breakpoint: 739,
+            settings: {
+              arown:true,
+            }
+          }
+        ]
+      });
+    },
 
     // khoi tao function start
     start: function () {
@@ -122,6 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setImgTopHeader();
       // su ly cac su kien
       this.handleEvent();
+      // slide banner top mb
+      this.slideBannerTopMb();
     },
   };
 

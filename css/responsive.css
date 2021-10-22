@@ -112,11 +112,39 @@
   .share-menu + .share-menu {
     margin-left: 1.25rem;
   }
+
+  .banner-top {
+    display: none;
+  }
+
+  .banner-top-mb-container {
+    display: block;
+  }
+
+  .banner-top-mb .slick-dots {
+    bottom: 0.3125rem;
+  }
+
+  .banner-top-mb .slick-dots li button {
+    width: 2rem;
+  }
+
+  .banner-top-mb .slick-dots li button:before {
+    content: "";
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #89AAE6;
+  }
+
+  .banner-top-mb .slick-dots li {
+    width: 1rem;
+    margin: 0 1rem;
+  }
 }
 @media (min-width: 46.25em) and (max-width: 64em) {
   .navbars,
 .menu-mb-content-header {
-    padding: 1.125rem 2rem;
+    padding: 0.75rem 2rem;
   }
 
   .navbar-item .navbar-item__primary:last-child {
@@ -127,6 +155,10 @@
     width: 3rem;
     height: auto;
   }
+
+  .banner-top-mb-item-content {
+    display: none;
+  }
 }
 @media (max-width: 46.1875em) {
   .navbar--left__logo-mb {
@@ -136,7 +168,7 @@
 
   .navbars,
 .menu-mb-content-header {
-    padding: 0.875rem 0.5rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .navbar-item__dropdown {
@@ -156,6 +188,22 @@
   .share-menu img {
     width: 2rem;
     height: auto;
+  }
+
+  .banner-top-mb-item-text {
+    display: none;
+  }
+
+  .banner-top-mb-item-content {
+    display: block;
+  }
+
+  .thumb-item6x3 {
+    padding-bottom: 70%;
+  }
+
+  .banner-top-mb .slick-dots {
+    bottom: -0.625rem;
   }
 }
 

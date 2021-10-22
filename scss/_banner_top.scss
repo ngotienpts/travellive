@@ -1,4 +1,5 @@
-.banner-top-avatar__content{
+.banner-top-avatar__content,
+.banner-top-mb-item-text{
     max-width: 800px;
     top: 50%;
     left: 50%;
@@ -74,4 +75,7 @@
 }
 .banner-top-thumb.active .banner-top-thumb__des{
     color: #3D3D3D;
+}
+.banner-top-mb-container {
+    display: none;
 }
