@@ -19,6 +19,7 @@ body {
   font-style: normal;
   line-height: 1.4;
   color: #484848;
+  background-color: #fafafa;
 }
 
 input,
@@ -371,4 +372,13 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/*=================================================================*/
+.padding-y-56 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.padding-x-32 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

@@ -122,11 +122,12 @@ document.addEventListener("DOMContentLoaded", function () {
         fade: true,
         cssEase: 'linear',
         dots:true,
+        arrows: false,
         responsive: [
           {
             breakpoint: 739,
             settings: {
-              arown:true,
+              arrows:true,
             }
           }
         ]
