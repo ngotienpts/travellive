@@ -158,6 +158,36 @@
   .tab-pane-row1-block {
     flex-direction: row;
   }
+
+  .tab-pane-row1__img {
+    width: 35%;
+  }
+
+  .tab-pane-row1-content {
+    width: 65%;
+    padding: 1rem;
+  }
+
+  .tab-pane-row1-text1 {
+    font-size: 0.625rem;
+  }
+
+  .tab-pane-row1-text2 {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+  }
+
+  .tab-pane-row1-text3 {
+    display: none;
+  }
+
+  .tab-pane-row2 {
+    margin-top: 0;
+  }
+
+  .tab-pane-row1-block {
+    margin-bottom: 1rem;
+  }
 }
 @media (min-width: 46.25em) and (max-width: 64em) {
   .navbars,
@@ -184,6 +214,37 @@
 
   .slick-dotted.slick-slider {
     margin-bottom: 0;
+  }
+
+  .tab-pane-block {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .tab-pane-row1 {
+    flex: 0 0 65%;
+    padding-right: 0.75rem;
+  }
+
+  .tab-pane-row2 {
+    flex: 0 0 35%;
+    padding-left: 0.75rem;
+  }
+
+  .tab-pane-row2-text2 {
+    font-size: 0.875rem;
+  }
+
+  .tab-pane-row2-block {
+    border-left: 4px solid #054A91;
+  }
+
+  .tab-pane-row2-text2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .tab-pane-row2-block .tab-pane-row1-content {
+    padding: 0.5rem;
   }
 }
 @media (max-width: 46.1875em) {
@@ -286,6 +347,49 @@
   .padding-x-32 {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+  }
+
+  .tab-pane-row2-block {
+    border-left: 0;
+  }
+
+  .tab-pane-row2 .tab-pane-row1__img {
+    display: block;
+  }
+
+  .tab-pane-row1-text2 {
+    font-size: 1rem;
+  }
+
+  .tab-pane-row2-text2 {
+    font-size: 1rem;
+    color: #054a91;
+  }
+
+  .tab-pane-block .tab-pane-row1 .tab-pane-row1-block:first-child {
+    flex-direction: column;
+  }
+
+  .tab-pane-block .tab-pane-row1 .tab-pane-row1-block:first-child .tab-pane-row1__img,
+.tab-pane-block .tab-pane-row1 .tab-pane-row1-block:first-child .tab-pane-row1-content {
+    width: 100%;
+  }
+
+  .tab-pane-block .tab-pane-row1 .tab-pane-row1-block:first-child .tab-pane-row1-text2 {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .tab-pane-block .tab-pane-row1 .tab-pane-row1-block:first-child .tab-pane-row1-text3 {
+    display: block;
+  }
+
+  .tab-pane-more {
+    font-size: 0.875rem;
+  }
+
+  .tab-line {
+    display: block;
   }
 }
 

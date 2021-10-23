@@ -54,7 +54,7 @@
     padding-bottom: 0.325rem;
     font-size: 1rem;
 }
-p.tab-pane-row1-text2{
+.tab-pane-row1-text2{
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
 }
@@ -92,4 +92,27 @@ p.tab-pane-row1-text2{
 }
 .tab-pane-row1-text3 {
     margin-top: auto;
+}
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+}
+.tabs {
+    position: relative;
+}
+.tab-line {
+    position: absolute;
+    width: 0;
+    height: 0.125rem;
+    background: #b9b9b9;
+    bottom: -1.25rem;
+    display: none;
+}
+.tab-line-child {
+    width: 0;
+    height: 0.125rem;
+    background: #054a9e;
+    bottom: -1.25rem;
 }

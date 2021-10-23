@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // show sub menu mobile
   var openSubMenu = document.querySelectorAll('.navbar-item-mb');
 
-
+  // click change tab
+  var tabBlock = document.querySelectorAll('.tab-container');
+  var tabs = document.querySelectorAll('.tabs');
+  var tabLines = document.querySelectorAll('.tab-line');
   const app = {
     pushUpMain:function(){
       var heightHeader = document.querySelector("#header");
@@ -37,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
 
+    // set width tabs line
+    getTabWidth:function(){
+      if(tabs){
+        tabs.forEach(function(c,index){
+          var tabline = tabLines[index];
+          tabline.style.width = c.offsetWidth + 'px';
+        })
+      }
+    },
 
     // set img top banner header
     setImgTopHeader:function(){
@@ -104,6 +116,43 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       }
 
+
+      // change tab on click
+      if(tabBlock){
+        tabBlock.forEach(function(tab){
+          var tabItems = tab.querySelectorAll('.tab-item');
+          var tabPanes = tab.querySelectorAll('.tab-pane');
+
+          if(tabItems){
+            tabItems.forEach(function(curr,index){
+              curr.addEventListener('click',changeTab);
+              var pane = tabPanes[index];
+              var tabLine = tabLines[index];
+              var tabActive = tab.querySelector('active');
+              // tabLine.querySelector('.tab-line-child').style.left = tabActive.offsetLeft + 'px';
+              tabLine.querySelector('.tab-line-child').style.width = tabActive.offsetWidth + 'px';
+              function changeTab(){
+
+                var tabItemActive = tab.querySelector('.tab-item.active');
+                var tabPaneActive = tab.querySelector('.tab-pane.active');
+
+
+
+                if(tabItemActive){
+                  tabItemActive.classList.remove('active');
+                }
+                if(tabPaneActive){
+                  tabPaneActive.classList.remove('active');
+                }
+                curr.classList.add('active');
+                pane.classList.add('active');
+              }
+            })
+          }
+        })
+      }
+
+
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
         // hide search header
@@ -144,6 +193,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.handleEvent();
       // slide banner top mb
       this.slideBannerTopMb();
+      // set width tab line
+      this.getTabWidth();
     },
   };
 
