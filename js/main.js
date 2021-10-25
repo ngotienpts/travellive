@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if(tabs){
         tabs.forEach(function(c,index){
           var tabline = tabLines[index];
-          tabline.style.width = c.offsetWidth + 'px';
+          tabline.style.width = c.scrollWidth + 'px';
         })
       }
     },
@@ -122,21 +122,27 @@ document.addEventListener("DOMContentLoaded", function () {
         tabBlock.forEach(function(tab){
           var tabItems = tab.querySelectorAll('.tab-item');
           var tabPanes = tab.querySelectorAll('.tab-pane');
+          var tabLine = tab.querySelector('.tab-line');
+          var tabActive = tab.querySelector('.tab-item.active');
+          if(tabLine){
+            tabLine.querySelector('.tab-line-child').style.left = tabActive.offsetLeft + 'px';
+            tabLine.querySelector('.tab-line-child').style.width = tabActive.offsetWidth + 'px';
+          }
 
           if(tabItems){
             tabItems.forEach(function(curr,index){
               curr.addEventListener('click',changeTab);
               var pane = tabPanes[index];
-              var tabLine = tabLines[index];
-              var tabActive = tab.querySelector('active');
-              // tabLine.querySelector('.tab-line-child').style.left = tabActive.offsetLeft + 'px';
-              tabLine.querySelector('.tab-line-child').style.width = tabActive.offsetWidth + 'px';
               function changeTab(){
-
+                // 
                 var tabItemActive = tab.querySelector('.tab-item.active');
                 var tabPaneActive = tab.querySelector('.tab-pane.active');
-
-
+                // 
+                if(tabLine){
+                  tabLine.querySelector('.tab-line-child').style.left = this.offsetLeft + 'px';
+                  tabLine.querySelector('.tab-line-child').style.width = this.offsetWidth + 'px';
+                }
+                // 
 
                 if(tabItemActive){
                   tabItemActive.classList.remove('active');
@@ -145,6 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   tabPaneActive.classList.remove('active');
                 }
                 curr.classList.add('active');
+                curr.scrollIntoView({behavior: "smooth",block:"nearest", inline: "center"});
                 pane.classList.add('active');
               }
             })

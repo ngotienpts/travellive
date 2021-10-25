@@ -134,10 +134,12 @@
     .tab-pane-row1-block{
         flex-direction: row;
     }
-    .tab-pane-row1__img {
+    .tab-pane-row1__img,
+    .tab-pane-to-travel__row1-thumb-img {
         width: 35%;
     }
-    .tab-pane-row1-content {
+    .tab-pane-row1-content,
+    .tab-pane-to-travel__row1-thumb-content {
         width:65%;
         padding: 1rem;
     }
@@ -154,9 +156,31 @@
     .tab-pane-row2 {
         margin-top: 0;
     }
-    .tab-pane-row1-block {
+    .tab-pane-row1-block,
+    .tab-pane-to-travel__row1-thumb-thumb {
         margin-bottom: 1rem;
     }
+    .tab-pane-to-travel__row1-thumbs {
+        margin-top: 1rem;
+        display: block;
+    }
+    .tab-pane-to-travel__row1-thumb-content {
+        position: relative;
+        background: #fff;
+    }
+    .tab-pane-to-travel__row1-thumb-thumb {
+        display: flex;
+        width: 100%;
+        box-shadow: 0 4px 16px rgb(163 161 161 / 50%);
+    }
+    .tab-pane-to-travel__row1-thumb-text1 {
+        font-size: 0.625rem;
+        padding-bottom: 0.325rem;
+    }
+    .tab-pane-to-travel__row1-thumb-text2 {
+        color: #054a91;
+    }
+    
 }
 
 // tablet
@@ -195,16 +219,41 @@
     }
     .tab-pane-row2-text2 {
         font-size: 0.875rem;
+        -webkit-line-clamp: 2;
+        color: #525252;
     }
     .tab-pane-row2-block {
         border-left: 4px solid #054A91;
     }
-    .tab-pane-row2-text2{
-        -webkit-line-clamp: 2;
-    }
     .tab-pane-row2-block .tab-pane-row1-content {
         padding: 0.5rem;
     }
+    .tab-pane-to-travel__row1 {
+        flex: 0 0 65%;
+    }
+    .tab-pane-to-travel__row2 {
+        flex: 0 0 35%;
+    }
+    .tab-pane-to-travel__row2-thumb-thumb {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .tab-pane-to-travel__row2-thumb-text2 {
+        -webkit-line-clamp: 2;
+        color: #525252;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .tab-pane-to-travel__row1-text1 {
+        color: #EFBB68;
+    }
+    .tab-pane-to-travel__row1-text2 {
+        font-size: 1.5rem;
+    }
+    .tab-pane-to-travel__row1-text3 {
+        font-size: 1rem;
+    }
+    
     
 }
 
@@ -323,7 +372,83 @@
     .tab-pane-more{
         font-size: 0.875rem;
     }
+    .tabs {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        height: 3rem;
+    }
     .tab-line {
         display: block;
     }
+    .tab-item-text{
+        font-size: 0.875rem;
+    }
+    .tabs::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+    .tabs::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+    }
+    .tab-pane-to-travel-block {
+        flex-direction: column;
+    }
+    .tab-pane-to-travel__row1 {
+        flex: 100%;
+        padding-right: 0;
+    }
+    .tab-pane-to-travel__row2 {
+        flex: 100%;
+        padding-left: 0;
+    }
+    .tab-pane-to-travel__row1-thumb-text2 {
+        font-size: 1rem;
+    }
+    .tab-pane-to-travel__row2-thumb-thumb {
+        padding: 0;
+        border-left: none;
+        margin-bottom: 1rem;
+        flex-direction: row;
+    }
+    .tab-pane-to-travel__row2-thumb-text2 {
+        color: #054a91;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .tab-pane-to-travel__row2-thumb-content {
+        padding: 0.5rem;
+        width: 65%;
+    }
+    .tab-pane-to-travel__row2-thumb-img {
+        display: block;
+        width: 35%;
+    }
+    .tab-pane-row1-content, .tab-pane-to-travel__row1-thumb-content {
+        padding: 0.5rem;
+    }
+    .tab-pane-to-travel__row1-content {
+        position: relative;
+        background: #fff;
+        padding: 0.5rem;
+    }
+    .tab-pane-to-travel__row1-text1 {
+        font-size: 0.625rem;
+        padding-bottom: 0.325rem;
+    }
+    .tab-pane-to-travel__row1-text2 {
+        color: #054a91;
+        font-size: 1.25rem;
+        padding-bottom: 0.5rem;
+    }
+    .tab-pane-to-travel__row1-text3 {
+        font-size: 1rem;
+        color: #525252;
+        margin-top: 0;
+    }
+    .tab-pane-to-travel__row1-avatar {
+        box-shadow: 0 4px 16px rgb(163 161 161 / 50%);
+    }
+    
 }
