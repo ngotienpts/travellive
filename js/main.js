@@ -172,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // slide banner top mb
     slideBannerTopMb:function(){
       $('.banner-top-mb').slick({
-        dots: true,
         infinite: true,
         speed: 500,
         fade: true,
@@ -189,7 +188,34 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
-
+    // slide hot deal
+    slideHotDeal:function(){
+      $('.hot-deal-slide').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows:false,
+              slidesToShow: 2,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1.2,
+              arrows:false,
+              infinite: false,
+            }
+          }
+        ]
+      });
+    },
     // khoi tao function start
     start: function () {
       // lay chieu cao cua header va day main len 1 chut
@@ -202,6 +228,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideBannerTopMb();
       // set width tab line
       this.getTabWidth();
+      // slide hot deal
+      this.slideHotDeal();
     },
   };
 

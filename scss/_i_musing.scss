@@ -1,0 +1,105 @@
+.i-musing{
+    background: #f4f6f5;
+}
+.i_musing_avatar,
+.i_musing_thumb{
+    position: relative;
+}
+.i_musing_avatar__content,
+.i_musing_thumb-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem 1rem;
+    background: linear-gradient(
+360deg, black, transparent);
+}
+.i_musing_avatar__content-text {
+    font-size: 2.125rem;
+}
+.i_musing_avatar__content-img {
+    width: 3.5rem;
+}
+.i_musing_thumb__content-img {
+    width: 2rem;
+    height: auto;
+}
+.i_musing_thumb__content-text {
+    font-size: 1.25rem;
+}
+.i_musing_thumb__content-mb {
+    display: none;
+}
+.tab-pane-block.tab-pane-musing-block {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+}
+.i_musing_avatar{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.coating-i-musing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #0404042e;
+}
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.play-large {
+    background-color: #333;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.play-video-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+}
+.play-large .play-video-icon {
+    font-size: 2.5rem;
+    color: #fff;
+}
+.play-small {
+    background-color: #333;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.play-small .play-video-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.play:hover{
+    opacity: 0.8;
+    transition: opacity 0.1s linear;
+    -webkit-transition: opacity 0.1s linear;
+    -moz-transition: opacity 0.1s linear;
+    -ms-transition: opacity 0.1s linear;
+    -o-transition: opacity 0.1s linear;
+}
+.i_musing_avatar-img-ipad {
+    display: none;
+}
