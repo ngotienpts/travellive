@@ -1,0 +1,72 @@
+.week-in-picture {
+    background-color: #FBEBD2;
+}
+.week-in-picture-content {
+    margin-top: 3rem;
+}
+.week-in-picture__block {
+    position: relative;
+}
+.week-in-picture__content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    max-width: 45%;
+    padding: 0 3rem;
+}
+.week-in-picture__title {
+    font-weight: 500;
+    font-style: italic;
+    color: #fff;
+    font-size: 2.125rem;
+    margin-bottom: 1rem;
+}
+.week-in-picture__des {
+    color: #f5f5f5;
+}
+.week-in-picture-content .slick-prev:before {
+    content: '\276E';
+}
+.week-in-picture-content .slick-next:before {
+    content: '\276F';
+}
+.week-in-picture-content .slick-prev {
+    left: 2rem;
+    z-index: 10;
+}
+.week-in-picture-content .slick-next {
+    right: 2rem;
+    z-index: 10;
+}
+.week-in-picture-content .slick-prev,
+.week-in-picture-content .slick-next {
+    width: 2rem;
+    height: 4.5rem;
+    background: rgba(255,255,255,0.25);
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+.week-in-picture-content .slick-dots li button:before{
+    content: '';
+}
+.week-in-picture-content .slick-dots li button{
+    font-size: 1.25rem;
+    color: #525252;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+}
+.week-in-picture-content .slick-dots li.slick-active button {
+    color: $color-blue-05;
+}
+.week-in-picture-content .slick-dots {
+    bottom: -2.5rem;
+    text-align: left;
+}

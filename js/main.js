@@ -168,7 +168,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
     },
-
+    // set width giao dien mb
+    setWidthPointOfView:function(){
+      var widthPointView = document.querySelector('.point-of-view ');
+      if(widthPointView.offsetWidth < 576){
+        var widthAuthor = widthPointView.querySelector('.point-of-view__left--author');
+        if(widthAuthor){
+          $(widthAuthor).slick({
+            infinite: false,
+            dots:true,
+            arrows: false,
+            slidesToShow: 1.2,
+            slidesToScroll: 1
+          });
+        }
+      }
+    },
     // slide banner top mb
     slideBannerTopMb:function(){
       $('.banner-top-mb').slick({
@@ -196,6 +211,8 @@ document.addEventListener("DOMContentLoaded", function () {
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
           {
             breakpoint: 1199,
@@ -216,6 +233,67 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // slide e magazine
+    slideEmagazine:function(){
+      $('.e-maga-content').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows:false,
+              slidesToShow: 1.7,
+              centerMode: true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              centerMode: true,
+              arrows:false,
+              infinite: true,
+            }
+          }
+        ]
+      });
+    },
+    // slide week in picture
+    slideWeekInPicture:function(){
+      $('.week-in-picture-content').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows:true,
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              arrows:true,
+              infinite: true,
+            }
+          }
+        ]
+      });
+    },
     // khoi tao function start
     start: function () {
       // lay chieu cao cua header va day main len 1 chut
@@ -230,6 +308,12 @@ document.addEventListener("DOMContentLoaded", function () {
       this.getTabWidth();
       // slide hot deal
       this.slideHotDeal();
+      // slide emagazine
+      this.slideEmagazine();
+      // slide week in picture
+      this.slideWeekInPicture();
+      // set width giao dien mb
+      this.setWidthPointOfView();
     },
   };
 

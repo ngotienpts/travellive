@@ -208,8 +208,67 @@
     .i_musing_avatar-img-ipad img {
         height: 100%;
     }
-    
+    .e-magazine{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .e-maga-content {
+        margin-top: 1.5rem;
+    }
+    .week-in-picture__content {
+        max-width: 100%;
+    }
+    .week-in-picture-content .slick-dots {
+        bottom: -1.5rem;
+        text-align: center;
+    }
+    .week-in-picture-content .slick-prev, .week-in-picture-content .slick-next {
+        width: 1.5rem;
+        height: 2.5rem;
+    }
+    .week-in-picture{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .p-x-32 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .week-in-picture-content .slick-prev {
+        left: 0;
+    }
+    .week-in-picture-content .slick-next {
+        right: 0;
+    }
+    .point-of-view__right-content {
+        display: block;
+    }
+    .point-of-view__right-block {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .point-of-view__right-img {
+        width: 30%;
+    }
+    .point-of-view__right-text {
+        padding: 0.375rem 1rem;
+        width: 70%;
+    }
+    .point-of-view__right-text3 {
+        display: none;
+    }
+    .point-of-view__left--author__title {
+        font-size: 0.875rem;
+    }
+    .point-of-view__left--author__des {
+        font-size: 0.75rem;
+    }
 }
+
+
+
+
 
 // tablet
 @media (min-width:46.25em)and (max-width:64em){
@@ -303,10 +362,54 @@
     .i_musing_thumb-content {
         padding: 0.5rem;
     }
+    .e-maga-content__textlink {
+        font-size: 1.25rem;
+    }
+    .week-in-picture__content {
+        max-width: 65%;
+    }
+    .week-in-picture__title {
+        line-height: 1.2;
+    }
+    .week-in-picture__block.border-6 {
+        border-radius: 0;
+    }
+    .point-of-view {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .point-of-view__right {
+        padding: 2rem 2rem 2.25rem 2rem;
+    }
+    .point-of-view__right-header {
+        padding-bottom: 3rem;
+    }
+    .point-of-view__left {
+        padding: 2rem 0.5rem 2rem 1.5rem;
+    }
+    .point-of-view__left--title {
+        font-size: 1.5rem;
+        padding-bottom: 2.125rem;
+    }
+    .point-of-view__left--author__img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+   
     
-    
-    
+    .point-of-view__right--title {
+        font-size: 1.5rem;
+    }
+    .point-of-view__left-readmore, 
+    .point-of-view__right-readmore {
+        padding-top: 1.25rem !important;
+    }
 }
+
+
+
+
 
 
 // mobile
@@ -570,5 +673,159 @@
     .play-small .play-video-icon {
         font-size: 1rem;
     }
-    
+    .e-maga-content__block {
+        padding: 0.5rem;
+    }
+    .e-maga-content__text1 {
+        padding-top: 1rem;
+        font-size: 0.625rem;
+    }
+    .e-maga-content__textlink {
+        font-size: 1rem;
+    }
+    .e-maga-content__text4 {
+        font-size: 0.875rem;
+    }
+    .e-maga-content__text5 {
+        border: 2px solid #054A91;
+        color: #054A91;
+        font-size: 0.875rem;
+        line-height: 1;
+    }
+    .e-maga-content__text6{
+        color: #054A91;
+        font-size: 0.875rem;
+        line-height: 1;
+    }
+    .e-maga-content .slick-slide {
+        margin: 0.375rem;
+    }
+    .e-magazine {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .week-in-picture__content {
+        padding: 1rem 0.5rem 0.5rem;
+        position: relative;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+    .week-in-picture {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .week-in-picture__title {
+        color: #33573d;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .week-in-picture__des {
+        color: #525252;
+        font-size: 0.875rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .week-in-picture-content .slick-prev,
+    .week-in-picture-content .slick-next {
+         top: 34%;
+         border-radius: 0;
+         -webkit-border-radius: 0;
+         -moz-border-radius: 0;
+         -ms-border-radius: 0;
+         -o-border-radius: 0;
+    }
+    .week-in-picture-content .slick-dots li button {
+        font-size: 1.125rem;
+    }
+    .point-of-view-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .point-of-view-content,
+    .week-in-picture-content {
+        margin-top: 1.5rem;
+    }
+    .week-in-picture__block{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .point-of-view  {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .point-of-view__left {
+        order: 2;
+        padding: 2.25rem 0;
+    }
+    .point-of-view__right {
+        padding: 0 0.5rem 2rem;
+    }
+    .point-of-view__right--title,
+    .point-of-view-select {
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .point-of-view__right-header {
+        padding-bottom: 1.125rem;
+    }
+    .point-of-view__right-text {
+        padding: 0.375rem 0.5rem;
+    }
+    .point-of-view__right-text1 {
+        font-size: 0.625rem;
+    }
+    .point-of-view__right-text2 {
+        font-size: 1rem;
+    }
+    .point-of-view__right-block:first-child{
+        flex-direction: column;
+    }
+    .point-of-view__right-block:first-child .point-of-view__right-img {
+        width: 100%;
+    }
+    .point-of-view__right-block:first-child .point-of-view__right-text {
+        width: 100%;
+    }
+    .point-of-view__right-block:first-child .point-of-view__right-text2 {
+        font-size: 1.25rem;
+    }
+    .point-of-view__right-block:first-child .point-of-view__right-text3 {
+        display: block;
+        font-size: 0.875rem;
+    }
+    .point-of-view__left--title {
+        padding-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .point-of-view__left--author__title {
+        font-size: 0.625rem;
+    }
+    .point-of-view__left--author .slick-slide {
+        margin: 1rem;
+    }
+    .point-of-view__left--author .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #ECBBAC;
+    }
+    .point-of-view__left--author .slick-dots li button:before {
+        color: gray;
+        font-size: 0.625rem;
+    }
 }

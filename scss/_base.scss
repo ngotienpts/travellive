@@ -81,6 +81,10 @@ img {
   max-width: 85.375rem;
   margin: 0 auto;
 }
+.w-1440 {
+  max-width: 90rem;
+  margin: 0 auto;
+}
 .w-1920 {
   max-width: 120rem;
   margin: 0 auto;
@@ -382,6 +386,10 @@ img {
   padding-bottom: 3.5rem;
 }
 .padding-x-32 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.p-x-32 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
