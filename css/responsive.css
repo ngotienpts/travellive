@@ -494,6 +494,48 @@
 .point-of-view__right-readmore {
     padding-top: 1.25rem !important;
   }
+
+  .pen-travllive-btn,
+.form-newletter {
+    margin-top: 2rem;
+  }
+
+  .footer-right-title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-right-icon {
+    display: block;
+    margin-left: 0.5rem;
+  }
+
+  .footer-right-list {
+    display: none;
+  }
+
+  .footer-right-navbar.active .footer-right-list {
+    display: block;
+  }
+
+  .footer-right-navbar.active .footer-right-title {
+    color: #EFBB68;
+  }
+
+  .footer-right-navbar.active .footer-right-title a {
+    color: #EFBB68 !important;
+  }
+
+  .footer-right-navbar.active .footer-right-item a {
+    color: #EFBB68 !important;
+  }
+
+  .footer-right {
+    display: block;
+    text-align: end;
+  }
 }
 @media (max-width: 46.1875em) {
   .navbar--left__logo-mb {
@@ -764,6 +806,7 @@
     font-size: 1.25rem;
     padding-bottom: 1rem;
     text-align: center;
+    padding-right: 0;
   }
 
   .promotion-email__form {
@@ -1009,6 +1052,83 @@
   .point-of-view__left--author .slick-dots li button:before {
     color: gray;
     font-size: 0.625rem;
+  }
+
+  .pen-travllive-title {
+    font-size: 1.375rem;
+  }
+
+  .pen-travllive-des {
+    font-size: 1rem;
+  }
+
+  .pen-travllive-btn,
+.form-newletter {
+    margin-top: 1.5rem;
+  }
+
+  .pen-travllive-btn,
+.newletter-btn {
+    font-size: 0.875rem;
+  }
+
+  .form-newletter-input {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-right,
+.footer-footer__logo {
+    display: none;
+  }
+
+  .footer-header-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-header-logo {
+    margin-bottom: 3.25rem;
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+
+  .footer-left__top {
+    flex-direction: column;
+  }
+
+  .footer-left__top > p {
+    margin-right: 0;
+  }
+
+  .footer-left__top--link {
+    display: inline-block;
+  }
+
+  .footer-share {
+    justify-content: center;
+  }
+
+  .footer-footer__content {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .footer-footer__text {
+    order: 3;
+  }
+
+  .footer-footer__text2 {
+    order: 2;
+    margin: 1rem 0;
+  }
+
+  .footer-footer__dmca {
+    order: 1;
+    margin-left: 0;
   }
 }
 

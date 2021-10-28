@@ -394,6 +394,10 @@ img {
   color: #054a91;
 }
 
+.text-blue-89 {
+  color: #89AAE6;
+}
+
 /*=================================================================*/
 .bg-cyan-e1 {
   background-color: #e1e9ef;
@@ -417,6 +421,10 @@ img {
 
 .bg-blue-05 {
   background-color: #054a91;
+}
+
+.bg-black-3d {
+  background-color: #3d3d3d;
 }
 
 /*=================================================================*/
@@ -1290,6 +1298,7 @@ img {
 .promotion-email__text {
   width: 45%;
   font-size: 2.125rem;
+  padding-right: 1.5rem;
 }
 
 .promotion-email__form {
@@ -1302,6 +1311,7 @@ img {
 
 .promotion-email__input {
   flex: 1;
+  height: 2.625rem;
 }
 
 .banner-pc img {
@@ -1719,6 +1729,237 @@ img {
 
 .pen-travllive-icon {
   margin-left: 0.25rem;
+}
+
+.form-newletter {
+  margin: auto;
+  max-width: 623px;
+  margin-top: 3rem;
+}
+
+.newletter-btn {
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.form-newletter-input {
+  flex: 1;
+  height: 2.625rem;
+  background-color: #ededed;
+  border-radius: 0.375rem;
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  -ms-border-radius: 0.375rem;
+  -o-border-radius: 0.375rem;
+}
+
+.newletter-clicking {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  color: #525252;
+}
+
+.newletter-clicking__link {
+  text-decoration: underline;
+  color: #525252;
+}
+
+.newletter-clicking__link:hover {
+  color: #078ad6;
+}
+
+.popup-login {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-login-wrapper {
+  max-width: 450px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 1.25rem;
+}
+
+h3.popup-login-title {
+  font-size: 20px;
+  padding-bottom: 1rem;
+  color: #FF564F;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #ebebebbd;
+}
+
+.fb-login-btn {
+  background: #5E80CB;
+  width: 100%;
+  height: 3rem;
+}
+
+.gg-login-btn {
+  margin-top: 1.25rem;
+  background: #D46456;
+  width: 100%;
+  height: 3rem;
+}
+
+.login-btn {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: #FF564F;
+  height: 3rem;
+}
+
+.login-text-register {
+  color: #3B75F2;
+  border-bottom: 1px solid #3B75F2;
+  font-weight: 500;
+}
+
+ion-icon.close-popup-login.md.hydrated {
+  font-size: 2rem;
+  color: #a9a5a5;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
+  padding: 0.325rem;
+}
+
+#footer {
+  padding: 4rem 2rem 1.5rem;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-left {
+  flex-grow: 1;
+  color: #ededed;
+}
+
+.footer-left a {
+  color: #ededed;
+}
+
+.footer-right {
+  flex-grow: 2;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right a {
+  color: #fff;
+}
+
+.footer-left__top--link {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 1.5rem;
+}
+
+.footer-left__top--link ~ .footer-left__top--link {
+  margin-left: 1.5rem;
+}
+
+.share-footer + .share-footer {
+  margin-left: 0.5rem;
+}
+
+.share-footer img {
+  width: 2rem;
+  height: auto;
+}
+
+.footer-share {
+  margin: 1.5rem 0 2.5rem;
+}
+
+.footer-right-icon {
+  display: none;
+}
+
+.footer-right-title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.footer-right-item {
+  margin-bottom: 1rem;
+}
+
+.footer-footer__logo {
+  margin: 1rem 0;
+  text-align: right;
+  text-align: -webkit-right;
+}
+
+.footer-footer__logo img {
+  height: 2.25rem;
+  width: auto;
+}
+
+.footer-footer__dmca {
+  height: 1.75rem;
+  width: auto;
+  margin-left: 1.5rem;
+}
+
+.footer-footer__text2,
+.footer-footer__text1 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.footer-footer__text2 {
+  margin-left: 1.5rem;
+}
+
+.footer-footer__text1 {
+  border-left: 1px solid #fff;
+  padding-left: 0.5rem;
+}
+
+.footer-footer__text1:hover {
+  color: #fff;
+}
+
+.footer-footer__text1:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.footer-footer__text1 + .footer-footer__text1 {
+  margin-left: 0.5rem;
+}
+
+.footer-header-logo img {
+  display: none;
+  height: 2.25rem;
+  width: auto;
+}
+
+.footer-left__top {
+  display: flex;
+}
+
+.footer-left__top > p {
+  margin-right: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

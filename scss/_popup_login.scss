@@ -1,0 +1,63 @@
+.popup-login {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+.popup-login-wrapper {
+    max-width: 450px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    padding: 1.25rem;
+}
+h3.popup-login-title {
+    font-size: 20px;
+    padding-bottom: 1rem;
+    color: #FF564F;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #ebebebbd;
+}
+.fb-login-btn {
+    background: #5E80CB;
+    width: 100%;
+    height: 3rem;
+}
+.gg-login-btn {
+    margin-top: 1.25rem;
+    background: #D46456;
+    width: 100%;
+    height: 3rem;
+}
+.login-btn {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: #FF564F;
+    height: 3rem;
+}
+.login-text-register {
+    color: #3B75F2;
+    border-bottom: 1px solid #3B75F2;
+    font-weight: 500;
+}
+ion-icon.close-popup-login.md.hydrated {
+    font-size: 2rem;
+    color: #a9a5a5;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    cursor: pointer;
+    padding: 0.325rem;
+}

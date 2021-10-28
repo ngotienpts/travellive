@@ -19,6 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var tabBlock = document.querySelectorAll('.tab-container');
   var tabs = document.querySelectorAll('.tabs');
   var tabLines = document.querySelectorAll('.tab-line');
+
+  // show popup login
+  var popupLogin = document.querySelector('.popup-login');
+  var openPopupLogin = document.querySelectorAll('.open-login');
+  var closePopupLogin = document.querySelector('.close-popup-login');
+  var popupLoginWrapper = document.querySelector('.popup-login-wrapper');
+
+  // footer
+  var footerBlock = document.querySelector('footer');
   const app = {
     pushUpMain:function(){
       var heightHeader = document.querySelector("#header");
@@ -159,6 +168,42 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       }
 
+      //footer
+      if(footerBlock){
+        if(footerBlock.offsetWidth < 1025){
+          var navbarFooter = footerBlock.querySelectorAll('.footer-right-navbar');
+          navbarFooter.forEach(function(curr){
+            var navbarIcon =  curr.querySelector('.footer-right-icon');
+            var caretIcon = curr.querySelector('.footer-right-icon');
+            navbarIcon.onclick = function(){
+              if(curr.classList.contains('active')){
+                curr.classList.remove('active');
+              }else{
+                curr.classList.add('active')
+              }
+              if(caretIcon.getAttribute('name') == 'caret-down-outline'){
+                caretIcon.setAttribute('name','caret-up-outline')
+              }else {
+                caretIcon.setAttribute('name','caret-down-outline')
+              }
+            }
+          })
+        }
+      } 
+
+      // show popup login
+      if(openPopupLogin){
+        openPopupLogin.forEach(function(value){
+          value.onclick = function(){
+            popupLogin.style.display = 'block';
+          }
+        })
+        if(closePopupLogin){
+          closePopupLogin.onclick = function(){
+            popupLogin.style.display = 'none';
+          }
+        }
+      }
 
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
