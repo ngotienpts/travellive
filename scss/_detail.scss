@@ -22,8 +22,11 @@
   padding-left: 1.25rem;
   position: relative;
 }
-.detail-left {
+.detail-left,
+.detail-right {
   position: sticky;
+  padding-top: 1.25rem;
+  top: 78px;
 }
 .detail-center {
   background: #fbfafa;
@@ -32,7 +35,7 @@
   position: sticky;
 }
 .table-of-content-field {
-  margin-top: 1.25rem;
+  // margin-top: 1.25rem;
   padding: 0.75rem 0.5rem;
   box-shadow: 0 4px 16px rgb(163 161 161 / 50%);
 }
@@ -110,4 +113,164 @@
 }
 .writer-profile-btn:hover {
   color: $color-blue-05;
+}
+.most-views-detail-right {
+  padding: 0.75rem 0;
+}
+.most-views-detail-right__item {
+  background: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border-left: 0.25rem solid #EFBB68;
+  font-size: 0.875rem;
+}
+.most-views-detail-right__item a {
+  color: #525252;
+}
+.most-views-detail-right__item:hover {
+  background: $color-blue-05;
+  border-color: $color-blue-05;
+  transition: background 0.2s linear;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+}
+.most-views-detail-right__item:hover a{
+  color: #fff;
+  transition: color 0.2s linear;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+}
+.subscribe-email2 {
+  padding: 1rem 0.5rem;
+}
+.subscribe-email-title2{
+  padding: 0;
+  font-size: 1.25rem;
+}
+.subscribe-email-des {
+  padding: 0;
+}
+.subscribe-btn2 {
+  font-size: 0.875rem;
+}
+.detail-header-item {
+  font-size: 1rem;
+}
+.detail-header-item a {
+  color: #c4c4c4;
+}
+.detail-header-item:last-child a {
+  color: #D87053;
+}
+.detail-center-content {
+  background: #fafafa;
+  padding: 1.75rem 1.25rem;
+}
+.detail-center-content__title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+.detail-center-content__des {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.detail-center-content__author  {
+  margin-bottom: 1.5rem;
+}
+.detail-center-content__author--item ~ .detail-center-content__author--item {
+  padding-left:2.375rem ;
+}
+.detail-center-content__author--item {
+  position: relative;
+}
+.detail-center-content__author--item::before {
+  position: absolute;
+  content: '';
+  background:  #ECBBAC;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.125rem;
+}
+.detail-center-content__author--item:first-child {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.detail-center-content__author--item:first-child:before {
+  content: none;
+}
+.detail-center-content__author--item:first-child a {
+  color: $color-blue-05;
+}
+.detail-center-content figure {
+  margin-bottom: 1.5rem;
+}
+.detail-center-content figure img {
+  border-radius: 0.375rem;
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  -ms-border-radius: 0.375rem;
+  -o-border-radius: 0.375rem;
+  width: 100%;
+  height: auto;
+}
+.detail-center-content figure h2 {
+  font-size: 0.875rem;
+  color: #525252;
+  margin-top: 0.5rem;
+}
+.detail-center-content p {
+  font-size: 1.125rem;
+  color: $color-gray-3d;
+  line-height: 27px;
+  margin-bottom: 1.5rem;
+  font-family: 'Alegreya', serif;
+}
+.detail-center-content > h2,
+.detail-center-content > h3,
+.detail-center-content > h4,
+.detail-center-content > h5 {
+  font-weight: 700;
+  color: $color-gray-3d;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  line-height: 21.6px;
+}
+.recommended-articles-block {
+  padding: 1rem;
+  background: rgba(239, 187, 104, 0.2);
+}
+.recommended-articles {
+  column-gap: 1rem;
+}
+.recommended-articles-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.recommended-article-img {
+  width: 35%;
+}
+.recommended-article-content {
+  width: 65%;
+  padding: 0.5rem;
+}
+.recommended-article-content__text1 {
+  font-size: 0.625rem;
+}
+.recommended-article-content__text2 {
+  font-size: 0.875rem;
 }

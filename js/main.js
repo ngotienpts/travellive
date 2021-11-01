@@ -216,16 +216,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // set width giao dien mb
     setWidthPointOfView:function(){
       var widthPointView = document.querySelector('.point-of-view ');
-      if(widthPointView.offsetWidth < 576){
-        var widthAuthor = widthPointView.querySelector('.point-of-view__left--author');
-        if(widthAuthor){
-          $(widthAuthor).slick({
-            infinite: false,
-            dots:true,
-            arrows: false,
-            slidesToShow: 1.2,
-            slidesToScroll: 1
-          });
+      if(widthPointView){
+        if(widthPointView.offsetWidth < 576){
+          var widthAuthor = widthPointView.querySelector('.point-of-view__left--author');
+          if(widthAuthor){
+            $(widthAuthor).slick({
+              infinite: false,
+              dots:true,
+              arrows: false,
+              slidesToShow: 1.2,
+              slidesToScroll: 1
+            });
+          }
         }
       }
     },
@@ -339,6 +341,23 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // day content top detail
+    pushTopDetail:function(){
+      var heightBannerTopDetail = document.querySelector('.banner-top-detail');
+      var heightNavbar = document.querySelector('.header');
+      var detailCenterContent = document.querySelector('.detail-center-wrapper');
+      var detailContentWrapper = document.querySelector('.detail-content-wrapper');
+      if(detailContentWrapper){
+        if(detailCenterContent){
+          if(heightBannerTopDetail){
+            detailCenterContent.style.marginTop = '-1' * (heightBannerTopDetail.offsetHeight - heightNavbar.offsetHeight -296) + "px"
+          }else {
+            detailCenterContent.style.marginTop = 20 + 'px';
+            detailContentWrapper.style.marginTop = heightNavbar.offsetHeight + 'px';
+          }
+        }
+      }
+    },
     // khoi tao function start
     start: function () {
       // lay chieu cao cua header va day main len 1 chut
@@ -359,6 +378,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideWeekInPicture();
       // set width giao dien mb
       this.setWidthPointOfView();
+      // day content top detail
+      this.pushTopDetail();
     },
   };
 
