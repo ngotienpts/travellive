@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var popupLogin = document.querySelector('.popup-login');
   var openPopupLogin = document.querySelectorAll('.open-login');
   var closePopupLogin = document.querySelector('.close-popup-login');
-  var popupLoginWrapper = document.querySelector('.popup-login-wrapper');
+
+  
 
   // footer
   var footerBlock = document.querySelector('footer');
@@ -350,7 +351,16 @@ document.addEventListener("DOMContentLoaded", function () {
       if(detailContentWrapper){
         if(detailCenterContent){
           if(heightBannerTopDetail){
-            detailCenterContent.style.marginTop = '-1' * (heightBannerTopDetail.offsetHeight - heightNavbar.offsetHeight -296) + "px"
+            if(heightBannerTopDetail.offsetWidth > 1024){
+              detailCenterContent.style.marginTop = '-1' * (heightBannerTopDetail.offsetHeight - heightNavbar.offsetHeight -296) + "px";
+            }
+            if(heightBannerTopDetail.offsetWidth <= 1024 && heightBannerTopDetail.offsetWidth >= 740){
+              detailCenterContent.style.marginTop = '-1' * (heightBannerTopDetail.offsetHeight - heightNavbar.offsetHeight -122) + "px";
+            }
+            if(heightBannerTopDetail.offsetWidth < 740){
+              detailCenterContent.style.marginTop = '-1' * (heightBannerTopDetail.offsetHeight - heightNavbar.offsetHeight -69) + "px";
+            }
+            
           }else {
             detailCenterContent.style.marginTop = 20 + 'px';
             detailContentWrapper.style.marginTop = heightNavbar.offsetHeight + 'px';
@@ -358,6 +368,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     },
+    // table of content when width <= 1024 
+    tableOfContents:function(){
+      var widthDocument = document.querySelector('#header');
+      var tableOfContent = document.querySelector('.table-of-content-field-mb');
+      if(widthDocument){
+        if(widthDocument.offsetWidth <= 1024){
+          window.onscroll = function(){
+            var scrollTopDetail = document.body.scrollTop || document.documentElement.scrollTop;
+            if(scrollTopDetail > tableOfContent.offsetTop){
+              console.log(123)
+            }
+          }
+        }
+      }
+    },
+    windowScroll:function(){},
     // khoi tao function start
     start: function () {
       // lay chieu cao cua header va day main len 1 chut
@@ -380,6 +406,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setWidthPointOfView();
       // day content top detail
       this.pushTopDetail();
+      // table of content when width <= 1024 
+      this.tableOfContents();
     },
   };
 
