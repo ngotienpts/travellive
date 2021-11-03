@@ -36,6 +36,7 @@
 }
 .table-of-content-field {
   // margin-top: 1.25rem;
+  position: relative;
   padding: 0.75rem 0.5rem;
   box-shadow: 0 4px 16px rgb(163 161 161 / 50%);
 }
@@ -110,6 +111,7 @@
 }
 .writer-profile-btn {
   border: 1px solid $color-blue-05;
+  font-size: 1.125rem;
 }
 .writer-profile-btn:hover {
   color: $color-blue-05;
@@ -253,6 +255,7 @@
 .recommended-articles-block {
   padding: 1rem;
   background: rgba(239, 187, 104, 0.2);
+  margin-bottom: 1.5rem;
 }
 .recommended-articles {
   column-gap: 1rem;
@@ -403,4 +406,15 @@
 .detail-cmt-content-children .detail-cmt-content-user__avatar img {
   width: 3.5rem !important;
   height: 3.5rem !important;
+}
+.detail-cate-other {
+  background: #fafafa;
+  background: linear-gradient(180deg,#fafafa,#f4f0ef);
+}
+.subcribe-email-detail-same {
+  background: #EFBB68;
+  display: none;
+}
+.detail-cate-other .most-views-detail-right {
+  display: none;
 }
