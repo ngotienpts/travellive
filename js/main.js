@@ -128,21 +128,18 @@ document.addEventListener("DOMContentLoaded", function () {
           var iconSubMb = b.querySelector('.navbar-item__icon');
           b.onclick = function(){
              var subMenuActive = document.querySelector('.navbar-item-mb.active');
-            if(subMenuActive){
+             var iconSubMb2 = document.querySelector('.navbar-item__icon.active');
+            if(subMenuActive && iconSubMb2){
 
               if(b.classList.contains('active')){
                 b.classList.remove('active');
-                if(iconSubMb){
-                  if(iconSubMb.getAttribute('name') == 'caret-down-outline'){
-                    iconSubMb.setAttribute('name','caret-up-outline')
-                  }else {
-                    iconSubMb.setAttribute('name','caret-down-outline')
-                  }
-                }
+                iconSubMb2.setAttribute('name','caret-down-outline');
                 return false;
               }
               else {
                 subMenuActive.classList.remove('active');
+                iconSubMb2.classList.remove('active');
+                iconSubMb2.setAttribute('name','caret-down-outline');
               }
               
             }
@@ -150,8 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
             b.classList.toggle('active');
             if(iconSubMb){
               if(iconSubMb.getAttribute('name') == 'caret-down-outline'){
-                iconSubMb.setAttribute('name','caret-up-outline')
+                iconSubMb.classList.add('active');
+                iconSubMb.setAttribute('name','caret-up-outline');
               }else {
+                iconSubMb2.classList.remove('active');
                 iconSubMb.setAttribute('name','caret-down-outline')
               }
             }
@@ -405,17 +404,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // table of content when width <= 1024 
     tableOfContents:function(){
       var scrollTopDetail = document.body.scrollTop || document.documentElement.scrollTop;
-      if(scrollTopDetail >= (isFixedMb.offsetTop - heightHeader.offsetHeight)){
-          tableOfContent.classList.add('isFixed');
-          tableOfContent.style.top = heightHeader.offsetHeight + 'px';
-          tableOfContent.onclick = function(){
-            if(tableOfContent.classList.contains('isFixed')){
-              tableOfContent.classList.toggle('is-show');
+      if(scrollTopDetail && isFixedMb){
+        if(scrollTopDetail >= (isFixedMb.offsetTop - heightHeader.offsetHeight)){
+            tableOfContent.classList.add('isFixed');
+            tableOfContent.style.top = heightHeader.offsetHeight + 'px';
+            tableOfContent.onclick = function(){
+              if(tableOfContent.classList.contains('isFixed')){
+                tableOfContent.classList.toggle('is-show');
+              }
             }
-          }
-
-      }else {
-        tableOfContent.classList.remove('isFixed')
+  
+        }else {
+          tableOfContent.classList.remove('isFixed')
+        }
       }
     },
     // window scroll

@@ -566,7 +566,7 @@
     -moz-border-radius: 0.375rem;
     -ms-border-radius: 0.375rem;
     -o-border-radius: 0.375rem;
-    background-color: rgba(255, 255, 255, 0.85) !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
   }
 
   .table-of-content-field-mb.isFixed .table-of-content__title {
