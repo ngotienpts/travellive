@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // push up main
   var heightHeader = document.querySelector("#header");
   var main = document.querySelector('#main');
-  var prevTopHeader = heightHeader.offsetTop;
-  var changeLogo = heightHeader.querySelector('.navbar--left__logo');
+  if(heightHeader){
+    var prevTopHeader = heightHeader.offsetTop;
+    var changeLogo = heightHeader.querySelector('.navbar--left__logo');
+    main.style.marginTop ='-' + heightHeader.offsetHeight + 'px';
+  }
   // 
-  main.style.marginTop ='-' + heightHeader.offsetHeight + 'px';
 
 
   // table of content when width <= 1024 
@@ -419,6 +421,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     },
+    // full page week picture
+    fullpageWeek:function(){
+      $('#fullpage-week').fullpage({
+        licenseKey: true,
+        sectionSelector: '.fullpage-week-item',
+        autoScrolling:true,
+        scrollHorizontally: true,
+        navigation: false,
+        anchors: ['menu-week-1', 'menu-week-2', 'menu-week-3', 'menu-week-4','menu-week-5'],
+        menu: '#menu-week',
+      });
+    },
     // window scroll
     windowScroll:function(){
       var _this = this;
@@ -455,6 +469,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.pushTopDetail();
       // window scroll
       this.windowScroll();
+      // full page week picture
+      this.fullpageWeek();
     },
   };
 
