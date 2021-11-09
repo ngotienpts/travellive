@@ -105,6 +105,14 @@
     font-size: 2.25rem;
     margin-bottom: 1rem;
     text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.week-table-of-content__title-icon {
+    margin-left: 0.375rem;
+    display: none;
 }
 .menu-week-item {
     font-size: 1.25rem;
@@ -173,4 +181,7 @@
 .number-week-icon {
     margin-left: 1.75rem;
     color: #ECBBAC;
+}
+.count-stories {
+    display: none;
 }

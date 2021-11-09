@@ -1,0 +1,85 @@
+.hot-deal-more__link {
+    border-bottom: 2px solid #fff;
+}
+.border-6 {
+    overflow: hidden;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+.hot-deal-slide__text {
+    font-size: 1.5rem;
+}
+.hot-deal-slide .slick-slide {
+    margin: 0.625rem;
+}
+.hot-deal-slide .slick-next:before,
+.hot-deal-slide .slick-prev:before {
+    font-size: 1.5rem;
+    color: #054a91;
+    margin-bottom: 0.1875rem;
+}
+
+.hot-deal-slide .slick-prev:before {
+    content: "\276E";
+}
+.hot-deal-slide .slick-next:before {
+    content: "\276F";
+}
+.hot-deal-slide .slick-prev {
+    left: -0.5rem;
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #054a91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hot-deal-slide .slick-next {
+    right: -0.5rem;
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #054a91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hot-deal-slide .slick-dots li.slick-active button:before {
+    color: #fff;
+}
+.hot-deal-slide .slick-dots li button:before {
+    font-size: 0.75rem;
+}
+.hot-deal-slide .slick-dots li button:before {
+    color: #fff;
+}
+.promotion-via-email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+}
+.promotion-email__text {
+    width: 45%;
+    font-size: 2.125rem;
+    padding-right: 1.5rem;
+}
+.promotion-email__form {
+    width: 55%;
+}
+.promotion-email__btn {
+    flex-shrink: 0;
+}
+.promotion-email__input {
+    flex:1;
+    height: 2.625rem;
+}

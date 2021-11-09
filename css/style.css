@@ -2745,6 +2745,15 @@ ion-icon.close-popup-login.md.hydrated {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week-table-of-content__title-icon {
+  margin-left: 0.375rem;
+  display: none;
 }
 
 .menu-week-item {
@@ -2826,6 +2835,115 @@ ion-icon.close-popup-login.md.hydrated {
 .number-week-icon {
   margin-left: 1.75rem;
   color: #ECBBAC;
+}
+
+.count-stories {
+  display: none;
+}
+
+.hot-deal-center-wrapper {
+  padding-top: 1.25rem;
+}
+
+.hot-deal-detail-content,
+.hot-deal-detail-wrapper {
+  background-color: #fafafa;
+}
+
+.hot-deal-writer-profile {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.hot-deal-writer-profile-avatar {
+  width: 10rem;
+  height: 10rem;
+}
+
+.hot-deal-writer-profile-icon {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  font-size: 1.5rem;
+  margin-left: 0.325rem;
+}
+
+.hot-deal-slide-top-container {
+  position: relative;
+}
+
+.hot-deal-slide-top {
+  max-width: 1024px;
+}
+
+.get-deal-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #fff;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  padding: 1.5rem;
+  max-width: 678px;
+}
+
+.get-deal-tittle {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.get-deal-duration {
+  padding: 1.5rem 0;
+}
+
+.get-deal-duration-text {
+  font-size: 1.125rem;
+}
+
+.get-deal-duration-text3 {
+  font-size: 1.125rem;
+}
+
+.get-deal-form {
+  max-width: 400px;
+  margin-top: 1.5rem;
+  display: none;
+}
+
+.get-deal-form.active {
+  display: block;
+}
+
+.get-deal-form.active ~ .get-deal-share {
+  margin-top: 0;
+}
+
+.get-deal-form-row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.get-deal-share {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 1.24rem;
+}
+
+.get-deal-share-btn:hover {
+  color: #fff;
+}
+
+.hot-deal-detail-cate-other,
+.cate-other-left-mobile,
+.featured-mb-left-hide-pc {
+  display: none;
 }
 
 #footer {

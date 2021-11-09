@@ -39,8 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // table of content when width <= 1024 
   var tableOfContent = document.querySelector('.table-of-content-field-mb');
   var isFixedMb = document.querySelector('.is-fixed-mb');
-  //
+  
+  //  full page
+  var weekInPicture = document.querySelector('.week-wrapper');
+  var fullpageWeekBlock = document.querySelectorAll('.fullpage-week-item__content-block');
 
+  //show table of content week in picture
+  var openTableOfContentWeek = document.querySelector('.count-stories');
+  var tableOfContentWeek = document.querySelector('.week-table-of-content');
+  var closeTableOfContentWeek = document.querySelector('.week-table-of-content__title');
+
+  // show get deal detail
+  var showGetDeal = document.querySelector('.get-deal-share-btn');
+  var getDealForm = document.querySelector('.get-deal-form');
 
   // footer
   var footerBlock = document.querySelector('footer');
@@ -241,11 +252,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
+      // table of content week in picture
+      if(openTableOfContentWeek){
+        openTableOfContentWeek.onclick = function(){
+            tableOfContentWeek.classList.add('isShow');
+            openTableOfContentWeek.style.opacity = 0;
+        }
+        if(closeTableOfContentWeek){
+          closeTableOfContentWeek.onclick = function(){
+            tableOfContentWeek.classList.remove('isShow');
+            openTableOfContentWeek.style.opacity = 1;
+          }
+        }
+      } 
+      // 
+
+      // show get deal detail
+      if(showGetDeal){
+        showGetDeal.onclick =function(){
+          if(getDealForm){
+            getDealForm.classList.toggle('active')
+          }
+        }
+      }
+
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
         // hide search header
-        if(!searchHeader.contains(e.target) && !e.target.matches('.navbar--right__img')){
-          searchHeader.classList.remove('show');
+        if(searchHeader){
+          if(!searchHeader.contains(e.target) && !e.target.matches('.navbar--right__img')){
+            searchHeader.classList.remove('show');
+          }
+        }
+
+        // hide table of content week
+        if(tableOfContentWeek){
+          if(!tableOfContentWeek.contains(e.target) && !e.target.matches('.count-stories-text') && !e.target.matches('.count-stories-icon')){
+            tableOfContentWeek.classList.remove('isShow');
+            openTableOfContentWeek.style.opacity = 1;
+          }
         }
       })
     },
@@ -377,6 +422,38 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // slide hot deal detail
+    slideHotDealDetail:function(){
+      $('.hot-deal-slide-top').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows:false,
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              arrows:false,
+              infinite: true,
+            }
+          }
+        ]
+      });
+    },
     // day content top detail
     pushTopDetail:function(){
       var heightBannerTopDetail = document.querySelector('.banner-top-detail');
@@ -423,15 +500,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // full page week picture
     fullpageWeek:function(){
-      $('#fullpage-week').fullpage({
-        licenseKey: true,
-        sectionSelector: '.fullpage-week-item',
-        autoScrolling:true,
-        scrollHorizontally: true,
-        navigation: false,
-        anchors: ['menu-week-1', 'menu-week-2', 'menu-week-3', 'menu-week-4','menu-week-5'],
-        menu: '#menu-week',
-      });
+      if(weekInPicture){
+        $('#fullpage-week').fullpage({
+          licenseKey: true,
+          sectionSelector: '.fullpage-week-item',
+          autoScrolling:true,
+          scrollHorizontally: true,
+          navigation: false,
+          anchors: ['menu-week-1', 'menu-week-2', 'menu-week-3', 'menu-week-4','menu-week-5'],
+          menu: '#menu-week',
+        });
+      }
     },
     // window scroll
     windowScroll:function(){
@@ -445,6 +524,7 @@ document.addEventListener("DOMContentLoaded", function () {
             _this.tableOfContents();
           }
         }
+        // 
       }
     },
     // khoi tao function start
@@ -463,6 +543,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideEmagazine();
       // slide week in picture
       this.slideWeekInPicture();
+      // slide hot deal detail
+      this.slideHotDealDetail();
       // set width giao dien mb
       this.setWidthPointOfView();
       // day content top detail
