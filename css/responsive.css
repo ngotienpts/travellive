@@ -654,10 +654,6 @@
     order: 1;
   }
 
-  .detail-cate-other .cate-other-right .most-views-detail-right {
-    order: 2;
-  }
-
   .week-table-of-content {
     display: none;
     left: 2rem;
@@ -759,6 +755,10 @@
 
   .detail-cate-other {
     display: none;
+  }
+
+  .detail-cate-other2 {
+    display: block;
   }
 
   .hot-deal-detail-cate-other {
@@ -2027,8 +2027,13 @@
     margin-bottom: 1.25rem;
   }
 
-  .cate-other-left-brand {
+  .cate-other-left-brand,
+.cate-other-left--2 {
     display: block;
+  }
+
+  .detail-cate-other .cate-other-right .most-views-detail-right {
+    order: 2;
   }
 }
 

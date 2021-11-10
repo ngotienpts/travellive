@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // set width giao dien mb
     setWidthPointOfView:function(){
-      var widthPointView = document.querySelector('.point-of-view ');
+      var widthPointView = document.querySelector('.point-of-view');
       if(widthPointView){
         if(widthPointView.offsetWidth < 576){
           var widthAuthor = widthPointView.querySelector('.point-of-view__left--author');

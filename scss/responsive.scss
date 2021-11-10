@@ -529,9 +529,7 @@
   .detail-cate-other .cate-other-right .subscribe-email{
     order: 1;
   }
-  .detail-cate-other .cate-other-right .most-views-detail-right{
-    order: 2;
-  }
+  
   .week-table-of-content {
     display: none;
     left: 2rem;
@@ -615,6 +613,9 @@
   }
   .detail-cate-other {
     display: none;
+  }
+  .detail-cate-other2 {
+    display: block;
   }
   .hot-deal-detail-cate-other {
     display: block;
@@ -1657,9 +1658,12 @@
   .featured-mb-left-hide-pc {
     margin-bottom: 1.25rem;
   }
-  .cate-other-left-brand {
+  .cate-other-left-brand,
+  .cate-other-left--2 {
     display: block;
   }
-
+  .detail-cate-other .cate-other-right .most-views-detail-right{
+    order: 2;
+  }
 
 }
