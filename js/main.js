@@ -27,11 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // push up main
   var heightHeader = document.querySelector("#header");
-  var main = document.querySelector('#main');
+  var headerLogoTop = document.querySelector(".header-logo-top");
   if(heightHeader){
     var prevTopHeader = heightHeader.offsetTop;
     var changeLogo = heightHeader.querySelector('.navbar--left__logo');
     main.style.marginTop ='-' + heightHeader.offsetHeight + 'px';
+    headerLogoTop.style.background = heightHeader.querySelector('.header-bg').style.background;
+
   }
   // 
 
@@ -42,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
   //  full page
   var weekInPicture = document.querySelector('.week-wrapper');
-  var fullpageWeekBlock = document.querySelectorAll('.fullpage-week-item__content-block');
 
   //show table of content week in picture
   var openTableOfContentWeek = document.querySelector('.count-stories');
@@ -58,12 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const app = {
     pushUpMain:function(){
       var currentTopHeader = heightHeader.offsetTop;
+      if(heightHeader){
+        var headerBg = heightHeader.querySelector('.header-bg');
+      }
       if(currentTopHeader > prevTopHeader){
-        heightHeader.style.backgroundColor = '#0a0a0a59';
-        heightHeader.style.transition = "all 0.3s";
+        headerBg.style.opacity = '0.5';
+        headerBg.style.transition = "all 0.3s";
         changeLogo.style.transform = 'translateX(0)';
       }else{
-        heightHeader.style.backgroundColor = "#0a0a0a";
+        headerBg.style.opacity = '1';
         changeLogo.style.transform = 'translateX(-174px)';
       }
     },
@@ -252,21 +256,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      // table of content week in picture
-      if(openTableOfContentWeek){
-        openTableOfContentWeek.onclick = function(){
-            tableOfContentWeek.classList.add('isShow');
-            openTableOfContentWeek.style.opacity = 0;
-        }
-        if(closeTableOfContentWeek){
-          closeTableOfContentWeek.onclick = function(){
-            tableOfContentWeek.classList.remove('isShow');
-            openTableOfContentWeek.style.opacity = 1;
-          }
-        }
-      } 
-      // 
-
       // show get deal detail
       if(showGetDeal){
         showGetDeal.onclick =function(){
@@ -282,14 +271,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if(searchHeader){
           if(!searchHeader.contains(e.target) && !e.target.matches('.navbar--right__img')){
             searchHeader.classList.remove('show');
-          }
-        }
-
-        // hide table of content week
-        if(tableOfContentWeek){
-          if(!tableOfContentWeek.contains(e.target) && !e.target.matches('.count-stories-text') && !e.target.matches('.count-stories-icon')){
-            tableOfContentWeek.classList.remove('isShow');
-            openTableOfContentWeek.style.opacity = 1;
           }
         }
       })
@@ -506,10 +487,29 @@ document.addEventListener("DOMContentLoaded", function () {
           sectionSelector: '.fullpage-week-item',
           autoScrolling:true,
           scrollHorizontally: true,
-          navigation: false,
+          navigation: true,
           anchors: ['menu-week-1', 'menu-week-2', 'menu-week-3', 'menu-week-4','menu-week-5'],
           menu: '#menu-week',
         });
+        var fpNavActive = document.querySelectorAll('#fp-nav ul li a');
+        fpNavActive.forEach(function(a,b){
+          a.parentElement.parentElement.parentElement.classList.add('fpNav-custom')
+          a.innerHTML = `${b} in ${fpNavActive.length - 2} stories <ion-icon name="chevron-up-outline" class="count-stories-icon"></ion-icon>`;
+        })
+        var fpNav = document.querySelector('.fpNav-custom');
+        // table of content week in picture
+        if(openTableOfContentWeek){
+          openTableOfContentWeek.onclick = function(){
+              tableOfContentWeek.classList.add('isShow');
+              fpNav.style.display = 'none'
+          }
+          if(closeTableOfContentWeek){
+            closeTableOfContentWeek.onclick = function(){
+              tableOfContentWeek.classList.remove('isShow');
+              fpNav.style.display = 'block'
+            }
+          }
+        } 
       }
     },
     // window scroll

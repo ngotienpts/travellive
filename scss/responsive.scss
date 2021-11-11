@@ -569,17 +569,20 @@
     display: block;
   }
   .count-stories {
-    display: block;
     position: fixed;
     left: 1rem;
     bottom: 1.5rem;
     color: #fff;
     font-weight: 700;
-    z-index: 100;
+    z-index: 110;
     display: flex;
     align-items: center;
     font-size: 1.125rem;
     padding: 2rem;
+    opacity: 0;
+  }
+  #fp-nav.fpNav-custom {
+    display: block;
   }
   .count-stories-icon {
     font-size: 1.5rem;
@@ -626,6 +629,14 @@
   .cate-other-left__title {
     width: 100%;
   }
+  #fp-nav.fpNav-custom ul li:first-child,
+  #fp-nav.fpNav-custom ul li:last-child {
+    display: none;
+  } 
+
+
+
+
 
 }
 @media (max-width: 63.9375em) {
@@ -1608,14 +1619,15 @@
     left: 0.625rem;
     right: 0.625rem;
   }
-  .count-stories {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-  }
+  .count-stories,
+  #fp-nav.fpNav-custom {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+}
   .fullpage-week-item__content-text1 {
     font-size: 2.125rem;
     line-height: 2.75rem;
@@ -1664,6 +1676,36 @@
   }
   .detail-cate-other .cate-other-right .most-views-detail-right{
     order: 2;
+  }
+  #fp-nav.fpNav-custom ul li {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  .count-stories-icon {
+    font-size: 1.125rem;
+  }
+  #fp-nav ul li a.active,
+  #fp-nav ul li a {
+    font-size: 1rem;
+  }
+  .count-stories {
+    bottom: 1rem;
+  }
+  #fp-nav.fpNav-custom {
+    bottom: 3.5rem !important;
+  }
+  .week-table-of-content__title {
+    font-size: 1.25rem;
+    // margin-bottom: 0.5rem;
+  }
+  .menu-week-item {
+    font-size: 1rem;
+  }
+  .menu-week-item.active a {
+    font-size: 1.125rem;
   }
 
 }
