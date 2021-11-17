@@ -482,13 +482,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // full page week picture
     fullpageWeek:function(){
       if(weekInPicture){
+        var menuWeek = weekInPicture.querySelector('#menu-week');
+        var menuWeekAnchors = Array.from(menuWeek.querySelectorAll('.menu-week-item')).map(function(value){
+          return value.dataset.menuanchor
+        });
         $('#fullpage-week').fullpage({
           licenseKey: true,
           sectionSelector: '.fullpage-week-item',
           autoScrolling:true,
           scrollHorizontally: true,
           navigation: true,
-          anchors: ['menu-week-1', 'menu-week-2', 'menu-week-3', 'menu-week-4','menu-week-5'],
+          anchors: menuWeekAnchors,
           menu: '#menu-week',
         });
         var fpNavActive = document.querySelectorAll('#fp-nav ul li a');
