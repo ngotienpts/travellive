@@ -786,18 +786,6 @@
     line-height: 2.75rem;
     font-size: 2.125rem;
   }
-
-  .top-career-img-pc {
-    display: none;
-  }
-
-  .opening-positions-header__des {
-    margin-bottom: 2rem;
-  }
-
-  .why-work-content-title {
-    font-size: 1rem;
-  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -1047,40 +1035,6 @@
 
   .detail-cmt-header__btn {
     margin-top: 1rem;
-  }
-
-  .top-career-img-tablet {
-    display: block;
-  }
-
-  .why-work-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
-  }
-
-  .why-work-content-block:nth-child(1) {
-    order: 1;
-  }
-
-  .why-work-content-block:nth-child(2) {
-    order: 3;
-  }
-
-  .why-work-content-block:nth-child(3) {
-    order: 5;
-  }
-
-  .why-work-content-block:nth-child(4) {
-    order: 2;
-  }
-
-  .why-work-content-block:nth-child(5) {
-    order: 4;
-  }
-
-  .why-work-content-block:nth-child(6) {
-    order: 6;
   }
 }
 @media (max-width: 46.1875em) {
@@ -2133,31 +2087,6 @@
   .menu-week-item.active a {
     font-size: 1.125rem;
   }
-
-  .top-career-content {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .top-career-img-mb {
-    display: block;
-  }
-
-  .top-career-content__text2 {
-    font-size: 1rem;
-  }
-
-  .why-work-content {
-    display: block;
-  }
-
-  .opening-positions-header__des {
-    margin-bottom: 1rem;
-  }
-
-  .why-work-content-block {
-    margin-bottom: 1rem;
-  }
 }
 
-/*# sourceMappingURL=responsive.css.map */
+/*# sourceMappingURL=reponsive.css.map */
