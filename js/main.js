@@ -54,6 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var showGetDeal = document.querySelector('.get-deal-share-btn');
   var getDealForm = document.querySelector('.get-deal-form');
 
+  // show candidate question 
+  var showCandidateQuestion = document.querySelectorAll('.candidate-question-item');
+
   // footer
   var footerBlock = document.querySelector('footer');
   const app = {
@@ -265,6 +268,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
+      // show candidate question
+      if(showCandidateQuestion){
+        showCandidateQuestion.forEach(function(el){
+          el.onclick = function(){
+            var elIcon = el.querySelector('.candidate-question-item-header__icon');
+            if(this.classList.contains('active')){
+              this.classList.remove('active');
+              elIcon.setAttribute('name','arrow-up-outline')
+            }else {
+              this.classList.add('active');
+              elIcon.setAttribute('name','chevron-up-outline')
+            }
+          }
+        })
+      }
+
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
         // hide search header
@@ -278,6 +297,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // set width giao dien mb
     setWidthPointOfView:function(){
       var widthPointView = document.querySelector('.point-of-view');
+      var widthOpeningPosition = document.querySelector('.opening-positions');
       if(widthPointView){
         if(widthPointView.offsetWidth < 576){
           var widthAuthor = widthPointView.querySelector('.point-of-view__left--author');
@@ -291,8 +311,23 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           }
         }
+      };
+      if(widthOpeningPosition){
+        if(widthOpeningPosition.offsetWidth < 576){
+          var widthWork = widthOpeningPosition.querySelectorAll('.tab-pane-block-opening');
+          if(widthWork){
+            $(widthWork).slick({
+              infinite: false,
+              dots:true,
+              arrows: false,
+              slidesToShow: 1.2,
+              slidesToScroll: 1
+            });
+          }
+        }
       }
     },
+    
     // slide banner top mb
     slideBannerTopMb:function(){
       $('.banner-top-mb').slick({
@@ -327,7 +362,7 @@ document.addEventListener("DOMContentLoaded", function () {
             breakpoint: 1199,
             settings: {
               arrows:false,
-              slidesToShow: 2,
+              slidesToShow: 1.7,
               centerMode: true,
             }
           },
@@ -430,6 +465,32 @@ document.addEventListener("DOMContentLoaded", function () {
               slidesToShow: 1,
               arrows:false,
               infinite: true,
+            }
+          }
+        ]
+      });
+    },
+    // slide our team say
+    slideOurTeamSay:function(){
+      $('.our-team-content').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1.7,
+        slidesToScroll: 1,
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
             }
           }
         ]
@@ -557,6 +618,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.windowScroll();
       // full page week picture
       this.fullpageWeek();
+      //slide our team say
+      this.slideOurTeamSay();
     },
   };
 

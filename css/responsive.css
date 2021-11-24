@@ -798,6 +798,47 @@
   .why-work-content-title {
     font-size: 1rem;
   }
+
+  .tab-pane-block-work-item {
+    padding: 1rem;
+  }
+
+  .tab-pane-block-work-item__text1 {
+    font-size: 1.5rem;
+  }
+
+  .tab-pane-block-work-item__icon {
+    font-size: 1rem;
+  }
+
+  .our-team-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .our-team-wrapper .tab-pane-more {
+    margin-top: 1.25rem;
+  }
+
+  .our-team-content .slick-prev {
+    left: 0.5rem;
+  }
+
+  .our-team-content .slick-next {
+    right: 0.5rem;
+  }
+
+  .candidate-question-item-header__title {
+    font-size: 1.5rem;
+  }
+
+  .candidate-question-item-content__title {
+    font-size: 1.25rem;
+  }
+
+  .candidate-question-item-content {
+    padding-left: 0.5rem;
+  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -1081,6 +1122,53 @@
 
   .why-work-content-block:nth-child(6) {
     order: 6;
+  }
+
+  .tab-pane-block-opening {
+    grid-column-gap: 1.5rem;
+  }
+
+  .unique-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .unique-item-img {
+    width: 104px;
+    height: 104px;
+  }
+
+  .unique-text {
+    margin-top: 1rem;
+  }
+
+  .unique-text1 {
+    font-size: 1.25rem;
+  }
+
+  .unique-text2 {
+    font-size: 1rem;
+  }
+
+  .unique-item {
+    padding: 0.5rem;
+  }
+
+  .our-team-item__img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .our-team-item__content-title {
+    font-size: 1.5rem;
+  }
+
+  .our-team-item {
+    padding: 1rem;
+  }
+
+  .our-team-item {
+    border-radius: 120px 6px;
   }
 }
 @media (max-width: 46.1875em) {
@@ -2157,6 +2245,150 @@
 
   .why-work-content-block {
     margin-bottom: 1rem;
+  }
+
+  .tab-pane-block-opening {
+    display: block;
+  }
+
+  .tab-pane-block-opening .slick-slide {
+    margin: 0.325rem;
+  }
+
+  .tab-pane-block-work-item {
+    box-shadow: 0 6px 6px rgba(163, 161, 161, 0.24);
+  }
+
+  .tab-pane-block-work-item__title {
+    font-size: 0.625rem;
+  }
+
+  .tab-pane-block-work-item__text1 {
+    font-size: 1.25rem;
+  }
+
+  .tab-pane-block-work-item__text2 {
+    font-size: 1rem;
+  }
+
+  .tab-pane-block-work-item ~ .tab-pane-block-work-item {
+    margin-top: 1rem;
+  }
+
+  .tab-pane-block-opening .slick-dots li button:before {
+    font-size: 0.5rem;
+  }
+
+  .tab-pane-block-opening .slick-dots li.slick-active button:before {
+    color: #D87053;
+  }
+
+  .tab-pane-block-opening .slick-dots li button:before {
+    color: #ECBBAC;
+  }
+
+  .unique-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  .unique-item-img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .unique-text {
+    margin-top: 1rem;
+  }
+
+  .unique-text1 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .unique-text2 {
+    font-size: 0.875rem;
+  }
+
+  .unique-item {
+    padding: 0.5rem;
+  }
+
+  .our-team-item__img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.625rem;
+  }
+
+  .our-team-item__content-title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .our-team-item__content-author {
+    font-size: 0.625rem;
+  }
+
+  .our-team-item__content-work {
+    font-size: 0.875rem;
+    margin-left: 1rem;
+  }
+
+  .our-team-item__content-work:before {
+    left: -0.5rem;
+  }
+
+  .our-team-item {
+    padding: 0.75rem;
+  }
+
+  .our-team-item {
+    border-radius: 70px 6px;
+  }
+
+  .our-team-content .slick-prev {
+    left: 0;
+  }
+
+  .our-team-content .slick-next {
+    right: 0;
+  }
+
+  .our-team-content .slick-next,
+.our-team-content .slick-prev {
+    width: 1.5rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+    background: rgba(163, 161, 161, 0.7);
+  }
+
+  .our-team-content .slick-slide {
+    margin: 2rem;
+  }
+
+  .our-team-content .slick-dots {
+    bottom: -5px;
+  }
+
+  .our-team-wrapper .tab-pane-more {
+    margin-top: -1.25rem;
+  }
+
+  .candidate-question-item-header__title {
+    font-size: 1.25rem;
+  }
+
+  .candidate-question-item {
+    padding: 0.5rem;
+    border-left: 0.5rem solid #89AAE6;
+  }
+
+  .candidate-question-item-content {
+    padding-left: 1rem;
   }
 }
 
