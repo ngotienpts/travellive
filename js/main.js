@@ -496,6 +496,35 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // slide top i am musing
+    slideTopIMusing:function(){
+      $('.top-i-am-musing-wrapper').slick({
+        dots: false,
+        infinite: false,
+        arrows: true,
+        slidesToShow: 1.3,
+        slidesToScroll: 1,
+        draggable:false,
+        autoplay:true,
+        autoplaySpeed:2000,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 1,
+              draggable:true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              draggable:true,
+            }
+          }
+        ]
+      });
+    },
     // day content top detail
     pushTopDetail:function(){
       var heightBannerTopDetail = document.querySelector('.banner-top-detail');
@@ -620,6 +649,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.fullpageWeek();
       //slide our team say
       this.slideOurTeamSay();
+      // slide top i am musing
+      this.slideTopIMusing();
     },
   };
 

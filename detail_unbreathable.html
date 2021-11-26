@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" sizes="32x32">
+    <title>Travellive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&family=Alegreya:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </head>
+
+  <body>
+   <!-- logo header -->
+    <section class="header-logo-top" style="background:#0a0a0a;">
+      <div>
+        <a href="#">
+          <img src="./images/logo1.svg" alt="" class="d-inline-block" />
+        </a>
+      </div>
+    </section>
+    <!-- logo header -->
+    <!-- show menu tablet -->
+    <section class="menu-mb">
+      <div class="coating-menu-mb"></div>
+      <div class="menu-mb-content">
+         <div class="menu-mb-content-header position-relative d-flex align-items-center justify-content-between">
+               <a href="#"><img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb"></a>
+               <ion-icon name="close-outline" class="fs-36 text-white close-menu-mb"></ion-icon>
+         </div>
+         <div class="menu-mb-list">
+            <ul class="navbar__list">
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class=" d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <!-- contact about -->
+              <li class="navbar-item line my-12"></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">about us</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">contact</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700 text-blue-89 open-login">sign in</li>
+              <li class="navbar-item line my-12"></li>
+              <!-- end contact about -->
+              <!-- share -->
+              <li class="navbar-item py-12 px-4 d-flex align-items-center justify-content-end">
+                 <a href="#" class="share-fb-menu share-menu">
+                    <img src="./images/u_facebook.png" alt="">
+                 </a>
+                 <a href="#" class="share-insta-menu share-menu">
+                    <img src="./images/u_instagram-alt.png" alt="">
+                 </a>
+                 <a href="#" class="share-youtbe-menu share-menu">
+                    <img src="./images/u_youtube.png" alt="">
+                 </a>
+                 <a href="#" class="share-zalo-menu share-menu">
+                    <img src="./images/zalo.png" alt="">
+                 </a>
+              </li>
+              <!-- end share -->
+            </ul>
+          </div>
+      </div>
+    </section>
+    <!-- end show menu tablet -->
+    <!-- popup login -->
+    <section class="popup-login">
+      <div class="popup-login-wrapper">
+        <ion-icon name="close-outline" class=" close-popup-login"></ion-icon>
+        <h3 class="popup-login-title">Đăng nhập tài khoản</h3>
+        <div class="form-popup-login">
+          <form action="" id="form-4">
+            <button class="btn fb-login-btn"><img src="./images/fb-w.svg" alt=""></button>
+            <button class="btn gg-login-btn"><img src="./images/gg-w.svg" alt=""></button>
+            <input type="checkbox" id="remember-acccount" class="my-4">
+            <label for="remember-acccount">Ghi nhớ tài khoản</label>
+            <button class="btn login-btn text-white">Đăng nhập</button>
+            <p class="text-center">Nếu chưa có tài khoản vui lòng <a href="#" class="login-text-register">Đăng ký</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end popup login -->
+    <!-- header -->
+    <header id="header">
+      <section class="header">
+        <div
+          class="navbars d-flex align-items-center justify-content-between py-xl-3 px-xl-4">
+          <div class="navbar--left">
+            <a href="#">
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo" />
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb" />
+            </a>
+          </div>
+          <div class="navbar--center">
+            <ul class="navbar__list d-flex align-items-center">
+              <li class="navbar-item  navbar-item-pc">
+                <div
+                  class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Việt Nam</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Á</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Âu</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Phi</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Mỹ</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Úc</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Hotels & Resorts</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">#NoHetelRooms</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class=" d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar--right d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__search p-2  mr-2 ">
+               <!-- <img src="./images/w-search.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="search-outline" class="navbar--right__img navbar--right__search-icon is-change-color"></ion-icon>
+            </div>
+            <div  class="align-items-center justify-content-center navbar--right__item navbar--right__user open-login bg-white p-2 rounded-circle">
+               <!-- <img src="./images/b_user.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="person-outline" class="navbar--right__img is-change-color-user navbar--right__user-icon"></ion-icon>
+            </div>
+            <div class="align-items-center justify-content-center navbar--right__item navbar--right__bar">
+               <!-- <img src="./images/bar.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="menu-outline" class="navbar--right__img is-change-color navbar--right__bar-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- search header -->
+        <div class="search-header">
+          <div class="search-header-form">
+            <form action="" id="form-1">
+              <div
+                class="form-group-t d-flex align-items-center position-relative"
+              >
+                <input type="text" name="search-header" class="form-control-t form-search-header" placeholder="Tìm kiếm" autocomplete="off"
+                />
+                <div class="ml-2 position-absolute search-header-btn">
+                  <img src="./images/w-search.svg" alt="" class="serch-btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end search header -->
+        <div class="header-bg" style="background:#0a0a0a;"></div>
+      </section>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      <!-- banner top detail -->
+      <section class="banner-top-detail">
+       <a href="#">
+        <img src="./images/4.jpg" alt="">
+       </a>
+      </section>
+      <!-- end banner top detail -->
+      <!-- detail-content -->
+      <section class="detail-content-wrapper">
+        <div class="w-1440 padding-x-32 detail-content">
+          <div class="detail-left-wrapper">
+            <div class="detail-left">
+              <!-- table of content -->
+              <div class="table-of-content-field bg-white border-6">
+                <h3 class="font-primary fw-500 text-gray-52 table-of-content__title">Table of Contents</h3>
+                <ul class="table-of-contents">
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                  <li class="table-of-content fw-500">
+                    <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                  </li>
+                </ul>
+                <div class="action">
+                  <h3 class="font-primary fw-500 text-gray-52 table-of-content__title">Action</h3>
+                  <ul class="action-share">
+                    <li class="action-item action-heart"><ion-icon name="heart-outline" class="action-heart-icon"></ion-icon></li>
+                    <li class="action-item action-fb"><a href="#"><img src="./images/fb-icon.svg" alt=""></a></li>
+                    <li class="action-item action-twitter"><a href="#"><img src="./images/twiiter.svg" alt=""></a></li>
+                    <li class="action-item action-mesage"><a href="#"><img src="./images/mesage.svg" alt=""></a></li>
+                    <li class="action-item action-link"><a href="#"><img src="./images/link.svg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end table of content -->
+              <!-- writer profile -->
+              <div class="writer-profile bg-white border-6 box-shadow1">
+                <div class="writer-profile-avatar">
+                  <a href="#">
+                    <img src="./images/1.jpg" alt="">
+                  </a>
+                </div>
+                <a href="#" class="text-gray-3d">
+                  <p class="fw-700 text-uppercase text-center writer-profile-title">Esther Howard</p>
+                  <p class="writer-profile-des">Pellentesque vulputate quam a quam atus volutpat, sed ullamcorper erat commodo.</p>
+                </a>
+                <div class="d-flex align-items-center justify-content-center mt-3">
+                  <a href="#" class="writer-profile-btn btn boder-999 text-blue-05 fw-700">Writer Profile</a>
+                  <a href="#">
+                    <img src="./images/fb-icon2.png" alt="" class="ml-3">
+                  </a>
+                </div>
+              </div>
+              <!-- end writer profile -->
+            </div>
+          </div>
+          <div class="detail-center-wrapper">
+            <div class="detail-center">
+              <!-- detail-content -->
+              <div class="border-6 box-shadow1 detail-center-content">
+                <ul class="category-header-list d-flex align-items-center">
+                  <li class="category-header-item detail-header-item fw-700 text-uppercase"><a href="#">totravel</a></li>
+                  <li class="category-header-item detail-header-item fw-700 text-uppercase"><a href="#">điểm đến</a></li>
+                  <li class="category-header-item detail-header-item fw-700 text-uppercase"><a href="#">châu âu</a></li>
+                </ul>
+                <!-- title -->
+                <h1 class="detail-center-content__title fw-500 font-primary text-gray-3d">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</h1>
+                <!-- end title -->
+                <!-- description -->
+                <p class="detail-center-content__des fw-500 font-primary text-gray-52">
+                  Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                </p>
+                <!-- enddescription -->
+                <!-- author -->
+                <ul class="detail-center-content__author d-flex align-items-center">
+                  <li class="detail-center-content__author--item"><a href="#">Esther Howard</a></li>
+                  <li class="detail-center-content__author--item">10/10/21</li>
+                  <li class="detail-center-content__author--item">5 mins read></li>
+                </ul>
+                <!-- end author -->
+                <!-- content -->
+                <figure class="expNoEdit">
+                  <img src="./images/1.jpg" alt="" class="lazyload loaded">
+                  <figcaption>
+                    <h2>Nhà ga Ngã Tư Vua ngoài đời thật. Ảnh: @rubyyyy0807</h2>  
+                  </figcaption>  
+                </figure>
+                <!-- div ko dc xoa -->
+                <div class="is-fixed-mb"></div>
+                <!-- end div ko dc xoa -->
+                <div class="d-xl-none d-block table-of-content-field-mb bg-white">
+                  <div class="table-of-content-field border-6">
+                    <h3 class="font-primary fw-500 text-gray-52 table-of-content__title">Table of Contents</h3>
+                    <ul class="table-of-contents">
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                      <li class="table-of-content fw-500">
+                        <a href="#" class="text-gray-52">Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</a>
+                      </li>
+                    </ul>
+                    <div class="action">
+                      <h3 class="font-primary fw-500 text-gray-52 table-of-content__title table-of-content__title-action">Action</h3>
+                      <ul class="action-share">
+                        <li class="action-item action-heart"><ion-icon name="heart-outline" class="action-heart-icon md hydrated" role="img" aria-label="heart outline"></ion-icon></li>
+                        <li class="action-item action-fb"><a href="#"><img src="./images/fb-icon.svg" alt=""></a></li>
+                        <li class="action-item action-twitter"><a href="#"><img src="./images/twiiter.svg" alt=""></a></li>
+                        <li class="action-item action-mesage"><a href="#"><img src="./images/mesage.svg" alt=""></a></li>
+                        <li class="action-item action-link"><a href="#"><img src="./images/link.svg" alt=""></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.</p>
+                <h2>Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla</h2>
+                <p>Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. Pellentesque vulputate quam a quam volutpat, sed ullamcorper erat commodo. Vestibulum sit amet ipsum vitae mauris mattis vulputate lacinia nec neque. Aenean quis consectetur nisi, ac interdum elit. Aliquam sit amet luctus elit, id tempus purus.</p>
+                <p>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis.</p>
+                <p>Donec sed erat ut magna suscipit mattis. Aliquam erat volutpat. Morbi in orci risus. Donec pretium fringilla blandit. Etiam ut accumsan leo. Aliquam id mi quam. Vivamus dictum ut erat nec congue. Etiam facilisis lacus ut arcu vulputate, non pellentesque sem convallis. Proin tempus sapien nisl, nec varius risus tristique a. Etiam ligula lacus, ultricies at cursus id, fringilla nec nulla. Fusce pretium laoreet diam a mollis. In finibus purus sed tortor fringilla, eu luctus lorem sodales.Ut dignissim ante ac augue vulputate tristique. Mauris venenatis tincidunt nibh, sit amet fringilla augue malesuada a. Mauris a nunc congue, viverra lectus sed, imperdiet quam. Aenean tempor sem sed lorem ultricies lacinia.</p>
+                <figure class="expNoEdit">
+                  <img src="./images/2.jpg" alt="" class="lazyload loaded">
+                  <figcaption>
+                    <h2>Nhà ga Ngã Tư Vua ngoài đời thật. Ảnh: @rubyyyy0807</h2>  
+                  </figcaption>  
+                </figure>
+                <!-- bai viet de xuat -->
+                <div class="recommended-articles-block">
+                  <h3 class="recommended-articles-title fw-500 font-primary text-gray-3d">Bài viết đề xuất</h3>
+                  <div class="recommended-articles d-sm-flex align-items-center d-block">
+                    <!--  -->
+                    <div class="recommended-article bg-white border-6 d-flex align-items-center">
+                      <div class="recommended-article-img">
+                        <div class="thumb-img">
+                          <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="recommended-article-content">
+                        <a href="#">
+                          <div class="recommended-article-content__text1 fw-700 text-red-d8 text-uppercase">aliquam erat</div>
+                          <div class="recommended-article-content__text2 fw-500 font-primary text-gray-52 fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="recommended-article bg-white border-6 d-flex align-items-center">
+                      <div class="recommended-article-img">
+                        <div class="thumb-img">
+                          <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/1.jpg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="recommended-article-content">
+                        <a href="#">
+                          <div class="recommended-article-content__text1 fw-700 text-red-d8 text-uppercase">aliquam erat</div>
+                          <div class="recommended-article-content__text2 fw-500 font-primary text-gray-52 fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+                <!-- end bai viet de xuat -->
+                <h2>Suspendisse sed nisi lacus sed</h2>
+                <p>Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. Pellentesque vulputate quam a quam volutpat, sed ullamcorper erat commodo. Vestibulum sit amet ipsum vitae mauris mattis vulputate lacinia nec neque. Aenean quis consectetur nisi, ac interdum elit. Aliquam sit amet luctus elit, id tempus purus.</p>
+                <p> 
+                  Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet, augue eros luctus sapien, ut euismod leo tortor ac enim. In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus. Mauris ac hendrerit metus. Phasellus mattis lectus commodo felis egestas, id accumsan justo ultrices. Phasellus aliquet, sem a placerat dapibus, enim purus dictum lacus, nec ultrices ante dui ac ante. Phasellus placerat, urna.
+                </p>
+                <figure class="expNoEdit">
+                  <img src="./images/3.jpg" alt="" class="lazyload loaded">
+                  <figcaption>
+                    <h2>Nhà ga Ngã Tư Vua ngoài đời thật. Ảnh: @rubyyyy0807</h2>  
+                  </figcaption>  
+                </figure>
+                <h2>Erat imperdiet sed euismod nisi</h2>
+                <p>
+                  Sed sit amet tortor nibh. Donec condimentum posuere nunc, et hendrerit sapien dictum ut. Aliquam congue non purus eu suscipit. Integer eu dui tortor. Donec ut dolor vitae ipsum ultrices semper. Morbi imperdiet dictum urna nec blandit. 
+                </p>
+                <p>
+                  Curabitur interdum diam ut porta vulputate. Fusce ultrices efficitur lectus et ornare. Morbi vulputate condimentum metus eu viverra. Integer iaculis volutpat lobortis. In dapibus massa at molestie ultricies. Nunc vitae gravida ipsum, euismod euismod nulla. Morbi at nibh ut orci fringilla luctus. Nunc diam dolor, posuere a venenatis et, venenatis nec augue. Phasellus tempus mauris non metus placerat, id consectetur quam porta. Proin pulvinar consequat urna, et porttitor leo maximus sed. Ut condimentum massa ut turpis consectetur aliquam. Maecenas vehicula magna quis malesuada feugiat. Fusce pharetra eros id odio vestibulum, quis mollis est tempor. Etiam sed purus orci. Nullam sit amet tortor eget.
+                </p>
+                <p> Sed sit amet tortor nibh. Donec condimentum posuere nunc, et hendrerit sapien dictum ut. Aliquam congue non purus eu suscipit. Integer eu dui tortor. Donec ut dolor vitae ipsum ultrices semper. Morbi imperdiet dictum urna nec blandit. </p>
+                <!-- end content -->
+              </div>
+              <!-- auhtor mb -->
+              <div class="d-xl-none d-block">
+                <div class="writer-profile bg-white border-6 box-shadow1">
+                  <div class="d-flex align-items-center">
+                    <div class="writer-profile-avatar">
+                      <a href="#">
+                        <img src="./images/1.jpg" alt="">
+                      </a>
+                    </div>
+                    <a href="#" class="text-gray-3d writer-profile-text">
+                      <p class="fw-700 text-uppercase text-xl-center writer-profile-title">Esther Howard</p>
+                      <p class="writer-profile-des">Pellentesque vulputate quam a quam atus volutpat, sed ullamcorper erat commodo.</p>
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mt-3 writer-profile-share">
+                    <a href="#" class="writer-profile-btn btn boder-999 text-blue-05 fw-700">Writer Profile</a>
+                    <a href="#">
+                      <img src="./images/fb-icon2.png" alt="" class="ml-3">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- end auhtor -->
+              <!-- cmt -->
+              <div class="detail-cmt bg-white box-shadow1 border-6">
+                <div class="detail-cmt-header d-lg-flex align-items-center justify-content-between">
+                    <div class="detail-cmt-header__text">
+                      <div class="detail-cmt-header__text1 fw-500 font-primary text-gray-52">Sign up to join conversation</div>
+                      <div class="detail-cmt-header__text2 font-third text-gray-3d">Add your feedback for this article by signing in or signing up.</div>
+                    </div>
+                    <div class="detail-cmt-header__btn text-lg-right">
+                      <a href="#" class="sign-up-btn2 btn boder-999 fw-700 bg-blue-05">Sign up with email!</a>
+                      <span class="font-third text-gray-3d d-inline-block px-12">or</span>
+                      <a href="#" class="sign-up-fb fw-700 text-blue-05">Facebook</a>
+                      <a href="#" class="sign-up-gg fw-700 text-blue-05 ml-12">Google</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="detail-cmt-content">
+                  <!-- cmt parent -->
+                  <div class="detail-cmt-content-parent">
+                    <div class="detail-cmt-content-user">
+                      <div class="detail-cmt-content-user__avatar">
+                        <a href="#">
+                          <img src="./images/1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="detail-cmt-content-user__field">
+                        <div class="border-6 detail-cmt-content-user__info">
+                          <ul class="detail-cmt-content-user__author">
+                            <li class="fw-700 detail-cmt-content-user__author--name">
+                              <a href="#" class="text-blue-05">Arlene McCoy</a>
+                            </li>
+                            <li class="text-gray-52 detail-cmt-content-user__author--time">8 hours ago</li>
+                          </ul>
+                          <p class="detail-cmt-content-user__text text-gray-3d font-third">
+                            In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus.
+                          </p>
+                        </div>
+                        <div class="detail-cmt-content-user__action">
+                          <div class="detail-cmt-content-user__icon detail-cmt-content-user__heart">
+                            <ion-icon name="heart-outline" class="detail-cmt-content-user__heart-icon"></ion-icon>
+                          </div>
+                          <div class="detail-cmt-content-user__icon detail-cmt-content-user__rep">
+                            <img src="./images/ArrowBendDownLeft.svg" alt="">
+                          </div>
+                          <!-- <div class="detail-cmt-content-user__icon detail-cmt-content-user__more">
+                            <ion-icon name="ellipsis-horizontal-outline" class="detail-cmt-content-user__more-icon"></ion-icon>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-cmt-content-children">
+                      <div class="detail-cmt-content-user">
+                        <div class="detail-cmt-content-user__avatar">
+                          <a href="#">
+                            <img src="./images/1.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="detail-cmt-content-user__field">
+                          <div class="border-6 detail-cmt-content-user__info">
+                            <ul class="detail-cmt-content-user__author">
+                              <li class="fw-700 detail-cmt-content-user__author--name">
+                                <a href="#" class="text-blue-05">Arlene McCoy</a>
+                              </li>
+                              <li class="text-gray-52 detail-cmt-content-user__author--time">8 hours ago</li>
+                            </ul>
+                            <p class="detail-cmt-content-user__text text-gray-3d font-third">
+                              In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus.
+                            </p>
+                          </div>
+                          <div class="detail-cmt-content-user__action">
+                            <div class="detail-cmt-content-user__icon detail-cmt-content-user__heart">
+                              <ion-icon name="heart-outline" class="detail-cmt-content-user__heart-icon"></ion-icon>
+                            </div>
+                            <div class="detail-cmt-content-user__icon detail-cmt-content-user__rep">
+                              <img src="./images/ArrowBendDownLeft.svg" alt="">
+                            </div>
+                            <!-- <div class="detail-cmt-content-user__icon detail-cmt-content-user__more">
+                              <ion-icon name="ellipsis-horizontal-outline" class="detail-cmt-content-user__more-icon"></ion-icon>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end cmt parent -->
+                  <!-- cmt parent -->
+                  <div class="detail-cmt-content-parent">
+                    <div class="detail-cmt-content-user">
+                      <div class="detail-cmt-content-user__avatar">
+                        <a href="#">
+                          <img src="./images/1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="detail-cmt-content-user__field">
+                        <div class="border-6 detail-cmt-content-user__info">
+                          <ul class="detail-cmt-content-user__author">
+                            <li class="fw-700 detail-cmt-content-user__author--name">
+                              <a href="#" class="text-blue-05">Arlene McCoy</a>
+                            </li>
+                            <li class="text-gray-52 detail-cmt-content-user__author--time">8 hours ago</li>
+                          </ul>
+                          <p class="detail-cmt-content-user__text text-gray-3d font-third">
+                            In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus.
+                          </p>
+                        </div>
+                        <div class="detail-cmt-content-user__action">
+                          <div class="detail-cmt-content-user__icon detail-cmt-content-user__heart">
+                            <ion-icon name="heart-outline" class="detail-cmt-content-user__heart-icon"></ion-icon>
+                          </div>
+                          <div class="detail-cmt-content-user__icon detail-cmt-content-user__rep">
+                            <img src="./images/ArrowBendDownLeft.svg" alt="">
+                          </div>
+                          <!-- <div class="detail-cmt-content-user__icon detail-cmt-content-user__more">
+                            <ion-icon name="ellipsis-horizontal-outline" class="detail-cmt-content-user__more-icon"></ion-icon>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-cmt-content-children">
+                      <div class="detail-cmt-content-user">
+                        <div class="detail-cmt-content-user__avatar">
+                          <a href="#">
+                            <img src="./images/1.jpg" alt="">
+                          </a>
+                        </div>
+                        <div class="detail-cmt-content-user__field">
+                          <div class="border-6 detail-cmt-content-user__info">
+                            <ul class="detail-cmt-content-user__author">
+                              <li class="fw-700 detail-cmt-content-user__author--name">
+                                <a href="#" class="text-blue-05">Arlene McCoy</a>
+                              </li>
+                              <li class="text-gray-52 detail-cmt-content-user__author--time">8 hours ago</li>
+                            </ul>
+                            <p class="detail-cmt-content-user__text text-gray-3d font-third">
+                              In hac habitasse platea dictumst. Sed cursus venenatis tellus, non lobortis diam volutpat sit amet. Sed tellus augue, hendrerit eu rutrum in, porttitor at metus.
+                            </p>
+                          </div>
+                          <div class="detail-cmt-content-user__action">
+                            <div class="detail-cmt-content-user__icon detail-cmt-content-user__heart">
+                              <ion-icon name="heart-outline" class="detail-cmt-content-user__heart-icon"></ion-icon>
+                            </div>
+                            <div class="detail-cmt-content-user__icon detail-cmt-content-user__rep">
+                              <img src="./images/ArrowBendDownLeft.svg" alt="">
+                            </div>
+                            <!-- <div class="detail-cmt-content-user__icon detail-cmt-content-user__more">
+                              <ion-icon name="ellipsis-horizontal-outline" class="detail-cmt-content-user__more-icon"></ion-icon>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end cmt parent -->
+                </div>
+                <!--  -->
+              </div>
+              <!-- end cmt -->
+              <!-- end detail content -->
+            </div>
+          </div>
+          <div class="detail-right-wrapper">
+            <div class="detail-right">
+              <!-- most view -->
+              <div class="most-views-detail-right">
+                <h3 class="font-primary fw-500 text-gray-52 table-of-content__title">Xem nhiều nhất</h3>
+                <ul class="most-views-detail-right__list">
+                  <li class="most-views-detail-right__item border-6 box-shadow1  font-primary fw-500">
+                    <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                  </li>
+                  <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                    <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                  </li>
+                  <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                    <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                  </li>
+                  <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                    <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                  </li>
+                  <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                    <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end most view -->
+              <!-- subcribe email -->
+              <div class="subscribe-email subscribe-email2 border-6">
+                <h3 class="subscribe-email-title subscribe-email-title2 fw-500 font-primary text-white">Subscribe to our newsletter!</h3>
+                <p class="subscribe-email-des subscribe-email-des2 text-white">Stay up to date with the latest travel news and everything new happening from Travellive.</p>
+                <div class="subscribe-email-form">
+                  <form action="" id="form-17" class="text-center">
+                   <input type="text" name="subscribe-email2" placeholder="Your email" class="form-control-t form-subscribe-input">
+                   <button class="subscribe-btn subscribe-btn2 btn boder-999 fw-700 bg-blue-05" type="submit">Subscribe now!</button>
+                  </form>
+                </div>
+              </div>
+              <!-- end subcribe email -->
+              <!-- banner -->
+              <div class="banner-pc mb-4 border-6">
+                <a href="#">
+                  <img src="./images/ads2.png" alt="">
+                </a>
+              </div>
+              <!-- end banner -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end detail-content -->
+      
+      <!-- caterory-other -->
+      <section class="cate-other detail-cate-other detail-cate-other2">
+        <div class="cate-other-block w-1440 padding-x-32">
+          <!-- left -->
+          <div class="cate-other-left cate-other-left--2">
+            <h3 class="text-red-d8 fw-500 font-primary text-uppercase text-center cate-other-left__title">bài viết liên quan</h3>
+            <!-- cate-other-left__list -->
+            <div  class="cate-other-left__list">
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+            </div>
+            <!-- end cate-other-left__list -->
+            <div class="tab-pane-more cate-other-left__loadmore fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Load more</a></div>
+          </div>
+          <!-- end left -->
+          <!-- right -->
+          <div class="cate-other-right">
+            <!-- most view -->
+            <div class="most-views-detail-right">
+              <h3 class="font-primary fw-500 text-gray-52 table-of-content__title">Xem nhiều nhất</h3>
+              <ul class="most-views-detail-right__list">
+                <li class="most-views-detail-right__item border-6 box-shadow1  font-primary fw-500">
+                  <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                </li>
+                <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                  <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                </li>
+                <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                  <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                </li>
+                <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                  <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                </li>
+                <li class="most-views-detail-right__item border-6 box-shadow1 font-primary fw-500">
+                  <a href="#" class="fix-text2">Amet minim mollit non des er unt ullamco est sit aliqua dolor do. er unt ullamco est sit aliqua dolor do.</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end most view -->
+            <!-- featured -->
+            <div class="featured-block border-6 ">
+              <h3 class="text-green-33 fw-500 font-primary text-uppercase text-center featured-block__title">bài đặc sắc</h3>
+              <!-- cate-other-left__list -->
+              <div  class="cate-other-right__list">
+                <!-- block -->
+                <div class="cate-other-right__item border-6">
+                  <div class="cate-other-right__item--img">
+                    <div class="thumb-img">
+                      <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="cate-other-right__item--content">
+                    <a href="#" class="">
+                      <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                      <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    </a>
+                    <div class="cate-other-right__item--source">
+                      <div class="cate-other-right__item--author">
+                        <a href="#" class="cate-other-right__item--author-link">
+                          <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                          <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                        </a>
+                      </div>
+                      <div class="cate-other-right__item--public">
+                        <div class="cate-other-right__item--day text-gray-52">
+                          <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                          <span class="cate-other-right__item--day-text">10/09/2021</span>
+                        </div>
+                        <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end block -->
+                <!-- block -->
+                <div class="cate-other-right__item border-6">
+                  <div class="cate-other-right__item--img">
+                    <div class="thumb-img">
+                      <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="cate-other-right__item--content">
+                    <a href="#" class="">
+                      <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                      <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    </a>
+                    <div class="cate-other-right__item--source">
+                      <div class="cate-other-right__item--author">
+                        <a href="#" class="cate-other-right__item--author-link">
+                          <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                          <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                        </a>
+                      </div>
+                      <div class="cate-other-right__item--public">
+                        <div class="cate-other-right__item--day text-gray-52">
+                          <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                          <span class="cate-other-right__item--day-text">10/09/2021</span>
+                        </div>
+                        <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end block -->
+                <!-- block -->
+                <div class="cate-other-right__item border-6">
+                  <div class="cate-other-right__item--img">
+                    <div class="thumb-img">
+                      <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="cate-other-right__item--content">
+                    <a href="#" class="">
+                      <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                      <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    </a>
+                    <div class="cate-other-right__item--source">
+                      <div class="cate-other-right__item--author">
+                        <a href="#" class="cate-other-right__item--author-link">
+                          <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                          <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                        </a>
+                      </div>
+                      <div class="cate-other-right__item--public">
+                        <div class="cate-other-right__item--day text-gray-52">
+                          <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                          <span class="cate-other-right__item--day-text">10/09/2021</span>
+                        </div>
+                        <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end block -->
+                <!-- block -->
+                <div class="cate-other-right__item border-6">
+                  <div class="cate-other-right__item--img">
+                    <div class="thumb-img">
+                      <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="cate-other-right__item--content">
+                    <a href="#" class="">
+                      <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                      <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    </a>
+                    <div class="cate-other-right__item--source">
+                      <div class="cate-other-right__item--author">
+                        <a href="#" class="cate-other-right__item--author-link">
+                          <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                          <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                        </a>
+                      </div>
+                      <div class="cate-other-right__item--public">
+                        <div class="cate-other-right__item--day text-gray-52">
+                          <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                          <span class="cate-other-right__item--day-text">10/09/2021</span>
+                        </div>
+                        <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end block -->
+
+              </div>
+              <!-- end cate-other-left__list -->
+            </div>
+             <!-- end featured -->
+             <!-- subscribe email -->
+             <div class="subscribe-email border-6">
+               <h3 class="subscribe-email-title fw-500 font-primary text-white">Be the first one to know what’s going on!</h3>
+               <p class="subscribe-email-des text-white">Stay up to date with the latest news from Travellive.</p>
+               <div class="subscribe-email-form">
+                 <form action="" id="form-18" class="text-center">
+                  <input type="text" name="subscribe-email" placeholder="Your email" class="form-control-t form-subscribe-input">
+                  <button class="subscribe-btn btn boder-999 fw-700 bg-blue-05" type="submit">Subscribe now!</button>
+                 </form>
+               </div>
+             </div>
+             <!-- end subscribe email -->
+             <!-- banner -->
+             <div class="banner-pc">
+              <a href="#">
+                <img src="./images/ads.jpg" alt="">
+              </a>
+            </div>
+             <!-- end banner -->
+          </div>
+          <!-- end right -->
+        </div>
+      </section>
+      <!-- end caterory-other -->
+
+      <!-- featured new mb -->
+      <!-- featured -->
+      <div  class="featured-mb">
+        <div class="featured-mb-left border-6">
+          <h3 class="text-green-33 fw-500 font-primary text-uppercase featured-block__title">bài đặc sắc</h3>
+          <!-- cate-other-left__list -->
+          <div  class="cate-other-right__list">
+            <!-- block -->
+            <div class="cate-other-right__item border-6">
+              <div class="cate-other-right__item--img">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="cate-other-right__item--content">
+                <a href="#" class="">
+                  <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                  <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                </a>
+                <div class="cate-other-right__item--source">
+                  <div class="cate-other-right__item--author">
+                    <a href="#" class="cate-other-right__item--author-link">
+                      <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                      <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                    </a>
+                  </div>
+                  <div class="cate-other-right__item--public">
+                    <div class="cate-other-right__item--day text-gray-52">
+                      <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                      <span class="cate-other-right__item--day-text">10/09/2021</span>
+                    </div>
+                    <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="cate-other-right__item border-6">
+              <div class="cate-other-right__item--img">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="cate-other-right__item--content">
+                <a href="#" class="">
+                  <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                  <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                </a>
+                <div class="cate-other-right__item--source">
+                  <div class="cate-other-right__item--author">
+                    <a href="#" class="cate-other-right__item--author-link">
+                      <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                      <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                    </a>
+                  </div>
+                  <div class="cate-other-right__item--public">
+                    <div class="cate-other-right__item--day text-gray-52">
+                      <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                      <span class="cate-other-right__item--day-text">10/09/2021</span>
+                    </div>
+                    <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="cate-other-right__item border-6">
+              <div class="cate-other-right__item--img">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="cate-other-right__item--content">
+                <a href="#" class="">
+                  <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                  <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                </a>
+                <div class="cate-other-right__item--source">
+                  <div class="cate-other-right__item--author">
+                    <a href="#" class="cate-other-right__item--author-link">
+                      <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                      <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                    </a>
+                  </div>
+                  <div class="cate-other-right__item--public">
+                    <div class="cate-other-right__item--day text-gray-52">
+                      <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                      <span class="cate-other-right__item--day-text">10/09/2021</span>
+                    </div>
+                    <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="cate-other-right__item border-6">
+              <div class="cate-other-right__item--img">
+                <div class="thumb-img">
+                  <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="cate-other-right__item--content">
+                <a href="#" class="">
+                  <p class="fw-700 text-uppercase cate-other-right__item--text1 text-red-d8">aliquam erat</p>
+                  <h1 class="fw-500 font-primary cate-other-right__item--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                </a>
+                <div class="cate-other-right__item--source">
+                  <div class="cate-other-right__item--author">
+                    <a href="#" class="cate-other-right__item--author-link">
+                      <img src="./images/1.jpg" alt="" class="cate-other-right__item--author-img">
+                      <p class="cate-other-right__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                    </a>
+                  </div>
+                  <div class="cate-other-right__item--public">
+                    <div class="cate-other-right__item--day text-gray-52">
+                      <ion-icon name="time-outline" class="cate-other-right__item--day-icon"></ion-icon>
+                      <span class="cate-other-right__item--day-text">10/09/2021</span>
+                    </div>
+                    <p class="cate-other-right__item--time text-gray-52">5 mins read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block -->
+
+          </div>
+          <!-- end cate-other-left__list -->
+        </div>
+        <div class="featured-mb-right">
+          <div class="d-sm-block d-flex align-items-center mb-sm-0 mb-4">
+            <!-- banner -->
+            <div class="banner-pc mb-sm-4 border-6 pr-sm-0 pr-2">
+              <a href="#">
+                <img src="./images/ads2.png" alt="">
+              </a>
+            </div>
+            <!-- end banner -->
+            <!-- banner -->
+            <div class="banner-pc border-6 pl-sm-0 pl-2">
+              <a href="#">
+                <img src="./images/ads3.png" alt="">
+              </a>
+            </div>
+            <!-- end banner -->
+          </div>
+        </div>
+      </div>
+       <!-- end featured -->
+      <!-- end featured new mb -->
+      <!-- detail same category -->
+      <section class="cate-other detail-same-cate">
+        <div class="cate-other-block w-1440 padding-x-32">
+          <!-- left -->
+          <div class="cate-other-left">
+            <h3 class="text-red-d8 fw-500 font-primary text-uppercase text-center cate-other-left__title">cùng chuyên mục</h3>
+            <!-- cate-other-left__list -->
+            <div  class="cate-other-left__list">
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+              <!-- block -->
+              <div class="cate-other-left__item border-6">
+                <div class="cate-other-left__item--img">
+                  <div class="thumb-img">
+                    <a href="#" class="thumb-item thumb-5x3"><img class="" src="./images/2.jpg" alt=""></a>
+                  </div>
+                </div>
+                <div class="cate-other-left__item--content">
+                  <a href="#" class="">
+                    <p class="fw-700 text-uppercase category-going-on-thumb-block--text1">aliquam erat</p>
+                    <h1 class="fw-500 font-primary category-going-on-thumb-block--text2 fix-text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.  </h1>
+                    <p class="category-going-on-thumb-block--text3 fix-text2">In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat.</p>
+                  </a>
+                  <div class="cate-other-left__item--source">
+                    <div class="cate-other-left__item--author">
+                      <a href="#" class="cate-other-left__item--author-link">
+                        <img src="./images/1.jpg" alt="" class="cate-other-left__item--author-img">
+                        <p class="cate-other-left__item--author-text fw-700 text-gray-52 text-uppercase">Esther Howard</p>
+                      </a>
+                    </div>
+                    <div class="cate-other-left__item--public">
+                      <div class="cate-other-left__item--day text-gray-52">
+                        <ion-icon name="time-outline" class="cate-other-left__item--day-icon"></ion-icon>
+                        <span class="cate-other-left__item--day-text">10/09/2021</span>
+                      </div>
+                      <p class="cate-other-left__item--time text-gray-52">5 mins read</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end block -->
+            </div>
+            <!-- end cate-other-left__list -->
+            <div class="tab-pane-more cate-other-left__loadmore fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Load more</a></div>
+          </div>
+          <!-- end left -->
+          <!-- right -->
+          <div class="cate-other-right">
+             <!-- subscribe email -->
+             <div class="subscribe-email border-6 subcribe-email-detail-same">
+               <h3 class="subscribe-email-title fw-500 font-primary text-white">Be the first one to know what’s going on!</h3>
+               <p class="subscribe-email-des text-white">Stay up to date with the latest news from Travellive.</p>
+               <div class="subscribe-email-form">
+                 <form action="" id="form-19" class="text-center">
+                  <input type="text" name="subscribe-email" placeholder="Your email" class="form-control-t form-subscribe-input">
+                  <button class="subscribe-btn btn boder-999 fw-700 bg-blue-05" type="submit">Subscribe now!</button>
+                 </form>
+               </div>
+             </div>
+             <!-- end subscribe email -->
+             <!-- banner -->
+             <div class="banner-pc">
+              <a href="#">
+                <img src="./images/ads.jpg" alt="">
+              </a>
+            </div>
+             <!-- end banner -->
+          </div>
+          <!-- end right -->
+        </div>
+      </section>
+      <!-- end detail same category -->
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class=" bg-black-3d">
+      <div class="footer-header-logo">
+        <a href="#"><img src="./images/logo1.svg" alt=""></a>
+      </div>
+      <section class="footer">
+        <div class="footer-left">
+          <div class="footer-left__top">
+            <p>
+              <a href="#" class="footer-left__top--link fs-14 fw-500 font-primary">About us</a>
+            </p>
+            <p>
+              <a href="#" class="footer-left__top--link fs-14 fw-500 font-primary">Let’s collabrate!</a>
+            </p>
+          </div>
+          <div class="footer-share d-flex align-items-center">
+            <a href="#" class="share-fb-menu share-footer">
+                <img src="./images/u_facebook.png" alt="">
+            </a>
+            <a href="#" class="share-insta-menu share-footer">
+                <img src="./images/u_instagram-alt.png" alt="">
+            </a>
+            <a href="#" class="share-youtbe-menu share-footer">
+                <img src="./images/u_youtube.png" alt="">
+            </a>
+            <a href="#" class="share-zalo-menu share-footer">
+                <img src="./images/zalo.png" alt="">
+            </a>
+          </div>
+          <ul class="fs-14">
+            <li class="fw-700 pb-4">Nhà xuất bản Thế Giới</li>
+            <li class="pb-4">Chịu trách nhiệm xuất bản: <span class="fw-700"> Trần Đoàn Lâm</span></li>
+            <li class="pb-2">Tòa soạn:<span class="fw-700"> Tầng 3, 59 Thợ Nhuộm, Hoàn Kiếm, Hà Nội</span></li>
+            <li class="pb-4">Tel: <span class="fw-700"> 024. 3936 8349</span> – Fax: <span class="fw-700">024. 39368350</span></li>
+            <li class="pb-2">VP Hồ Chí Minh: <span class="fw-700">Tầng 3, 144 Võ Văn Tần, P.6, Q.3, TPHCM</span></li>
+            <li class="pb-4">Tel: <span class="fw-700">028. 3930 9641</span> – Fax: <span class="fw-700">028. 3930 9642</span></li>
+            <li class="">Giấy phép xuất bản số: <span class="fw-700">05/GP-XBĐS</span></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">What’s going on?</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Covid-19</a></li>
+              <li class="footer-right-item"><a href="#">Trong nước</a></li>
+              <li class="footer-right-item"><a href="#">Quốc tế</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">To travel</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Cảm hứng</a></li>
+              <li class="footer-right-item"><a href="#">Điểm đến</a></li>
+              <li class="footer-right-item"><a href="#">Lưu trú</a></li>
+              <li class="footer-right-item"><a href="#">Phương tiên</a></li>
+              <li class="footer-right-item"><a href="#">Ẩm thực</a></li>
+              <li class="footer-right-item"><a href="#">Tips&Tours</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">To live</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Văn hóa</a></li>
+              <li class="footer-right-item"><a href="#">Lối sống</a></li>
+              <li class="footer-right-item"><a href="#">Chân dung</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">HOT DEAL!</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">I am musing</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Video</a></li>
+              <li class="footer-right-item"><a href="#">Podcasts</a></li>
+              <li class="footer-right-item"><a href="#">Photo albums</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">Point of view</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Góc nhìn du lịch</a></li>
+              <li class="footer-right-item"><a href="#">Tiềm năng du lịch</a></li>
+              <li class="footer-right-item"><a href="#">Thảo luận</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">More</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Writers</a></li>
+              <li class="footer-right-item"><a href="#">E-magazine</a></li>
+              <li class="footer-right-item"><a href="#">Membership</a></li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <section class="footer-footer">
+        <div class="footer-footer__logo">
+          <a href="#">
+            <img src="./images/logo1.svg" alt="">
+          </a>
+        </div>
+        <div class="d-flex align-items-center justify-content-end footer-footer__content">
+          <div class="d-flex align-items-center footer-footer__text">
+            <a href="#" class="footer-footer__text1">Terms and Conditions</a>
+            <a href="#" class="footer-footer__text1">Private Policy</a>
+          </div>
+          <p class="footer-footer__text2">© Travellive 2021</p>
+          <img src="./images/dmca.svg" alt="" class="footer-footer__dmca">
+        </div>
+      </section>
+    </footer>
+    <!-- end footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
