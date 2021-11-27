@@ -146,7 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if(openSubMenu){
         openSubMenu.forEach(function(b){
           var iconSubMb = b.querySelector('.navbar-item__icon');
-          b.onclick = function(){
+          var titleSub = b.querySelector('.navbar-item__info')
+          titleSub.onclick = function(){
              var subMenuActive = document.querySelector('.navbar-item-mb.active');
              var iconSubMb2 = document.querySelector('.navbar-item__icon.active');
             if(subMenuActive && iconSubMb2){
