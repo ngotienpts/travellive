@@ -79,7 +79,8 @@
   padding: 1.5rem 2rem;
   top: 100%;
   left: 0;
-  max-width: 500px;
+  // max-width: 500px;
+  width: auto;
   min-width: 200px;
   margin-top: 1rem;
   display: grid;
@@ -111,7 +112,10 @@
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
 }
-
+.navbar-item.navbar-item-pc:last-child .navbar-item__dropdown {
+  right: 0;
+  left: auto;
+}
 .navbar-item__primary a {
   color: #fff;
 }
