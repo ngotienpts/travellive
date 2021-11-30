@@ -3716,7 +3716,7 @@ ion-icon.close-popup-login.md.hydrated {
   font-size: 1.125rem;
 }
 
-.video-cate-other-left__item--source {
+.podcast-cate-other-left__item--source {
   display: none;
 }
 
@@ -3734,6 +3734,10 @@ ion-icon.close-popup-login.md.hydrated {
 
 .podcast-update-full {
   background: #89AAE6;
+}
+
+.podcast-featured-tab-pane__item-public {
+  display: none;
 }
 
 #footer {
