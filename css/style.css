@@ -1476,6 +1476,22 @@ img {
   color: #fff;
 }
 
+.play-small-sm {
+  background-color: #333;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.play-small-sm .play-video-icon {
+  font-size: 1rem;
+  color: #fff;
+}
+
 .play:hover {
   opacity: 0.8;
   transition: opacity 0.1s linear;
@@ -3624,6 +3640,100 @@ ion-icon.close-popup-login.md.hydrated {
 
 .unbreathable-subscribe-email {
   background: #EFBB68;
+}
+
+.video-cate-other {
+  background: #fcf9f8;
+}
+
+.video-other-left__title {
+  box-shadow: 0 4px 16px rgba(163, 161, 161, 0.5);
+}
+
+.video-other-left__item--img {
+  width: 40%;
+}
+
+.video-other-left__item--content {
+  width: 60%;
+}
+
+.showing-title {
+  font-size: 1.125rem;
+}
+
+.video-other-left__list {
+  max-height: 768px;
+  overflow-y: scroll;
+  padding-right: 1.25rem;
+}
+
+.video-other-left__list::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+.video-other-left__list::-webkit-scrollbar-thumb {
+  background-color: #89AAE6;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}
+
+.video-other-left__list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: transparent;
+}
+
+.video-featured-block {
+  background: #e7eefa;
+}
+
+.video-featured-mb-right,
+.video-newletter {
+  display: none;
+}
+
+.video-category-going-on-field--img {
+  display: none;
+}
+
+.video-category-going-on-thumb-block {
+  background: #fff;
+}
+
+.podcast-category-going-on-thumb-block {
+  background: #fff;
+}
+
+.podcast-category-going-on-thumb-block--text4 {
+  margin-bottom: 0.625rem;
+}
+
+.podcast-category-going-on-thumb-block--text4 span {
+  font-size: 1.125rem;
+}
+
+.video-cate-other-left__item--source {
+  display: none;
+}
+
+.podcast-other-left__item-update {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0.325rem 0.625rem;
+}
+
+.podcast-update {
+  background: #D87053;
+}
+
+.podcast-update-full {
+  background: #89AAE6;
 }
 
 #footer {

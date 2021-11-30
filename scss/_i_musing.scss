@@ -92,6 +92,20 @@
     font-size: 1.5rem;
     color: #fff;
 }
+.play-small-sm {
+    background-color: #333;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.play-small-sm .play-video-icon {
+    font-size: 1rem;
+    color: #fff;
+}
 .play:hover{
     opacity: 0.8;
     transition: opacity 0.1s linear;
