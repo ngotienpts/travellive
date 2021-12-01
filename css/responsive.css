@@ -1005,6 +1005,33 @@
   .video-category-going-on-thumb-block {
     background: #f5f5f5;
   }
+
+  .popup-video-field {
+    max-width: 700px;
+    padding: 0.5rem;
+  }
+
+  .popup-video-block {
+    display: block;
+  }
+
+  .popup-video-block-right-content {
+    max-height: 250px;
+  }
+
+  .popup-video-block-left .popup-video-block-left__text {
+    display: none !important;
+  }
+
+  .popup-video-block-bottom {
+    display: block;
+    background-color: #fff;
+  }
+
+  .popup-video-block-right {
+    margin-top: 1rem;
+    border: 1px solid #D87053;
+  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -2781,6 +2808,93 @@
 
   .podcast-tab-pane__item-date-item {
     display: none;
+  }
+
+  .popup-video-block-right-content {
+    max-height: 175px;
+  }
+
+  .popup-video-block-right-header {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .popup-video-block-right-content {
+    padding: 0.5rem;
+  }
+
+  .popup-video-block-right-content::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+  }
+
+  .popup-video-block-left__title {
+    font-size: 1.25rem;
+  }
+
+  .popup-video-block-left__share-text,
+.popup-video-block-left__des {
+    font-size: 0.875rem;
+  }
+
+  .popup-video-field {
+    max-width: 350px;
+  }
+
+  .popup-video-close {
+    font-size: 1.5rem;
+    top: -0.375rem;
+    right: -0.375rem;
+  }
+
+  .popup-video-cate-other-right__item {
+    margin-bottom: 1rem;
+  }
+
+  .action-item img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .popup-video-field {
+    padding: 0;
+  }
+
+  .popup-video-block-right,
+.popup-video-block-bottom {
+    margin: 0.5rem;
+  }
+}
+@media (max-width: 25em) {
+  .popup-video-field {
+    max-width: 300px;
+  }
+
+  .popup-video-block-right-header {
+    font-size: 0.75rem;
+    padding: 0.325rem;
+  }
+
+  .popup-video-block-left__title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 20em) {
+  .popup-video-field {
+    max-width: 280px;
+  }
+
+  .popup-video-cate-other-right__item {
+    margin-bottom: 0.625rem;
+  }
+
+  .popup-video-block-left__des {
+    display: none;
+  }
+
+  .action-share {
+    margin-top: 0.375rem;
   }
 }
 

@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" sizes="32x32">
+    <title>Travellive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800;900&family=EB+Garamond:wght@400;500;600;700;800&family=Alegreya:wght@400;500;600;700;800;900&family=Be+Vietnam:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+   <!-- logo header -->
+    <section class="header-logo-top" style="background:#0a0a0a;">
+      <div>
+        <a href="#">
+          <img src="./images/logo1.svg" alt="" class="d-inline-block" />
+        </a>
+      </div>
+    </section>
+    <!-- logo header -->
+    <!-- show menu tablet -->
+    <section class="menu-mb">
+      <div class="coating-menu-mb"></div>
+      <div class="menu-mb-content">
+         <div class="menu-mb-content-header position-relative d-flex align-items-center justify-content-between">
+               <a href="#"><img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb"></a>
+               <ion-icon name="close-outline" class="fs-36 text-white close-menu-mb"></ion-icon>
+         </div>
+         <div class="menu-mb-list">
+            <ul class="navbar__list">
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class=" d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-mb">
+                <div class="d-flex align-items-center justify-content-end fw-700 py-12 px-sm-5 px-4 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon md hydrated" role="img" aria-label="caret down outline"></ion-icon>
+                </div>
+              </li>
+              <!-- contact about -->
+              <li class="navbar-item line my-12"></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">about us</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700"><a href="#" class="text-gray-ed">contact</a></li>
+              <li class="navbar-item py-12 px-4 text-uppercase text-right fw-700 text-blue-89 open-login">sign in</li>
+              <li class="navbar-item line my-12"></li>
+              <!-- end contact about -->
+              <!-- share -->
+              <li class="navbar-item py-12 px-4 d-flex align-items-center justify-content-end">
+                 <a href="#" class="share-fb-menu share-menu">
+                    <img src="./images/u_facebook.png" alt="">
+                 </a>
+                 <a href="#" class="share-insta-menu share-menu">
+                    <img src="./images/u_instagram-alt.png" alt="">
+                 </a>
+                 <a href="#" class="share-youtbe-menu share-menu">
+                    <img src="./images/u_youtube.png" alt="">
+                 </a>
+                 <a href="#" class="share-zalo-menu share-menu">
+                    <img src="./images/zalo.png" alt="">
+                 </a>
+              </li>
+              <!-- end share -->
+            </ul>
+          </div>
+      </div>
+    </section>
+    <!-- end show menu tablet -->
+    <!-- popup login -->
+    <section class="popup-login">
+      <div class="popup-login-wrapper">
+        <ion-icon name="close-outline" class=" close-popup-login"></ion-icon>
+        <h3 class="popup-login-title">Đăng nhập tài khoản</h3>
+        <div class="form-popup-login">
+          <form action="" id="form-4">
+            <button class="btn fb-login-btn"><img src="./images/fb-w.svg" alt=""></button>
+            <button class="btn gg-login-btn"><img src="./images/gg-w.svg" alt=""></button>
+            <input type="checkbox" id="remember-acccount" class="my-4">
+            <label for="remember-acccount">Ghi nhớ tài khoản</label>
+            <button class="btn login-btn text-white">Đăng nhập</button>
+            <p class="text-center">Nếu chưa có tài khoản vui lòng <a href="#" class="login-text-register">Đăng ký</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end popup login -->
+    <!-- header -->
+    <header id="header">
+      <section class="header">
+        <div
+          class="navbars d-flex align-items-center justify-content-between py-xl-3 px-xl-4">
+          <div class="navbar--left">
+            <a href="#">
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo" />
+              <img src="./images/logo3.svg" alt="" class="navbar--left__logo-mb" />
+            </a>
+          </div>
+          <div class="navbar--center">
+            <ul class="navbar__list d-flex align-items-center">
+              <li class="navbar-item  navbar-item-pc">
+                <div
+                  class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">What's going on?</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Travel</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+                <ul class="navbar-item__dropdown">
+                  <li class="navbar-item__primary">
+                    <a href="#">Cảm hứng du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Điểm đến</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Việt Nam</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Á</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Âu</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Phi</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Mỹ</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">Châu Úc</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Lưu trú</a>
+                    <ul class="navbar-item-list">
+                      <li class="navbar-item-list__second">
+                        <a href="#">Hotels & Resorts</a>
+                      </li>
+                      <li class="navbar-item-list__second">
+                        <a href="#">#NoHetelRooms</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Phương tiện du lịch</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tips</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">Tours</a>
+                  </li>
+                  <li class="navbar-item__primary">
+                    <a href="#">HOT DEAL!</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Hot deal!</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">To Live</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">E-magazine</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">I am musing</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class=" d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">Point of View</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+              <li class="navbar-item navbar-item-pc">
+                <div class="d-flex align-items-center fw-700 py-12 px-3 navbar-item__info">
+                  <span class="navbar-item__title d-inline-block mr-1">More</span>
+                  <ion-icon name="caret-down-outline" class="navbar-item__icon"></ion-icon>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar--right d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-center navbar--right__item navbar--right__search p-2  mr-2 ">
+               <!-- <img src="./images/w-search.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="search-outline" class="navbar--right__img navbar--right__search-icon is-change-color"></ion-icon>
+            </div>
+            <div  class="align-items-center justify-content-center navbar--right__item navbar--right__user open-login bg-white p-2 rounded-circle">
+               <!-- <img src="./images/b_user.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="person-outline" class="navbar--right__img is-change-color-user navbar--right__user-icon"></ion-icon>
+            </div>
+            <div class="align-items-center justify-content-center navbar--right__item navbar--right__bar">
+               <!-- <img src="./images/bar.svg" alt="" class="navbar--right__img"/> -->
+               <ion-icon name="menu-outline" class="navbar--right__img is-change-color navbar--right__bar-icon"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <!-- search header -->
+        <div class="search-header">
+          <div class="search-header-form">
+            <form action="" id="form-1">
+              <div
+                class="form-group-t d-flex align-items-center position-relative"
+              >
+                <input type="text" name="search-header" class="form-control-t form-search-header" placeholder="Tìm kiếm" autocomplete="off"
+                />
+                <div class="ml-2 position-absolute search-header-btn">
+                  <img src="./images/w-search.svg" alt="" class="serch-btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end search header -->
+        <div class="header-bg" style="background:#0a0a0a;"></div>
+      </section>
+    </header>
+    <!-- end header -->
+    <!-- main -->
+    <main id="main">
+      <!-- about ud top -->
+      <section class="about-us-top w-1440 padding-x-32 padding-y-56 mt-header">
+        <div class="about-us-top__img">
+            <div class="thumb-img">
+                <div class="thumb-item thumb-5x3">
+                <img src="./images/ema1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="about-us-top__content">
+            <h1 class="about-us-top__content--title text-red-d8 fw-500 font-primary text-uppercase">TO TRAVEL TO LIVE</h1>
+            <div class="font-third text-gray-52 about-us-top__content--text">
+                <p class="about-us-top__content--text1">Phát hành số đầu tiên từ năm 2003, tạp chí Travellive với thông điệp: "to TRAVEL is to LIVE". Du lịch là sống, và cuộc sống là những cuộc hành trình. 
+                </p>
+                <p class="about-us-top__content--text1">Travellive không chỉ truyền cảm hứng mà còn cung cấp cho độc giả vốn kiến thức về lối sống và văn hóa đương đại nhằm xây dựng cộng đồng du lịch có phong cách, văn minh và đem lại giá trị cho xã hội. 
+                </p>
+                <p class="about-us-top__content--text1">Travellive đã thực hiện nhiều dự án xúc tiến du lịch làm cầu nối cho độc giả Việt Nam vươn ra thế giới và giúp du khách quốc tế tiếp cận nền du lịch Việt Nam. Từ đó, trở thành kênh truyền thông uy tín, được tín nhiệm bởi các nhà đầu tư, tập đoàn và bộ/cục du lịch các quốc gia trên toàn cầu. 
+                </p>
+                <p class="about-us-top__content--text1">
+                    Không dừng lại trong lĩnh vực xuất bản, hiện Travellive hoạt động như một agency cung cấp các giải pháp truyền thông, quảng cáo với đa dạng hình thức thông qua nội dung du lịch và lifestyle. 
+                </p>
+            </div>
+        </div>
+      </section>
+      <!-- end about ud top -->
+      <!-- what is going on -->
+      <section class="opening-positions-wrapper padding-y-56 padding-x-32">
+        <div class="opening-positions tab-container">
+          <!-- title -->
+          <div class="text-center">
+            <h2 class="going-on-header__title opening-positions-header__title font-primary text-red-d8 fs-48">Opening positions</h2>
+            <h3 class="opening-positions-header__des font-third text-gray-52">We are looking for talented people to join our team in several positions.</h3>
+          </div>
+          <!-- end title -->
+          <!-- tab -->
+            <div class="w-1440 p-x-32 tabs d-flex align-items-center justify-content-sm-center mt-sm-4 mb-sm-5 my-4">
+              <!-- tab item -->
+              <div class="tab-item d-flex align-items-center active">
+                <div class="tab-item__icon">
+                  <img src="./images/CirclesFour.svg" alt="" class="tab-item-img">
+                  <img src="./images/CirclesFour_gray.svg" alt="" class="tab-item-img2">
+                </div>
+                <div class="tab-item-text fw-700 fs-18">Tất cả</div>
+              </div>
+              <!-- end tab item -->
+              <!-- tab item -->
+              <div class="tab-item d-flex align-items-center">
+                <div class="tab-item-text fw-700 fs-18">Hồ Chí Minh</div>
+              </div>
+              <!-- tab item -->
+              <div class="tab-item d-flex align-items-center">
+                <div class="tab-item-text fw-700 fs-18">Hà Nội</div>
+              </div>
+              <!-- end tab item -->
+              <!-- tab item -->
+              <div class="tab-item d-flex align-items-center">
+                <div class="tab-item-text fw-700 fs-18">Remote</div>
+              </div>
+              <!-- end tab item -->
+              <!-- tab line -->
+              <div class="tab-line mt-3 mb-4">
+                <div class="tab-line-child"></div>
+              </div>
+              <!-- end tab line -->
+            </div>
+            <div class="w-1440 p-x-32 tab-content1">
+              <!-- tab pane 1 -->
+              <div class="tab-pane active">
+                <div class="tab-pane-block-opening">
+                  <!-- work block -->
+                  <div class="tab-pane-block-work">
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                        <a href="#" class="tab-pane-block-work-link">
+                          <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                          <div class="d-flex align-items-center justify-content-between">
+                            <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                            <div class="d-flex align-items-center justify-content-between text-blue-05">
+                              <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                              <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+                    <!-- end work item -->
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                      <a href="#" class="tab-pane-block-work-link">
+                        <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                          <div class="d-flex align-items-center justify-content-between text-blue-05">
+                            <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                            <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end work item -->
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                      <a href="#" class="tab-pane-block-work-link">
+                        <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                          <div class="d-flex align-items-center justify-content-between text-blue-05">
+                            <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                            <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end work item -->
+                  </div>
+                  <!-- end work block -->
+                  <!-- work block -->
+                  <div class="tab-pane-block-work">
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                      <a href="#" class="tab-pane-block-work-link">
+                        <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                          <div class="d-flex align-items-center justify-content-between text-blue-05">
+                            <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                            <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end work item -->
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                      <a href="#" class="tab-pane-block-work-link">
+                        <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                          <div class="d-flex align-items-center justify-content-between text-blue-05">
+                            <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                            <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end work item -->
+                    <!-- work item -->
+                    <div class="tab-pane-block-work-item bg-white border-6 box-shadow2">
+                      <a href="#" class="tab-pane-block-work-link">
+                        <h3 class="tab-pane-block-work-item__title fw-700">Production</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="tab-pane-block-work-item__text1 fw-500 font-primary">Creative Director</p>
+                          <div class="d-flex align-items-center justify-content-between text-blue-05">
+                            <ion-icon name="search-outline" class="tab-pane-block-work-item__icon"></ion-icon>
+                            <span class="tab-pane-block-work-item__text2 fw-700">Hồ Chí Minh</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- end work item -->
+                  </div>
+                  <!-- end work block -->
+                </div>
+                <div class="tab-pane-more fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Xem thêm</a></div>
+              </div>
+              <!-- end tab pane 1 -->
+              <div class="tab-pane">hello</div>
+              <!-- tab pane 2 -->
+              <!-- end tab pane 2 -->
+              <!-- tab pane 3 -->
+              <div class="tab-pane">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis illo nisi corporis libero debitis, architecto vitae eos veniam aspernatur, corrupti, ducimus ipsum doloremque consequatur cupiditate minima id iste et facere!</div>
+              <!-- end tab pane 3 -->
+              <!-- tab pane 4 -->
+              <div class="tab-pane">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis illo nisi corporis libero debitis, architecto vitae </div>
+              <!-- end tab pane 4 -->
+            </div>
+            <!-- end tab -->
+        </div>
+      </section>
+      <!-- end what is going on -->
+      <!-- banner pc -->
+      <div class="banner-pc">
+        <a href="#">
+          <img src="./images/company_image.jpg" alt="">
+        </a>
+      </div>
+      <!-- end banner pc -->
+      <!-- why work with us -->
+      <section class="why-work-wrapper padding-y-56 padding-x-32">
+        <div class="w-1440 why-work tab-container">
+          <!-- title -->
+          <div class="text-center">
+            <h2 class="going-on-header__title font-primary text-red-d8 fs-48">Why work with us?</h2>
+            <h3 class="opening-positions-header__des font-third text-gray-52">Explore our attractive working environment.</h3>
+          </div>
+          <!-- end title -->
+          <!-- content -->
+          <div class="why-work-content w-1266">
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">1</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the opportunity to quickly level up your career.</p>
+                </a>
+            </div>
+            <!-- end block1 -->
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">2</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the opportunity to quickly level up your career.</p>
+                </a>
+            </div>
+            <!-- end block1 -->
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">3</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the opportunity to quickly level up your career.</p>
+                </a>
+            </div>
+            <!-- end block1 -->
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">4</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the opportunity to quickly level up your career.</p>
+                </a>
+            </div>
+            <!-- end block1 -->
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">5</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the opportunity to quickly level up your career.</p>
+                </a>
+            </div>
+            <!-- end block1 -->
+            <!-- block1 -->
+            <div class="why-work-content-block">
+                <a href="#">
+                    <h3 class="why-work-content-number font-four text-red-ec">6</h3>
+                    <p class="why-work-content-title font-third text-gray-3d">Big responsibilities, autonomy and the </p>
+                </a>
+            </div>
+            <!-- end block1 -->
+          </div>
+          <!-- end content -->
+          <div class="tab-pane-more fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Join our team</a></div>
+        </div>
+      </section>
+      <!-- end why work with us -->
+      <!-- unique benefits -->
+      <section class="unique-wrapper padding-y-56 padding-x-32 bg-white">
+        <div class="w-1440 why-work tab-container">
+          <!-- title -->
+          <div class="text-center">
+            <h2 class="going-on-header__title font-primary text-red-d8 fs-48">Unique benefits for employee.</h2>
+            <h3 class="opening-positions-header__des font-third text-gray-52">We offer something that only our company has.</h3>
+          </div>
+          <!-- end title -->
+          <!-- content -->
+          <div class="unique-content w-1266">
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Coffee.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/AirplaneTakeoff.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Camera2.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Gift.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Newspaper.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Heartbeat.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/Aperture2.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="unique-item">
+              <a href="#">
+                <div class="unique-item-img">
+                  <img src="./images/GameController.svg" alt="">
+                </div>
+                <div class="unique-text">
+                  <p class="unique-text1 fw-500 font-primary text-gray-3d">Monthly allowances</p>
+                  <p class="unique-text2 font-third text-gray-52">Gym, parking, free snack & coffee</p>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+          </div>
+          <!-- end content -->
+          <div class="tab-pane-more fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Check our vacancies</a></div>
+        </div>
+      </section>
+      <!-- end unique benefits -->
+      <!-- our team say -->
+      <section class="our-team-wrapper padding-y-56 padding-x-32">
+        <div class="why-work tab-container">
+          <!-- title -->
+          <div class="text-center">
+            <h2 class="going-on-header__title font-primary text-red-d8 fs-48">Our team says...</h2>
+            <h3 class="opening-positions-header__des font-third text-gray-52">When we ask them to say something about TravelLive+.</h3>
+          </div>
+          <!-- end title -->
+          <!-- content -->
+          <div class="our-team-content">
+            <!-- block -->
+            <div class="our-team-item bg-white box-shadow2">
+              <a href="#" class="d-flex align-items-center">
+                <div class="our-team-item__img">
+                  <img src="./images/author.jpg" alt="">
+                </div>
+                <div class="our-team-item__content">
+                  <h3 class="our-team-item__content-title fw-500 font-primary text-gray-52">
+                    “Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+                  </h3>
+                  <div class="d-flex align-items-center">
+                    <p class="our-team-item__content-author fw-700">Alexa nguyen</p>
+                    <p class="our-team-item__content-work">Graphic Designer</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="our-team-item bg-white box-shadow2">
+              <a href="#" class="d-flex align-items-center">
+                <div class="our-team-item__img">
+                  <img src="./images/author.jpg" alt="">
+                </div>
+                <div class="our-team-item__content">
+                  <h3 class="our-team-item__content-title fw-500 font-primary text-gray-52">
+                    “Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+                  </h3>
+                  <div class="d-flex align-items-center">
+                    <p class="our-team-item__content-author fw-700">Alexa nguyen</p>
+                    <p class="our-team-item__content-work">Graphic Designer</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="our-team-item bg-white box-shadow2">
+              <a href="#" class="d-flex align-items-center">
+                <div class="our-team-item__img">
+                  <img src="./images/author.jpg" alt="">
+                </div>
+                <div class="our-team-item__content">
+                  <h3 class="our-team-item__content-title fw-500 font-primary text-gray-52">
+                    “Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+                  </h3>
+                  <div class="d-flex align-items-center">
+                    <p class="our-team-item__content-author fw-700">Alexa nguyen</p>
+                    <p class="our-team-item__content-work">Graphic Designer</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="our-team-item bg-white box-shadow2">
+              <a href="#" class="d-flex align-items-center">
+                <div class="our-team-item__img">
+                  <img src="./images/author.jpg" alt="">
+                </div>
+                <div class="our-team-item__content">
+                  <h3 class="our-team-item__content-title fw-500 font-primary text-gray-52">
+                    “Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+                  </h3>
+                  <div class="d-flex align-items-center">
+                    <p class="our-team-item__content-author fw-700">Alexa nguyen</p>
+                    <p class="our-team-item__content-work">Graphic Designer</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- end block -->
+          </div>
+          <!-- end content -->
+          <div class="tab-pane-more fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Opening position</a></div>
+        </div>
+      </section>
+      <!-- end our team say -->
+      <!-- candidate-question -->
+      <section class="candidate-question-wrapper padding-y-56 padding-x-32">
+        <div class="w-1440 why-work tab-container">
+          <!-- title -->
+          <div class="text-center">
+            <h2 class="going-on-header__title font-primary text-red-d8 fs-48">Candidate question</h2>
+            <h3 class="opening-positions-header__des font-third text-gray-52">Everything you would like to know about TravelLive+</h3>
+          </div>
+          <!-- end title -->
+          <!-- content -->
+          <div class="cadidate-question-content w-1266">
+            <!-- block -->
+            <div class="candidate-question-item border-6 box-shadow2">
+              <div class="candidate-question-item-header text-blue-05">
+                <h3 class="candidate-question-item-header__title fw-500 font-primary">Application requirements</h3>
+                <ion-icon name="arrow-up-outline" class="candidate-question-item-header__icon"></ion-icon>
+              </div>
+              <div class="candidate-question-item-content">
+                <h3 class="candidate-question-item-content__title fw-500 font-primary text-gray-3d">Can I apply if I don’t have professional experience?</h3>
+                <p class="candidate-question-item-content__des font-third text-gray-52">Having professional experience is not mandatory to apply for a senior position. Fresh graduate are welcome as long as they are passionate, have a good head for problem solving and a good background in related field.</p>
+              </div>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="candidate-question-item border-6 box-shadow2">
+              <div class="candidate-question-item-header text-blue-05">
+                <h3 class="candidate-question-item-header__title fw-500 font-primary">Application requirements</h3>
+                <ion-icon name="arrow-up-outline" class="candidate-question-item-header__icon"></ion-icon>
+              </div>
+              <div class="candidate-question-item-content">
+                <h3 class="candidate-question-item-content__title fw-500 font-primary text-gray-3d">Can I apply if I don’t have professional experience?</h3>
+                <p class="candidate-question-item-content__des font-third text-gray-52">Having professional experience is not mandatory to apply for a senior position. Fresh graduate are welcome as long as they are passionate, have a good head for problem solving and a good background in related field.</p>
+              </div>
+            </div>
+            <!-- end block -->
+            <!-- block -->
+            <div class="candidate-question-item border-6 box-shadow2">
+              <div class="candidate-question-item-header text-blue-05">
+                <h3 class="candidate-question-item-header__title fw-500 font-primary">Application requirements</h3>
+                <ion-icon name="arrow-up-outline" class="candidate-question-item-header__icon"></ion-icon>
+              </div>
+              <div class="candidate-question-item-content">
+                <h3 class="candidate-question-item-content__title fw-500 font-primary text-gray-3d">Can I apply if I don’t have professional experience?</h3>
+                <p class="candidate-question-item-content__des font-third text-gray-52">Having professional experience is not mandatory to apply for a senior position. Fresh graduate are welcome as long as they are passionate, have a good head for problem solving and a good background in related field.</p>
+              </div>
+            </div>
+            <!-- end block -->
+          </div>
+          <!-- end content -->
+          <div class="tab-pane-more fw-700 pt-lg-5 pt-4 text-center"><a href="#" class="tab-pane-more__link text-blue-05">Send us a question</a></div>
+        </div>
+      </section>
+      <!-- end candidate-question -->
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer id="footer" class=" bg-black-3d">
+      <div class="footer-header-logo">
+        <a href="#"><img src="./images/logo1.svg" alt=""></a>
+      </div>
+      <section class="footer">
+        <div class="footer-left">
+          <div class="footer-left__top">
+            <p>
+              <a href="#" class="footer-left__top--link fs-14 fw-500 font-primary">About us</a>
+            </p>
+            <p>
+              <a href="#" class="footer-left__top--link fs-14 fw-500 font-primary">Let’s collabrate!</a>
+            </p>
+          </div>
+          <div class="footer-share d-flex align-items-center">
+            <a href="#" class="share-fb-menu share-footer">
+                <img src="./images/u_facebook.png" alt="">
+            </a>
+            <a href="#" class="share-insta-menu share-footer">
+                <img src="./images/u_instagram-alt.png" alt="">
+            </a>
+            <a href="#" class="share-youtbe-menu share-footer">
+                <img src="./images/u_youtube.png" alt="">
+            </a>
+            <a href="#" class="share-zalo-menu share-footer">
+                <img src="./images/zalo.png" alt="">
+            </a>
+          </div>
+          <ul class="fs-14">
+            <li class="fw-700 pb-4">Nhà xuất bản Thế Giới</li>
+            <li class="pb-4">Chịu trách nhiệm xuất bản: <span class="fw-700"> Trần Đoàn Lâm</span></li>
+            <li class="pb-2">Tòa soạn:<span class="fw-700"> Tầng 3, 59 Thợ Nhuộm, Hoàn Kiếm, Hà Nội</span></li>
+            <li class="pb-4">Tel: <span class="fw-700"> 024. 3936 8349</span> – Fax: <span class="fw-700">024. 39368350</span></li>
+            <li class="pb-2">VP Hồ Chí Minh: <span class="fw-700">Tầng 3, 144 Võ Văn Tần, P.6, Q.3, TPHCM</span></li>
+            <li class="pb-4">Tel: <span class="fw-700">028. 3930 9641</span> – Fax: <span class="fw-700">028. 3930 9642</span></li>
+            <li class="">Giấy phép xuất bản số: <span class="fw-700">05/GP-XBĐS</span></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">What’s going on?</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Covid-19</a></li>
+              <li class="footer-right-item"><a href="#">Trong nước</a></li>
+              <li class="footer-right-item"><a href="#">Quốc tế</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">To travel</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Cảm hứng</a></li>
+              <li class="footer-right-item"><a href="#">Điểm đến</a></li>
+              <li class="footer-right-item"><a href="#">Lưu trú</a></li>
+              <li class="footer-right-item"><a href="#">Phương tiên</a></li>
+              <li class="footer-right-item"><a href="#">Ẩm thực</a></li>
+              <li class="footer-right-item"><a href="#">Tips&Tours</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">To live</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Văn hóa</a></li>
+              <li class="footer-right-item"><a href="#">Lối sống</a></li>
+              <li class="footer-right-item"><a href="#">Chân dung</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">HOT DEAL!</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">I am musing</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Video</a></li>
+              <li class="footer-right-item"><a href="#">Podcasts</a></li>
+              <li class="footer-right-item"><a href="#">Photo albums</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">Point of view</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Góc nhìn du lịch</a></li>
+              <li class="footer-right-item"><a href="#">Tiềm năng du lịch</a></li>
+              <li class="footer-right-item"><a href="#">Thảo luận</a></li>
+            </ul>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="footer-right-navbar">
+            <div class="footer-right-title">
+              <a href="#">More</a>
+              <ion-icon name="caret-down-outline" class="footer-right-icon"></ion-icon>
+            </div>
+            <ul class="footer-right-list">
+              <li class="footer-right-item"><a href="#">Writers</a></li>
+              <li class="footer-right-item"><a href="#">E-magazine</a></li>
+              <li class="footer-right-item"><a href="#">Membership</a></li>
+            </ul>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <section class="footer-footer">
+        <div class="footer-footer__logo">
+          <a href="#">
+            <img src="./images/logo1.svg" alt="">
+          </a>
+        </div>
+        <div class="d-flex align-items-center justify-content-end footer-footer__content">
+          <div class="d-flex align-items-center footer-footer__text">
+            <a href="#" class="footer-footer__text1">Terms and Conditions</a>
+            <a href="#" class="footer-footer__text1">Private Policy</a>
+          </div>
+          <p class="footer-footer__text2">© Travellive 2021</p>
+          <img src="./images/dmca.svg" alt="" class="footer-footer__dmca">
+        </div>
+      </section>
+    </footer>
+    <!-- end footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

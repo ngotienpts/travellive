@@ -57,6 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // show candidate question 
   var showCandidateQuestion = document.querySelectorAll('.candidate-question-item');
 
+  // show popup video
+  var openPopupVideo = document.querySelectorAll('.show-video-popup');
+  var popupVideo = document.querySelector('.popup-video-wrapper');
+  
+
   // footer
   var footerBlock = document.querySelector('footer');
   const app = {
@@ -285,6 +290,27 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       }
 
+      // show popup video
+      if(openPopupVideo){
+        openPopupVideo.forEach(function(el){
+          el.onclick = function(){
+           if(popupVideo.classList.contains('.open')){
+             popupVideo.classList.remove('open')
+           }else {
+             popupVideo.classList.add('open')
+           }
+          }
+        })
+      }
+
+      // close popup video
+      if(popupVideo){
+        var closePopupVideo = popupVideo.querySelector('.popup-video-close');
+        closePopupVideo.onclick = function(){
+          popupVideo.classList.remove('open')
+        }
+      }
+      
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
         // hide search header

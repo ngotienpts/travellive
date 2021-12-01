@@ -1,0 +1,27 @@
+.about-us-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+}
+.about-us-top__img .thumb-5x3 {
+    padding-bottom: 90%;
+    border-radius: 999px 999px 0 0;
+    -webkit-border-radius: 999px 999px 0 0;
+    -moz-border-radius: 999px 999px 0 0;
+    -ms-border-radius: 999px 999px 0 0;
+    -o-border-radius: 999px 999px 0 0;
+    overflow:hidden;
+}
+.about-us-top__content {
+    margin-top: auto;
+}
+.about-us-top__content--title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.about-us-top__content--text1 {
+    font-size: 1.125rem;
+}
+.about-us-top__content--text1  + .about-us-top__content--text1  {
+    margin-top: 1.5rem;
+}
