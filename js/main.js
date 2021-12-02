@@ -552,6 +552,34 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // slide milestones about us
+    slideMilestons:function(){
+      $('.milestones-field').slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 4.1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '70px',
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 1,
+              draggable:true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1,
+              draggable:true,
+            }
+          }
+        ]
+      });
+    },
     // day content top detail
     pushTopDetail:function(){
       var heightBannerTopDetail = document.querySelector('.banner-top-detail');
@@ -678,6 +706,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideOurTeamSay();
       // slide top i am musing
       this.slideTopIMusing();
+      // slide milestones about us
+      this.slideMilestons();
     },
   };
 

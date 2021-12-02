@@ -2865,6 +2865,10 @@
 .popup-video-block-bottom {
     margin: 0.5rem;
   }
+
+  .cate-other-block .cate-other-left {
+    display: block;
+  }
 }
 @media (max-width: 25em) {
   .popup-video-field {

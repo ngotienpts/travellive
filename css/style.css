@@ -3773,6 +3773,161 @@ ion-icon.close-popup-login.md.hydrated {
   margin-top: 1.5rem;
 }
 
+.milestones-block__img {
+  position: relative;
+}
+
+.milestones-block__img .thumb-5x3 {
+  padding-bottom: 80%;
+}
+
+.milestones-block__img--coating {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem 0.5rem;
+  background-image: repeating-linear-gradient(to bottom, rgba(82, 82, 82, 0.2), #525252);
+  border-radius: 0 0 0.375rem 0.375rem;
+  -webkit-border-radius: 0 0 0.375rem 0.375rem;
+  -moz-border-radius: 0 0 0.375rem 0.375rem;
+  -ms-border-radius: 0 0 0.375rem 0.375rem;
+  -o-border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.milestones-block__img--coating-title {
+  font-size: 1.5rem;
+}
+
+.milestones-block__img--coating-des {
+  font-size: 0.875rem;
+}
+
+.milestones-block__dot {
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  background: #c4c4c4;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.milestones-block__time {
+  font-size: 2.125rem;
+  margin-top: 0.625rem;
+}
+
+.milestones-field .slick-slide {
+  margin: 0.625rem;
+}
+
+.milestones-block__img--coating::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid #525252;
+  transform: translate(-50%, 100%);
+  -webkit-transform: translate(-50%, 100%);
+  -moz-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  -o-transform: translate(-50%, 100%);
+}
+
+.milestones-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #D87053;
+  bottom: 82px;
+  z-index: -1;
+}
+
+.milestones-field .slick-prev {
+  left: -0.5rem;
+  z-index: 10;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #054a91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40%;
+}
+
+.milestones-field .slick-next {
+  right: -0.5rem;
+  z-index: 10;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #054a91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40%;
+}
+
+.milestones-field .slick-prev:before {
+  content: "❮";
+}
+
+.milestones-field .slick-next:before {
+  content: "❯";
+}
+
+.milestones-field .slick-next:before,
+.milestones-field .slick-prev:before {
+  font-size: 1.5rem;
+  color: #054a91;
+  margin-bottom: 0.1875rem;
+}
+
+.milestones-field .slick-active.slick-center .milestones-block__img--coating {
+  background-image: repeating-linear-gradient(to bottom, rgba(216, 112, 83, 0.2), #d87053);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.milestones-field .slick-active.slick-center .milestones-block__img--coating::before {
+  border-top: 0.5rem solid #d87053;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.milestones-field .slick-active.slick-center .milestones-block__dot {
+  background: #ECBBAC;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.milestones-field .slick-active.slick-center .milestones-block__time {
+  color: #ECBBAC;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
 .popup-video-wrapper {
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
