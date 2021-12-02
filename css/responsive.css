@@ -1032,6 +1032,35 @@
     margin-top: 1rem;
     border: 1px solid #D87053;
   }
+
+  .about-us-top {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-top__content {
+    order: 1;
+  }
+
+  .about-us-top__img {
+    order: 2;
+  }
+
+  .about-us-top__content--title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .founder-message-content {
+    margin-top: 4rem;
+  }
+
+  .create-travellive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .create-travellive-item__text {
+    font-size: 1.125rem;
+  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -2868,6 +2897,77 @@
 
   .cate-other-block .cate-other-left {
     display: block;
+  }
+
+  .create-travellive {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .create-travellive-item__img {
+    width: 5rem;
+  }
+
+  .create-travellive-item__text {
+    font-size: 1rem;
+  }
+
+  .founder-message-content__img {
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .founder-message-content__img img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .founder-message-content__text {
+    padding: 0.75rem;
+    padding-top: 6.5rem;
+  }
+
+  .founder-message-content__text1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .founder-message-content {
+    border-radius: 30px 80px;
+    margin-top: 7rem;
+  }
+
+  .founder-message-content__auhtor {
+    justify-content: center;
+  }
+
+  .create-travellive__title,
+.about-us-top__content--title {
+    font-size: 2.125rem;
+  }
+
+  .outstanding-project-content .slick-prev,
+.outstanding-project-content .slick-next {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .outstanding-project-content .slick-next:before,
+.outstanding-project-content .slick-prev:before {
+    font-size: 1rem;
+  }
+
+  .outstanding-project--item__text1 {
+    font-size: 1.25rem;
+  }
+
+  .outstanding-project--item__text2 {
+    font-size: 0.875rem;
   }
 }
 @media (max-width: 25em) {

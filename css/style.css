@@ -3928,6 +3928,171 @@ ion-icon.close-popup-login.md.hydrated {
   -o-transition: all 0.2s linear;
 }
 
+.founder-message {
+  background: #f7f7f7;
+}
+
+.founder-message-content {
+  max-width: 796px;
+  margin: auto;
+  background: #fff;
+  border-radius: 0 130px;
+  position: relative;
+  margin-top: 6rem;
+}
+
+.founder-message-content__img {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.founder-message-content__img img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+
+.founder-message-content__text {
+  padding: 1.5rem;
+  padding-left: 18rem;
+}
+
+.founder-message-content__text1 {
+  font-size: 2.125rem;
+  font-style: italic;
+  line-height: 2.75rem;
+}
+
+.founder-message-content__auhtor {
+  margin-top: 1rem;
+}
+
+.founder-message-content__text3 {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.founder-message-content__text3:before {
+  position: absolute;
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #ECBBAC;
+  top: 50%;
+  left: -0.875rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.create-travellive {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 3rem;
+}
+
+.create-travellive-item {
+  padding: 0.75rem;
+  background: #d7dadc;
+}
+
+.create-travellive-item__img {
+  margin: auto;
+  width: 10rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.create-travellive-banner {
+  margin-top: 2.25rem;
+}
+
+.create-travellive-item__text {
+  font-size: 1.25rem;
+}
+
+.outstanding-project--item__icon {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+.outstanding-project--item__text1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.outstanding-project--item__text {
+  padding: 1rem 0.5rem 0.75rem;
+}
+
+.outstanding-project-content .slick-slide {
+  margin: 0.625rem;
+}
+
+.outstanding-project-content .thumb-5x3 {
+  padding-bottom: 80%;
+}
+
+.outstanding-project-content .slick-prev {
+  left: -0.5rem;
+  z-index: 10;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #054a91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+}
+
+.outstanding-project-content .slick-next {
+  right: -0.5rem;
+  z-index: 10;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #054a91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+}
+
+.outstanding-project-content .slick-prev:before {
+  content: "❮";
+}
+
+.outstanding-project-content .slick-next:before {
+  content: "❯";
+}
+
+.outstanding-project-content .slick-next:before,
+.outstanding-project-content .slick-prev:before {
+  font-size: 1.5rem;
+  color: #054a91;
+  margin-bottom: 0.1875rem;
+}
+
 .popup-video-wrapper {
   background: rgba(0, 0, 0, 0.6);
   position: fixed;

@@ -552,6 +552,30 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
       });
     },
+    // slide outstanding project
+    slideOutstandingProject:function(){
+      $('.outstanding-project-content').slick({
+        dots: false,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 2.2,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 1.2,
+            }
+          }
+        ]
+      });
+    },
     // slide milestones about us
     slideMilestons:function(){
       $('.milestones-field').slick({
@@ -706,6 +730,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideOurTeamSay();
       // slide top i am musing
       this.slideTopIMusing();
+      // slide outstanding project
+      this.slideOutstandingProject();
       // slide milestones about us
       this.slideMilestons();
     },
