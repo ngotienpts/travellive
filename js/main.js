@@ -560,6 +560,8 @@ document.addEventListener("DOMContentLoaded", function () {
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed:2000,
         responsive: [
           {
             breakpoint: 1199,

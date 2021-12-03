@@ -222,13 +222,14 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
-.create-travellive {
+.create-travellive,
+.community-values {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-gap: 3rem;
 }
 .create-travellive-item {
-    padding: 0.75rem;
+    padding: 0.75rem 0.5rem;
     background:#d7dadc;
 }
 .create-travellive-item__img {
@@ -301,4 +302,18 @@
     font-size: 1.5rem;
     color: #054a91;
     margin-bottom: 0.1875rem;
+}
+.community-value-wrapper {
+    background: #fefbfb;
+}
+.community-value-item {
+    padding: 0.75rem;
+}
+.community-value-item__img {
+    width: 4.5rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.community-value-item___text {
+    font-size: 1.5rem;
 }

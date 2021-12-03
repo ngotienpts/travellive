@@ -846,7 +846,8 @@
   .founder-message-content {
     margin-top: 4rem;
   }
-  .create-travellive {
+  .create-travellive,
+  .community-values {
     grid-template-columns: repeat(3, 1fr);
   }
   .create-travellive-item__text {
@@ -2348,7 +2349,8 @@
   .cate-other-block .cate-other-left {
     display: block;
   }
-  .create-travellive {
+  .create-travellive,
+  .community-values {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
@@ -2404,6 +2406,9 @@
   }
   .outstanding-project--item__text2 {
     font-size: 0.875rem;
+  }
+  .community-value-item___text {
+    font-size: 1rem;
   }
   
 
