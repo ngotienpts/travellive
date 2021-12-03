@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // show popup video
   var openPopupVideo = document.querySelectorAll('.show-video-popup');
   var popupVideo = document.querySelector('.popup-video-wrapper');
+
+  // show outstanding project
+  var openOutstanding = document.querySelectorAll('.show-outstanding-project');
+  var popupOutstanding = document.querySelector('.popup-outstanding-project-wrapper');
   
 
   // footer
@@ -311,6 +315,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
       
+      // show outstanding
+      if(openOutstanding){
+        openOutstanding.forEach(function(el){
+          el.onclick = function(){
+           if(popupOutstanding.classList.contains('.open')){
+            popupOutstanding.classList.remove('open');
+            _this.slideSponsoredBy();
+           }else {
+            popupOutstanding.classList.add('open');
+            // slide Sponsored by
+            _this.slideSponsoredBy();
+           }
+          }
+        });
+        // close popup video
+        if(popupOutstanding){
+          var closeOutstanding = popupOutstanding.querySelector('.popup-outstanding-close ');
+          closeOutstanding.onclick = function(){
+            popupOutstanding.classList.remove('open')
+          }
+        }
+      }
+
       // hide cac element khi click ra ngoai
       document.addEventListener('click',function(e){
         // hide search header
@@ -560,19 +587,19 @@ document.addEventListener("DOMContentLoaded", function () {
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         responsive: [
           {
             breakpoint: 1199,
             settings: {
-              slidesToShow: 2.2,
+              slidesToShow: 2.7,
             }
           },
           {
             breakpoint: 740,
             settings: {
-              slidesToShow: 1.2,
+              slidesToShow: 1.7,
             }
           }
         ]
@@ -582,28 +609,61 @@ document.addEventListener("DOMContentLoaded", function () {
     slideMilestons:function(){
       $('.milestones-field').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         arrows: true,
-        slidesToShow: 4.1,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '70px',
+        // centerMode: true,
+        // centerPadding: '70px',
         responsive: [
           {
             breakpoint: 1199,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               draggable:true,
             }
           },
           {
             breakpoint: 740,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 1.7,
               draggable:true,
             }
           }
         ]
+      });
+    },
+    // slide partner about us
+    slidePartnerAboutUs:function(){
+      $('.partner-content').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 5,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 4,
+            }
+          }
+        ]
+      });
+    },
+    // slide Sponsored by
+    slideSponsoredBy:function(){
+      $('.sponsored-by-list').slick({
+        infinite: true,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1
       });
     },
     // day content top detail
@@ -736,6 +796,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideOutstandingProject();
       // slide milestones about us
       this.slideMilestons();
+      // slide partner about us
+      this.slidePartnerAboutUs();
     },
   };
 

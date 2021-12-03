@@ -809,7 +809,8 @@
   .video-category-going-on-thumb-block {
     background: #f5f5f5;
   }
-  .popup-video-field {
+  .popup-video-field,
+  .popup-outstanding-project-field {
     max-width: 700px;
     padding: 0.5rem;
   }
@@ -852,6 +853,23 @@
   }
   .create-travellive-item__text {
     font-size: 1.125rem;
+  }
+  .listen-content {
+    max-width: 562px;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+  .popup-outstanding-project-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.75rem;
+  }
+  .popup-outstanding-project__img .thumb-5x3 {
+    padding-bottom: 50%;
+  }
+  .popup-outstanding-project__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
   }
 
 
@@ -2324,10 +2342,13 @@
   .popup-video-block-left__des {
     font-size: 0.875rem;
   }
-  .popup-video-field {
+  .popup-video-field,
+  .popup-outstanding-project-field {
     max-width: 350px;
+    padding: 0;
   }
-  .popup-video-close {
+  .popup-video-close,
+  .popup-outstanding-close {
     font-size: 1.5rem;
     top: -0.375rem;
     right: -0.375rem;
@@ -2338,9 +2359,6 @@
   .action-item img {
     width: 2rem;
     height: auto;
-  }
-  .popup-video-field {
-    padding: 0;
   }
   .popup-video-block-right,
   .popup-video-block-bottom {
@@ -2410,7 +2428,63 @@
   .community-value-item___text {
     font-size: 1rem;
   }
-  
+  .listen-title {
+    font-size: 1.5rem;
+  }
+  .listen-left-item + .listen-left-item {
+    margin-top: 1.5rem;
+  }
+  .listen-share__icon--item img {
+    margin-right: 0;
+  }
+  .listen-share__icon--item + .listen-share__icon--item  {
+    margin-left: 1.25rem;
+  }
+  .listen-share__icon {
+    justify-content: center;
+  }
+  .listen-share__title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .sponsored-by {
+    display: none;
+  }
+  .popup-outstanding-project-block {
+    padding: 0.5rem;
+  }
+  .popup-outstanding-project__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .popup-outstanding-project__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .popup-outstanding-project__share {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .popup-outstanding-project__action-share {
+    justify-content: center;
+  }
+  .outstanding-project-content .slick-slide {
+    margin: 0.325rem;
+  }
+  .milestones-block__img--coating-title {
+    font-size: 1.25rem;
+  }
+  .milestones-block__dot {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1rem;
+  }
+  .milestones-block__time {
+    font-size: 1.25rem;
+  }
+  .milestones-line {
+    bottom: 56px;
+}
 
 
 
@@ -2420,7 +2494,8 @@
 
 // danh cho man hinh duoi 400px
 @media (max-width: 25em){
-  .popup-video-field {
+  .popup-video-field,
+  .popup-outstanding-project-field {
     max-width: 300px;
   }
   .popup-video-block-right-header {
@@ -2430,10 +2505,21 @@
   .popup-video-block-left__title {
     font-size: 1rem;
   }
+  .popup-outstanding-project__share {
+    padding: 0.625rem 0;
+  }
+  .popup-outstanding-project__title {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+  }
+  .popup-outstanding-project__text {
+    font-size: 0.75rem;
+  }
   
 }
 @media (max-width: 20em){
-  .popup-video-field {
+  .popup-video-field,
+  .popup-outstanding-project-field {
     max-width: 280px;
   }
   .popup-video-cate-other-right__item {
@@ -2445,4 +2531,5 @@
   .action-share {
     margin-top: 0.375rem;
   }
+  
 }

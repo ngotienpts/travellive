@@ -129,7 +129,7 @@
     color: #054a91;
     margin-bottom: 0.1875rem;
 }
-.milestones-field .slick-active.slick-center .milestones-block__img--coating {
+.milestones-field .slick-slide:last-child .milestones-block__img--coating {
     background-image: repeating-linear-gradient(to bottom, rgba(216, 112, 83, 0.2), #d87053);
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -137,7 +137,7 @@
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
 }
-.milestones-field .slick-active.slick-center .milestones-block__img--coating::before {
+.milestones-field .slick-slide:last-child .milestones-block__img--coating::before {
     border-top: 0.5rem solid  #d87053;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -145,7 +145,7 @@
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
 }
-.milestones-field .slick-active.slick-center .milestones-block__dot {
+.milestones-field .slick-slide:last-child .milestones-block__dot {
     background: #ECBBAC;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -153,7 +153,7 @@
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
 }
-.milestones-field .slick-active.slick-center .milestones-block__time {
+.milestones-field .slick-slide:last-child .milestones-block__time {
    color: #ECBBAC;
    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
@@ -316,4 +316,153 @@
 }
 .community-value-item___text {
     font-size: 1.5rem;
+}
+.partner-content .slick-slide {
+    margin: 0.625rem;
+}
+.partner-img {
+    margin: auto;
+    width: 12.5rem;
+    height: auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.partner-content .slick-dots li button:before {
+    color: #D87053;
+    font-size: 0.5rem;
+}
+.partner-content .slick-dots li{
+    margin: 0;
+}
+.mission-wrapper {
+    background-color: #fcf8f8;
+}
+.listen-wrapper {
+    background-color: #faebdb;
+}
+.listen-content {
+    max-width: 1142px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+.listen-left-item {
+    padding: 1rem;
+}
+.listen-left-item + .listen-left-item {
+    margin-top: 3rem;
+}
+.listen-title {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.listen-location {
+    margin-bottom: 1.25rem;
+}
+.listen-text {
+    font-size: 1.125rem;
+}
+.listen-img {
+    width: 2rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.listen-share__title {
+    font-size: 1.5rem;
+}
+.listen-share__icon--item img {
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+.form-listen-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.25rem;
+}
+.form-listen-textarea {
+    height: auto;
+    max-height: 189px;
+    background-color: #ededed;
+    margin-bottom: 1rem;
+}
+.popup-outstanding-project-wrapper {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+.popup-outstanding-project-wrapper.open {
+    display: block;
+}
+.popup-outstanding-project-field {
+    max-width: 1370px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+.popup-outstanding-close {
+    background-color: #D87053;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    top: -0.75rem;
+    right: -0.75rem;
+    font-size: 2rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+.popup-outstanding-project-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.popup-outstanding-project__img .thumb-5x3 {
+    padding-bottom: 80%;
+}
+.popup-outstanding-project__title {
+    font-size: 3rem;
+    margin-bottom: 2.25rem;
+}
+.popup-outstanding-project__text {
+    font-size: 1.125rem;
+    line-height: 27px;
+}
+.popup-outstanding-project__share {
+    padding: 2.25rem 0;
+    border-bottom: 1px solid #d87053;
+}
+.sponsored-by {
+    padding-top: 2.25rem;
+}
+.sponsored-by__title {
+    font-size: 1.25rem;
+}
+.sponsored-by-list {
+    max-width: 680px;
+}
+.sponsored-by__img {
+    width: 96px;
+    height: auto;
+    margin: auto;
+}
+.sponsored-by-list .slick-slide {
+    margin: 0.625rem;
 }
