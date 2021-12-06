@@ -65,6 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var openOutstanding = document.querySelectorAll('.show-outstanding-project');
   var popupOutstanding = document.querySelector('.popup-outstanding-project-wrapper');
   
+  // choose file
+  var myFile = document.querySelector('#myfile');
+  var chooseText = document.querySelector('.choose-file__text');
+
+  // section form job opening
+  var jobOpening = document.querySelector('.job-opening-right');
 
   // footer
   var footerBlock = document.querySelector('footer');
@@ -335,6 +341,55 @@ document.addEventListener("DOMContentLoaded", function () {
           closeOutstanding.onclick = function(){
             popupOutstanding.classList.remove('open')
           }
+        }
+      }
+
+      // choose file
+      if(myFile){
+        myFile.oninput = function(e){
+          if(chooseText){
+            chooseText.innerText = e.target.value.split("\\").pop();
+          }
+        }
+      }
+
+      // job opening
+      if(jobOpening){
+        var sectionOne = jobOpening.querySelector('.section-form1');
+        var sectionTwo = jobOpening.querySelector('.section-form2');
+        var sectionThree = jobOpening.querySelector('.section-form3');
+        var nextTwo = jobOpening.querySelector('.section-one');
+        var nextThree = jobOpening.querySelector('.section-two');
+        var backOne = jobOpening.querySelector('.back-one');
+        var backTwo = jobOpening.querySelector('.back-two');
+        var showNoti = jobOpening.querySelector('.section-three');
+        var openNoti = document.querySelector('.succes-job');
+        
+        nextTwo.onclick = function(){
+          sectionOne.style.display = 'none';
+          sectionTwo.style.display = 'block';
+        }
+
+        backOne.onclick = function(){
+          sectionTwo.style.display = 'none';
+          sectionThree.style.display = 'none';
+          sectionOne.style.display = 'block';
+        }
+
+        nextThree.onclick = function(){
+          sectionOne.style.display = 'none';
+          sectionTwo.style.display = 'none';
+          sectionThree.style.display = 'block';
+        }
+
+        backTwo.onclick = function(){
+          sectionThree.style.display = 'none';
+          sectionOne.style.display = 'none';
+          sectionTwo.style.display = 'block';
+        }
+
+        showNoti.onclick = function(){
+          openNoti.classList.add('show');
         }
       }
 
@@ -613,8 +668,6 @@ document.addEventListener("DOMContentLoaded", function () {
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        // centerMode: true,
-        // centerPadding: '70px',
         responsive: [
           {
             breakpoint: 1199,
@@ -632,6 +685,20 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         ]
       });
+      // 
+      // var slideItems = document.querySelectorAll('.milestones-field .slick-slide');
+      // var slideItem = document.querySelector('.milestones-field .slick-slide');
+      // if(slideItems){
+      //   if(slideItem){
+      //     var widthItemSlick = (((slideItem.clientWidth) + 20) * (Math.floor(slideItems.length/2)));
+      //     // slideItem.parentElement.removeAttribute('style')
+      //     console.log(widthItemSlick);
+      //     console.log([slideItem.parentElement]);
+      //     // opacity: 1; width: 2520px; transform: translate3d(0px, 0px, 0px);
+      //   }
+      // }
+        
+        
     },
     // slide partner about us
     slidePartnerAboutUs:function(){
@@ -803,3 +870,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   app.start();
 });
+

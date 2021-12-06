@@ -871,6 +871,13 @@
     font-size: 2.5rem;
     margin-bottom: 1.25rem;
   }
+  .job-opening-content {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+  .job-opening-left--block__title {
+    font-size: 1.5rem;
+  }
 
 
 
@@ -2484,7 +2491,34 @@
   }
   .milestones-line {
     bottom: 56px;
-}
+  }
+  .job-opening-cate__item,
+  .job-opening-left--block__content {
+    font-size: 0.875rem;
+  }
+  .job-opening-left--block__title {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .job-opening-left--block {
+    margin-bottom: 1.5rem;
+  }
+  .job-opening-right__sapo {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .apply-upload {
+    display: block;
+  }
+  .choose-file {
+    height: 4.125rem;
+  }
+  .succes-job-wrapper {
+    max-width: 25rem;
+  }
+  .succes-job__title {
+    font-size: 2rem;
+  }
 
 
 
