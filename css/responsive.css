@@ -1093,6 +1093,12 @@
   .job-opening-left--block__title {
     font-size: 1.5rem;
   }
+
+  .tab-milestones .swiper-button-next,
+.tab-milestones .swiper-button-prev {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -3077,7 +3083,7 @@
   }
 
   .milestones-line {
-    bottom: 56px;
+    bottom: 46px;
   }
 
   .job-opening-cate__item,
@@ -3113,6 +3119,19 @@
 
   .succes-job__title {
     font-size: 2rem;
+  }
+
+  .tab-milestones .swiper-button-next,
+.tab-milestones .swiper-button-prev {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 40%;
+  }
+
+  .tab-milestones .swiper-button-next:after,
+.tab-milestones .swiper-button-prev:after {
+    font-size: 1rem;
+    margin-top: 0;
   }
 }
 @media (max-width: 25em) {

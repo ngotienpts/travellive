@@ -662,41 +662,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // slide milestones about us
     slideMilestons:function(){
-      $('.milestones-field').slick({
-        dots: false,
-        infinite: false,
-        arrows: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 2,
-              draggable:true,
-            }
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+        slidesPerGroup: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
           },
-          {
-            breakpoint: 740,
-            settings: {
-              slidesToShow: 1.7,
-              draggable:true,
-            }
-          }
-        ]
+          1024: {
+            slidesPerView: 4.2,
+            spaceBetween: 20,
+          },
+        },
       });
-      // 
-      // var slideItems = document.querySelectorAll('.milestones-field .slick-slide');
-      // var slideItem = document.querySelector('.milestones-field .slick-slide');
-      // if(slideItems){
-      //   if(slideItem){
-      //     var widthItemSlick = (((slideItem.clientWidth) + 20) * (Math.floor(slideItems.length/2)));
-      //     // slideItem.parentElement.removeAttribute('style')
-      //     console.log(widthItemSlick);
-      //     console.log([slideItem.parentElement]);
-      //     // opacity: 1; width: 2520px; transform: translate3d(0px, 0px, 0px);
-      //   }
-      // }
         
         
     },

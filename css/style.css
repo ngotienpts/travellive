@@ -3856,54 +3856,48 @@ ion-icon.close-popup-login.md.hydrated {
   width: 100%;
   height: 1px;
   background: #D87053;
-  bottom: 82px;
+  bottom: 75px;
   z-index: -1;
 }
 
-.milestones-field .slick-prev {
-  left: -0.5rem;
-  z-index: 10;
+.tab-milestones .swiper-button-next,
+.tab-milestones .swiper-button-prev {
+  top: 36%;
+}
+
+.tab-milestones .swiper-button-next:after,
+.tab-milestones .swiper-button-prev:after {
+  color: #054a91;
+  font-size: 1.5rem;
+  margin-top: -2px;
+}
+
+.tab-milestones .swiper-button-next,
+.tab-milestones .swiper-button-prev {
   width: 2.5rem;
   height: 2.5rem;
   background: #fff;
   border-radius: 50%;
   border: 1px solid #054a91;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 40%;
 }
 
-.milestones-field .slick-next {
-  right: -0.5rem;
-  z-index: 10;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: #fff;
-  border-radius: 50%;
-  border: 1px solid #054a91;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 40%;
+.tab-milestones .swiper-button-next {
+  left: 0.5rem;
 }
 
-.milestones-field .slick-prev:before {
+.tab-milestones .swiper-button-prev {
+  right: 0.5rem;
+}
+
+.tab-milestones .swiper-button-prev:after {
   content: "❮";
 }
 
-.milestones-field .slick-next:before {
+.tab-milestones .swiper-button-next:after {
   content: "❯";
 }
 
-.milestones-field .slick-next:before,
-.milestones-field .slick-prev:before {
-  font-size: 1.5rem;
-  color: #054a91;
-  margin-bottom: 0.1875rem;
-}
-
-.milestones-field .slick-slide:last-child .milestones-block__img--coating {
+.milestones-block.swiper-slide.swiper-slide-active .milestones-block__img--coating {
   background-image: repeating-linear-gradient(to bottom, rgba(216, 112, 83, 0.2), #d87053);
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -3912,7 +3906,7 @@ ion-icon.close-popup-login.md.hydrated {
   -o-transition: all 0.2s linear;
 }
 
-.milestones-field .slick-slide:last-child .milestones-block__img--coating::before {
+.milestones-block.swiper-slide.swiper-slide-active .milestones-block__img--coating::before {
   border-top: 0.5rem solid #d87053;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -3921,7 +3915,7 @@ ion-icon.close-popup-login.md.hydrated {
   -o-transition: all 0.2s linear;
 }
 
-.milestones-field .slick-slide:last-child .milestones-block__dot {
+.milestones-block.swiper-slide.swiper-slide-active .milestones-block__dot {
   background: #ECBBAC;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -3930,7 +3924,7 @@ ion-icon.close-popup-login.md.hydrated {
   -o-transition: all 0.2s linear;
 }
 
-.milestones-field .slick-slide:last-child .milestones-block__time {
+.milestones-block.swiper-slide.swiper-slide-active .milestones-block__time {
   color: #ECBBAC;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
