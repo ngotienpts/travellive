@@ -1100,6 +1100,22 @@
     width: 2rem;
     height: 2rem;
   }
+
+  .scale-translation:hover {
+    transform: translateY(0) scale(1);
+    -webkit-transform: translateY(0) scale(1);
+    -moz-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    -o-transform: translateY(0) scale(1);
+  }
+
+  .scale-translation2:hover {
+    transform: translateY(0) scale(1);
+    -webkit-transform: translateY(0) scale(1);
+    -moz-transform: translateY(0) scale(1);
+    -ms-transform: translateY(0) scale(1);
+    -o-transform: translateY(0) scale(1);
+  }
 }
 @media (max-width: 63.9375em) {
   .hot-deal-slide-top {
@@ -1601,7 +1617,6 @@
     overflow-x: scroll;
     flex-wrap: nowrap;
     white-space: nowrap;
-    height: 3rem;
   }
 
   .tab-line {
@@ -3135,6 +3150,22 @@
 .tab-milestones .swiper-button-prev:after {
     font-size: 1rem;
     margin-top: 0;
+  }
+
+  .tab-item__icon {
+    width: 1.125rem;
+  }
+
+  .tabs .slick-track {
+    position: relative;
+  }
+
+  .tabs .slick-track:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.125rem;
+    background: rgba(5, 74, 145, 0.3);
   }
 }
 @media (max-width: 25em) {

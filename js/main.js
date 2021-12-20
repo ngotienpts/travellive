@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // click change tab
   var tabBlock = document.querySelectorAll(".tab-container");
-  var tabs = document.querySelectorAll(".tabs");
+  // var tabs = document.querySelectorAll(".tabs");
   var tabLines = document.querySelectorAll(".tab-line");
 
   // show popup login
@@ -96,14 +96,14 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     // set width tabs line
-    getTabWidth: function () {
-      if (tabs) {
-        tabs.forEach(function (c, index) {
-          var tabline = tabLines[index];
-          tabline.style.width = c.scrollWidth + "px";
-        });
-      }
-    },
+    // getTabWidth: function () {
+    //   if (tabs) {
+    //     tabs.forEach(function (c, index) {
+    //       var tabline = tabLines[index];
+    //       tabline.style.width = c.scrollWidth + "px";
+    //     });
+    //   }
+    // },
 
     // set img top banner header
     setImgTopHeader: function () {
@@ -214,54 +214,54 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // change tab on click
-      if (tabBlock) {
-        tabBlock.forEach(function (tab) {
-          var tabItems = tab.querySelectorAll(".tab-item");
-          var tabPanes = tab.querySelectorAll(".tab-pane");
-          var tabLine = tab.querySelector(".tab-line");
-          var tabActive = tab.querySelector(".tab-item.active");
-          if (tabLine) {
-            tabLine.querySelector(".tab-line-child").style.left =
-              tabActive.offsetLeft + "px";
-            tabLine.querySelector(".tab-line-child").style.width =
-              tabActive.offsetWidth + "px";
-          }
+      // if (tabBlock) {
+      //   tabBlock.forEach(function (tab) {
+      //     var tabItems = tab.querySelectorAll(".tab-item");
+      //     var tabPanes = tab.querySelectorAll(".tab-pane");
+      //     var tabLine = tab.querySelector(".tab-line");
+      //     var tabActive = tab.querySelector(".tab-item.active");
+      //     if (tabLine) {
+      //       tabLine.querySelector(".tab-line-child").style.left =
+      //         tabActive.offsetLeft + "px";
+      //       tabLine.querySelector(".tab-line-child").style.width =
+      //         tabActive.offsetWidth + "px";
+      //     }
 
-          if (tabItems) {
-            tabItems.forEach(function (curr, index) {
-              curr.addEventListener("click", changeTab);
-              var pane = tabPanes[index];
-              function changeTab() {
-                //
-                var tabItemActive = tab.querySelector(".tab-item.active");
-                var tabPaneActive = tab.querySelector(".tab-pane.active");
-                //
-                if (tabLine) {
-                  tabLine.querySelector(".tab-line-child").style.left =
-                    this.offsetLeft + "px";
-                  tabLine.querySelector(".tab-line-child").style.width =
-                    this.offsetWidth + "px";
-                }
-                //
+      //     if (tabItems) {
+      //       tabItems.forEach(function (curr, index) {
+      //         curr.addEventListener("click", changeTab);
+      //         var pane = tabPanes[index];
+      //         function changeTab() {
+      //           //
+      //           var tabItemActive = tab.querySelector(".tab-item.active");
+      //           var tabPaneActive = tab.querySelector(".tab-pane.active");
+      //           //
+      //           if (tabLine) {
+      //             tabLine.querySelector(".tab-line-child").style.left =
+      //               this.offsetLeft + "px";
+      //             tabLine.querySelector(".tab-line-child").style.width =
+      //               this.offsetWidth + "px";
+      //           }
+      //           //
 
-                if (tabItemActive) {
-                  tabItemActive.classList.remove("active");
-                }
-                if (tabPaneActive) {
-                  tabPaneActive.classList.remove("active");
-                }
-                curr.classList.add("active");
-                curr.scrollIntoView({
-                  behavior: "smooth",
-                  block: "nearest",
-                  inline: "center",
-                });
-                pane.classList.add("active");
-              }
-            });
-          }
-        });
-      }
+      //           if (tabItemActive) {
+      //             tabItemActive.classList.remove("active");
+      //           }
+      //           if (tabPaneActive) {
+      //             tabPaneActive.classList.remove("active");
+      //           }
+      //           curr.classList.add("active");
+      //           curr.scrollIntoView({
+      //             behavior: "smooth",
+      //             block: "nearest",
+      //             inline: "center",
+      //           });
+      //           pane.classList.add("active");
+      //         }
+      //       });
+      //     }
+      //   });
+      // }
 
       //footer
       if (footerBlock) {
@@ -745,6 +745,38 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesToScroll: 1,
       });
     },
+    // slide tab pane
+    slideTabPane: function () {
+      $(".tabs").slick({
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".tab-content1",
+        focusOnSelect: true,
+        infinite: false,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 6,
+            },
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 5,
+            },
+          },
+        ],
+      });
+      $(".tab-content1").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: ".tabs",
+        dots: false,
+        fade: true,
+      });
+    },
     // day content top detail
     pushTopDetail: function () {
       var heightBannerTopDetail = document.querySelector(".banner-top-detail");
@@ -949,7 +981,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // slide banner top mb
       this.slideBannerTopMb();
       // set width tab line
-      this.getTabWidth();
+      // this.getTabWidth();
       // slide hot deal
       this.slideHotDeal();
       // slide emagazine
@@ -974,6 +1006,8 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideOutstandingProject();
       // slide partner about us
       this.slidePartnerAboutUs();
+      // slide tab pane
+      this.slideTabPane();
       // sticky sidebar cate 1
       // this.stickySlidebarCate1();
       // sticky sidebar
