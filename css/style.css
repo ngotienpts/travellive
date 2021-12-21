@@ -814,7 +814,7 @@ img {
   visibility: visible;
 }
 
-.navbar-item-pc:hover .navbar-item__info {
+.navbar-item-pc:hover .navbar-item__title {
   color: #efbb68;
 }
 
@@ -1197,7 +1197,7 @@ img {
 }
 
 .tab-content1 .slick-slide {
-  margin-top: 1rem;
+  margin: 1rem 1rem 0;
 }
 
 .slick-slide .tab-item-text {
@@ -1206,6 +1206,19 @@ img {
 
 .slick-slide .tab-item__icon {
   flex-shrink: 0;
+}
+
+.tab-content1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.week-in-picture__img {
+  position: relative;
+}
+
+.week-in-picture__img .thumb-5x3 {
+  padding-bottom: 73%;
 }
 
 .tab-pane-to-travel-block {
@@ -1346,6 +1359,10 @@ img {
 
 .tab-pane-to-travel__row2-thumb-thumb:hover .tab-pane-to-travel__row2-thumb-text2 {
   color: #fff;
+}
+
+.to-travel {
+  background: linear-gradient(180deg, #fbfafa, #fdf9f8);
 }
 
 .hot-deal-more__link {
@@ -2005,7 +2022,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .category-header-item {
-  color: #ECBBAC;
+  color: #ecbbac;
   padding: 0 1rem;
   position: relative;
 }
@@ -2015,12 +2032,12 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .category-header-item a {
-  color: #ECBBAC;
+  color: #ecbbac;
 }
 
 .category-header-item::before {
   content: "❭";
-  color: #ECBBAC;
+  color: #ecbbac;
   position: absolute;
   font-size: 1.25rem;
   left: -0.25rem;
@@ -2058,7 +2075,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .category-going-on-field--text1 {
-  color: #EFBB68;
+  color: #efbb68;
 }
 
 .category-going-on-field--text2 {
@@ -2091,12 +2108,12 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .category-going-on-thumb-block--text1 {
-  color: #D87053;
+  color: #d87053;
   padding-bottom: 0.325rem;
 }
 
 .category-going-on-thumb-block--text2 {
-  color: #054A91;
+  color: #054a91;
   padding-bottom: 0.5rem;
   font-size: 1.5rem;
 }
@@ -2195,7 +2212,7 @@ ion-icon.close-popup-login.md.hydrated {
   content: "";
   width: 0.375rem;
   height: 0.375rem;
-  background-color: #ECBBAC;
+  background-color: #ecbbac;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2217,7 +2234,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .featured-block {
-  background: #EFBB68;
+  background: #efbb68;
   margin-bottom: 1.5rem;
 }
 
@@ -2276,6 +2293,10 @@ ion-icon.close-popup-login.md.hydrated {
   display: none;
 }
 
+.going-on-category .tab-content1 .slick-slide {
+  margin: 1rem;
+}
+
 .banner-top-detail img {
   width: 100%;
   height: auto;
@@ -2308,9 +2329,7 @@ ion-icon.close-popup-login.md.hydrated {
 
 .detail-left,
 .detail-right {
-  position: sticky;
   padding-top: 1.25rem;
-  top: 78px;
 }
 
 .detail-right {
@@ -2426,7 +2445,7 @@ ion-icon.close-popup-login.md.hydrated {
   padding: 0.5rem 0.5rem 0.5rem 0.75rem;
   margin-bottom: 1rem;
   position: relative;
-  border-left: 0.25rem solid #EFBB68;
+  border-left: 0.25rem solid #efbb68;
   font-size: 0.875rem;
 }
 
@@ -2479,7 +2498,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .detail-header-item:last-child a {
-  color: #D87053;
+  color: #d87053;
 }
 
 .detail-center-content {
@@ -2515,7 +2534,7 @@ ion-icon.close-popup-login.md.hydrated {
 .detail-center-content__author--item::before {
   position: absolute;
   content: "";
-  background: #ECBBAC;
+  background: #ecbbac;
   width: 0.375rem;
   height: 0.375rem;
   border-radius: 50%;
@@ -2696,7 +2715,7 @@ ion-icon.close-popup-login.md.hydrated {
 .detail-cmt-content-user__author--time:before {
   position: absolute;
   content: "";
-  background: #ECBBAC;
+  background: #ecbbac;
   width: 0.375rem;
   height: 0.375rem;
   border-radius: 50%;
@@ -2774,7 +2793,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .subcribe-email-detail-same {
-  background: #EFBB68;
+  background: #efbb68;
   display: none;
 }
 
@@ -3947,7 +3966,7 @@ ion-icon.close-popup-login.md.hydrated {
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #D87053;
+  background: #d87053;
   bottom: 75px;
   z-index: -1;
 }
@@ -4008,7 +4027,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .milestones-block.swiper-slide.swiper-slide-active .milestones-block__dot {
-  background: #ECBBAC;
+  background: #ecbbac;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -4017,7 +4036,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .milestones-block.swiper-slide.swiper-slide-active .milestones-block__time {
-  color: #ECBBAC;
+  color: #ecbbac;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -4085,7 +4104,7 @@ ion-icon.close-popup-login.md.hydrated {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background: #ECBBAC;
+  background: #ecbbac;
   top: 50%;
   left: -0.875rem;
   transform: translateY(-50%);
@@ -4223,7 +4242,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .partner-content .slick-dots li button:before {
-  color: #D87053;
+  color: #d87053;
   font-size: 0.5rem;
 }
 
@@ -4328,7 +4347,7 @@ ion-icon.close-popup-login.md.hydrated {
 }
 
 .popup-outstanding-close {
-  background-color: #D87053;
+  background-color: #d87053;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

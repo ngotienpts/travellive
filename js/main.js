@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // click change tab
   var tabBlock = document.querySelectorAll(".tab-container");
   // var tabs = document.querySelectorAll(".tabs");
-  var tabLines = document.querySelectorAll(".tab-line");
+  // var tabLines = document.querySelectorAll(".tab-line");
 
   // show popup login
   var popupLogin = document.querySelector(".popup-login");
@@ -262,7 +262,45 @@ document.addEventListener("DOMContentLoaded", function () {
       //     }
       //   });
       // }
-
+      if (tabBlock) {
+        tabBlock.forEach(function (a) {
+          var tabs = a.querySelector(".tabs");
+          var tabContent = a.querySelector(".tab-content1");
+          $(tabs)
+            .not(".slick-initialized")
+            .slick({
+              slidesToShow: 12,
+              slidesToScroll: 1,
+              arrows: false,
+              asNavFor: tabContent,
+              focusOnSelect: true,
+              infinite: false,
+              responsive: [
+                {
+                  breakpoint: 1199,
+                  settings: {
+                    slidesToShow: 7,
+                  },
+                },
+                {
+                  breakpoint: 740,
+                  settings: {
+                    slidesToShow: 5,
+                  },
+                },
+              ],
+            });
+          $(tabContent).not(".slick-initialized").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: tabs,
+            infinite: false,
+            dots: false,
+            fade: true,
+            arrows: false,
+          });
+        });
+      }
       //footer
       if (footerBlock) {
         if (footerBlock.offsetWidth < 1025) {
@@ -745,38 +783,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesToScroll: 1,
       });
     },
-    // slide tab pane
-    slideTabPane: function () {
-      $(".tabs").slick({
-        slidesToShow: 10,
-        slidesToScroll: 1,
-        arrows: false,
-        asNavFor: ".tab-content1",
-        focusOnSelect: true,
-        infinite: false,
-        responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 6,
-            },
-          },
-          {
-            breakpoint: 740,
-            settings: {
-              slidesToShow: 5,
-            },
-          },
-        ],
-      });
-      $(".tab-content1").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: ".tabs",
-        dots: false,
-        fade: true,
-      });
-    },
+
     // day content top detail
     pushTopDetail: function () {
       var heightBannerTopDetail = document.querySelector(".banner-top-detail");
@@ -902,6 +909,14 @@ document.addEventListener("DOMContentLoaded", function () {
         additionalMarginBottom: 20,
       });
     },
+    // sticky sidebar unbre 1
+    stickyUnbre1: function () {
+      $(".leftSidebarUnbre, .rightSidebarUnbre").theiaStickySidebar({
+        containerSelector: "#unbre-1",
+        additionalMarginTop: 20,
+        additionalMarginBottom: 20,
+      });
+    },
     // full page week picture
     fullpageWeek: function () {
       if (weekInPicture) {
@@ -1006,22 +1021,22 @@ document.addEventListener("DOMContentLoaded", function () {
       this.slideOutstandingProject();
       // slide partner about us
       this.slidePartnerAboutUs();
-      // slide tab pane
-      this.slideTabPane();
       // sticky sidebar cate 1
-      // this.stickySlidebarCate1();
+      this.stickySlidebarCate1();
       // sticky sidebar
-      // this.stickySlidebar();
+      this.stickySlidebar();
       // sticky sidebar detail 2
-      // this.stickySlidebarDetail2();
+      this.stickySlidebarDetail2();
       // sticky sidebar detail 3
-      // this.stickySlidebarDetail3();
+      this.stickySlidebarDetail3();
       // sticky sidebar hot deal 1
-      // this.stickyHotDeal1();
+      this.stickyHotDeal1();
       // sticky sidebar hot deal 2
-      // this.stickyHotDeal2();
+      this.stickyHotDeal2();
       // sticky sidebar hot deal 3
-      // this.stickyHotDeal3();
+      this.stickyHotDeal3();
+      // sticky sidebar unbre 1
+      this.stickyUnbre1();
     },
   };
 

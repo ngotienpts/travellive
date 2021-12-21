@@ -159,7 +159,7 @@
   -o-transition: all 0.2s linear;
 }
 .tab-content1 .slick-slide {
-  margin-top: 1rem;
+  margin: 1rem 1rem 0;
 }
 // .bg-gradient1 {
 //   background: linear-gradient(180deg, #fafafa, #fef6f4);
@@ -169,4 +169,14 @@
 }
 .slick-slide .tab-item__icon {
   flex-shrink: 0;
+}
+.tab-content1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.week-in-picture__img {
+  position: relative;
+}
+.week-in-picture__img .thumb-5x3 {
+  padding-bottom: 73%;
 }
