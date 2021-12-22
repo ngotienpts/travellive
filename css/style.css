@@ -1221,6 +1221,19 @@ img {
   padding-bottom: 73%;
 }
 
+.tabs .slick-slide {
+  width: auto !important;
+}
+
+.tabs .slick-track {
+  width: auto !important;
+  display: inline-block !important;
+}
+
+.tabs .slick-list {
+  text-align: center;
+}
+
 .tab-pane-to-travel-block {
   display: flex;
   width: 100%;
@@ -1363,6 +1376,11 @@ img {
 
 .to-travel {
   background: linear-gradient(180deg, #fbfafa, #fdf9f8);
+}
+
+.tabs .slick-slide {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .hot-deal-more__link {
@@ -1656,6 +1674,10 @@ img {
 
 .e-maga-content .slick-slide {
   margin: 1.125rem 0.625rem 0.625rem;
+}
+
+.e-maga-content__title {
+  min-height: 4.125rem;
 }
 
 .week-in-picture {
@@ -2070,7 +2092,7 @@ ion-icon.close-popup-login.md.hydrated {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 15rem 1.5rem 1.5rem;
   background: linear-gradient(360deg, black, transparent);
 }
 
@@ -2799,6 +2821,15 @@ ion-icon.close-popup-login.md.hydrated {
 
 .detail-cate-other .most-views-detail-right {
   display: none;
+}
+
+.most-views-detail-right__item {
+  min-height: 3.5rem;
+}
+
+.banner-top-detail {
+  overflow-y: hidden;
+  max-height: 800px;
 }
 
 .fullpage-week-item__img--tablet,

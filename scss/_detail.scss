@@ -421,3 +421,10 @@
 .detail-cate-other .most-views-detail-right {
   display: none;
 }
+.most-views-detail-right__item {
+  min-height: 3.5rem;
+}
+.banner-top-detail {
+  overflow-y: hidden;
+  max-height: 800px;
+}

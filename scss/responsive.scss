@@ -902,6 +902,9 @@
     -ms-transform: translateY(0) scale(1);
     -o-transform: translateY(0) scale(1);
   }
+  .e-maga-content__title {
+    min-height: auto;
+  }
 }
 // ============================================================================================================
 @media (max-width: 63.9375em) {
@@ -2596,7 +2599,7 @@
   .tabs .slick-current .tab-item:before {
     position: absolute;
     content: "";
-    width: 54px;
+    width: 100%;
     transform: translateY(23px);
     height: 0.125rem;
     background: #054a91;
@@ -2614,6 +2617,13 @@
   .tab-milestones {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+  }
+  .hot-deal-slide__text {
+    min-height: 2.75rem;
+  }
+  .tabs.active .slick-track {
+    width: max-content !important;
+    display: flex !important;
   }
 }
 

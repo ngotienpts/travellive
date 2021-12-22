@@ -266,6 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tabBlock.forEach(function (a) {
           var tabs = a.querySelector(".tabs");
           var tabContent = a.querySelector(".tab-content1");
+          
           $(tabs)
             .not(".slick-initialized")
             .slick({
@@ -299,6 +300,14 @@ document.addEventListener("DOMContentLoaded", function () {
             fade: true,
             arrows: false,
           });
+          if(footerBlock){
+            if(footerBlock.offsetWidth < 576) {
+              var slickSlide = a.querySelectorAll('.tab-item');
+              if(slickSlide.length > 4){
+                tabs.classList.add('active')
+              }
+            }
+          }
         });
       }
       //footer
